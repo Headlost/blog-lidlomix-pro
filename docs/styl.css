@@ -45,3 +45,16 @@ header { background: #fffdf8; }
 .blog-form input[type="file"] { width: 100%; }
 .support-section p { max-width: 68ch; }
 @media (max-width: 680px) { .signup-grid { grid-template-columns: 1fr; } .story-row { grid-template-columns: minmax(65px, 24%) 1fr; } }
+
+.forum-directory { display:grid; gap:.55rem; margin:1.25rem 0; }
+.forum-directory a { display:grid; gap:.1rem; padding:.85rem 1rem; background:#fffcf7; border:1px solid #ded2bf; border-radius:8px; text-decoration:none; }
+.forum-directory a:hover, .forum-directory a[aria-current="true"] { border-color:#2142aa; background:#eaf0fc; }
+.forum-directory span { color:#505972; font-size:.9rem; }
+.forum-boards .forum-board { margin-top:1.25rem; }
+.forum-topics h3 { margin:.1rem 0 .4rem; font-size:1.35rem; }
+.forum-topics li.forum-reply { margin-left:clamp(.75rem,3vw,2.2rem); border-left:2px solid #d9d1c3; }
+.forum-contact { margin-top:2rem; }
+.forum-contact .demo { margin:0; }
+.forum-contact .blog-form { padding-bottom:1rem; }
+
+.forum-board [hidden] { display: none !important; }

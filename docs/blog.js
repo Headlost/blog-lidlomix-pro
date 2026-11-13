@@ -1,5 +1,34 @@
 const communityApi = "https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site";
 
+const boardLinks = [...document.querySelectorAll('[data-board-link]')];
+const boards = [...document.querySelectorAll('.forum-board')];
+function selectBoard() {
+  const hash = location.hash.slice(1);
+  if (hash === 'connect' || hash === 'smart') {
+    const signup = document.getElementById('aktualizacje');
+    signup.open = true;
+    signup.querySelector('select').value = hash === 'connect' ? 'Connect' : 'Smart';
+    signup.scrollIntoView();
+  }
+  const boardId = boards.find(board => board.id === hash)?.id;
+  const active = boardId || document.querySelector('.forum-board:not([hidden])')?.id || boards[0]?.id;
+  for (const board of boards) board.hidden = board.id !== active;
+  for (const link of boardLinks) {
+    if (link.hash === '#' + active) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  }
+  if (boardId) document.getElementById(boardId).scrollIntoView();
+  const detail = ['zasady', 'aktualizacje', 'sprzet'].includes(hash) && document.getElementById(hash);
+  if (detail) detail.open = true;
+}
+if (boards.length) {
+  for (const link of document.querySelectorAll('[data-open-rules]')) {
+    link.addEventListener('click', () => { document.getElementById('zasady').open = true; });
+  }
+  selectBoard();
+  addEventListener('hashchange', selectBoard);
+}
+
 for (const section of document.querySelectorAll('[data-post]')) {
   const status = section.querySelector('[data-comments-status]');
   const list = section.querySelector('ul');
@@ -7,6 +36,18 @@ for (const section of document.querySelectorAll('[data-post]')) {
   const form = section.querySelector('form');
   const replyNote = form.querySelector('.reply-note');
   const post = section.dataset.post;
+  const composer = form.closest('.topic-composer');
+  const topicTitle = form.querySelector('[data-topic-title]');
+  function setReply(id, name = '') {
+    form.elements.replyTo.value = id;
+    replyNote.hidden = !id;
+    if (topicTitle) {
+      topicTitle.hidden = !!id;
+      topicTitle.querySelector('input').disabled = !!id;
+    }
+    if (composer) composer.querySelector('summary').textContent = id ? 'Napisz odpowiedź' : 'Załóż temat';
+    replyNote.querySelector('span').textContent = id ? 'Odpowiedź do ' + name : '';
+  }
   let cursor = '';
   let loading = false;
 
@@ -17,7 +58,20 @@ for (const section of document.querySelectorAll('[data-post]')) {
     const body = document.createElement('p');
     name.textContent = comment.name;
     body.textContent = comment.body;
+    if (comment.title) {
+      const title = document.createElement('h3');
+      title.textContent = comment.title;
+      item.append(title);
+    }
+    if (comment.replyTo) item.classList.add('forum-reply');
     item.append(name);
+    if (comment.date) {
+      const date = document.createElement('time');
+      date.className = 'reply-meta';
+      date.dateTime = comment.date;
+      date.textContent = ' · ' + new Date(comment.date).toLocaleDateString('pl-PL');
+      item.append(date);
+    }
 
     if (comment.replyTo) {
       const parent = document.createElement('a');
@@ -49,9 +103,8 @@ for (const section of document.querySelectorAll('[data-post]')) {
       button.className = 'reply-button';
       button.textContent = 'Odpowiedz';
       button.addEventListener('click', () => {
-        form.elements.replyTo.value = comment.id;
-        replyNote.querySelector('span').textContent = 'Odpowiedź do ' + comment.name;
-        replyNote.hidden = false;
+        setReply(comment.replyTo || comment.id, comment.name);
+        if (composer) composer.open = true;
         form.elements.body.focus();
       });
       item.append(button);
@@ -69,7 +122,20 @@ for (const section of document.querySelectorAll('[data-post]')) {
       const response = await fetch(communityApi + '/comments?' + params);
       if (!response.ok) throw new Error();
       const page = await response.json();
-      for (const comment of page.comments) list.append(renderComment(comment));
+      for (const comment of page.comments) {
+        if (document.getElementById('wpis-' + comment.id)) continue;
+        list.append(renderComment(comment));
+      }
+      if (composer) {
+        for (const reply of list.querySelectorAll('.forum-reply')) {
+          const root = document.getElementById(reply.querySelector('.reply-meta[href]')?.hash.slice(1));
+          if (!root || root.parentElement !== list) continue;
+          let tail = root;
+          while (tail.nextElementSibling?.dataset.thread === root.id) tail = tail.nextElementSibling;
+          reply.dataset.thread = root.id;
+          if (tail !== reply) tail.after(reply);
+        }
+      }
       cursor = page.next;
       status.textContent = list.children.length ? '' : 'Tu jeszcze nie ma wpisów.';
       if (more) more.hidden = !cursor;
@@ -82,10 +148,10 @@ for (const section of document.querySelectorAll('[data-post]')) {
   }
   more?.addEventListener('click', loadComments);
   replyNote?.querySelector('button').addEventListener('click', () => {
-    form.elements.replyTo.value = '';
-    replyNote.hidden = true;
+    setReply('');
     form.elements.body.focus();
   });
+  form.addEventListener('reset', () => { if (replyNote) setReply(''); });
   loadComments();
 }
 
@@ -135,7 +201,7 @@ for (const form of document.querySelectorAll('[data-endpoint]')) {
       if (replyNote) replyNote.hidden = true;
       status.textContent = endpoint === 'comments'
         ? 'Dziękuję. Wpis czeka na zatwierdzenie.'
-        : 'Zapisano zgłoszenie. Dziękuję!';
+        : result.emailed ? 'Zapisano i przesłano zgłoszenie. Dziękuję!' : 'Zapisano zgłoszenie. Dziękuję!';
     } catch (error) {
       status.textContent = 'Nie udało się wysłać. ' + error.message;
     } finally {
