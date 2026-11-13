@@ -7,12 +7,39 @@ const passwordField = login.elements.password;
 const releaseForm = dialog.querySelector('#panel-release');
 const more = dialog.querySelector('#panel-more');
 const roleField = login.elements.role;
+const approval = document.createElement('button');
+approval.type = 'button';
+approval.hidden = true;
+area.prepend(approval);
 let credentials;
 let activeKind = 'pending';
 let requestId = 0;
+let approvalRequired;
+
+function showApproval(required) {
+  approvalRequired = required;
+  approval.hidden = typeof required !== 'boolean';
+  approval.textContent = required ? 'Wyłącz zatwierdzanie nowych wpisów' : 'Włącz zatwierdzanie nowych wpisów';
+}
+
+approval.addEventListener('click', async () => {
+  const session = credentials;
+  approval.disabled = true;
+  try {
+    const result = await callPanel('setForumApproval', { required: !approvalRequired }, session);
+    if (credentials !== session) return;
+    showApproval(result.approvalRequired);
+    status.textContent = approvalRequired ? 'Nowe wpisy będą czekać na zatwierdzenie.' : 'Nowe wpisy będą publikowane od razu.';
+  } catch (error) {
+    if (credentials === session) status.textContent = error.message;
+  } finally {
+    approval.disabled = false;
+  }
+});
 
 function lockPanel() {
   credentials = undefined;
+  showApproval(undefined);
   requestId++;
   login.reset();
   dialog.querySelector('#panel-roles').reset();
@@ -40,8 +67,10 @@ async function callPanel(action, fields = {}, auth = credentials) {
 async function loadEntries(kind, cursor = '') {
   releaseForm.hidden = true;
   const currentRequest = ++requestId;
-  const { entries, next } = await callPanel('list', { kind, cursor });
+  const result = await callPanel('list', { kind, cursor });
   if (currentRequest !== requestId) return;
+  const { entries, next } = result;
+  if (!approval.disabled) showApproval(result.approvalRequired);
   activeKind = kind;
   output.replaceChildren();
   if (!entries.length) output.textContent = 'Brak wpisów.';

@@ -1,5 +1,18 @@
 const communityApi = "https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site";
 
+const forumApprovalStatus = document.querySelector('[data-forum-approval-status]');
+if (forumApprovalStatus) {
+  fetch(communityApi + '/forum-settings', { signal: AbortSignal.timeout(6000) })
+    .then(response => response.ok ? response.json() : null)
+    .then(settings => {
+      if (typeof settings?.approvalRequired !== 'boolean') return;
+      forumApprovalStatus.textContent = settings.approvalRequired
+        ? 'Nowe tematy i odpowiedzi pojawiają się po zatwierdzeniu.'
+        : 'Nowe tematy i odpowiedzi pojawiają się od razu po wysłaniu.';
+    })
+    .catch(() => {});
+}
+
 const publishedVersions = new Set(['0.15.0', '0.15.3']);
 const releaseList = document.querySelector('[data-releases]');
 const forum = document.querySelector('[data-post]');
