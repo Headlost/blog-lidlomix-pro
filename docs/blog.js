@@ -1,6 +1,6 @@
 const communityApi = "https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site";
 
-const publishedVersions = new Set(['0.15.0']);
+const publishedVersions = new Set(['0.15.0', '0.15.3']);
 const releaseList = document.querySelector('[data-releases]');
 const forum = document.querySelector('[data-post]');
 const releasesReady = (releaseList || forum) ? loadReleases() : Promise.resolve();
