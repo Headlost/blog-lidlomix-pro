@@ -1,0 +1,95 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jak uruchomiłem Lidlomix Pro na Monsieur Cuisine Connect. Android USB, własny launcher, aplikacja w Rust i testy wagi."><meta property="og:type" content="website"><meta property="og:title" content="Od strony technicznej | Lidlomix Pro"><meta property="og:description" content="Jak uruchomiłem Lidlomix Pro na Monsieur Cuisine Connect. Android USB, własny launcher, aplikacja w Rust i testy wagi."><meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/connect-aktualne/foto-wybor.webp"><meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/technika.html"><title>Od strony technicznej | Lidlomix Pro</title><link rel="stylesheet" href="styl.css?v=technika-1"><script src="blog.js?v=aktualizacje-2" defer></script></head><body><header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="technika.html" aria-current="page">Technika</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header><main class="wrap">
+<article class="article tech-article">
+  <p class="eyebrow">Monsieur Cuisine Connect · SKMC 1200 B2</p>
+  <h1>Od strony technicznej</h1>
+  <p class="lead">Żeby uruchomić Lidlomix Pro na Connect, musiałem najpierw dostać się do Androida. Potem zbudowałem ekran wyboru i dopiero na urządzeniu mogłem sprawdzić, jak własna aplikacja radzi sobie z jego czujnikami i ograniczeniami.</p>
+  <nav class="tech-nav" aria-label="Na tej stronie">
+    <a href="#android-usb">Dostęp do Androida</a><a href="#launcher">Ekran wyboru</a><a href="#rust">Aplikacja w Rust</a><a href="#waga">Waga i Smart</a>
+  </nav>
+  <section aria-labelledby="android-usb">
+    <h2 id="android-usb">1. Dostęp do Androida</h2>
+    <p>Punktem wyjścia był poradnik <a href="https://github.com/wpm-mh/Lidlomix-Hack">Lidlomix-Hack autorstwa wpm-mh</a> dla Connect Trend. Pokazał, że przez port serwisowy można uruchomić środowisko odzyskiwania TWRP i włączyć ADB, czyli komunikację komputera z Androidem. Swoją procedurę sprawdziłem na Connect SKMC 1200 B2 z Androidem 6.0.</p>
+    <p>Gniazdo jest od spodu robota, pod klapką mocowaną jedną śrubą. Oba porty wyglądają podobnie. <strong>Przewód z dwoma męskimi wtykami USB‑A podłączałem wyłącznie do portu oznaczonego „Android USB”. Podłączenie do sąsiedniego portu „USB” może uszkodzić urządzenie.</strong></p>
+    <ol>
+      <li>Po podłączeniu do Windows wykonałem pełną kopię pamięci w SP Flash Tool. Zgodność dwóch odczytów obszaru rozruchowego sprawdziłem przed dalszą pracą.</li>
+      <li>Tymczasowo uruchomiłem TWRP i zmieniłem konfigurację USB, żeby Android udostępniał ADB. Następnie przywróciłem fabryczny obraz rozruchowy.</li>
+      <li>Po ponownym uruchomieniu zatwierdziłem połączenie z komputerem na ekranie robota. Od tej chwili mogłem używać ADB do instalowania i aktualizowania własnych aplikacji.</li>
+    </ol>
+    <details class="demo">
+      <summary>Zobacz zdjęcie portów i zrzut kopii zapasowej</summary>
+      <div class="tech-figures">
+        <figure>
+          <a href="https://github.com/wpm-mh/Lidlomix-Hack/blob/96bb25d50ba984bd024be9581bcf237f7023bdab/assets/usb.png"><img src="https://raw.githubusercontent.com/wpm-mh/Lidlomix-Hack/96bb25d50ba984bd024be9581bcf237f7023bdab/assets/usb.png" width="1862" height="1862" loading="lazy" alt="Dwa porty USB pod klapką serwisową urządzenia z poradnika Lidlomix-Hack."></a>
+          <figcaption>Porty pod klapką w Connect Trend. <a href="https://github.com/wpm-mh/Lidlomix-Hack#instalacja">Zdjęcie z poradnika Lidlomix-Hack</a></figcaption>
+        </figure>
+        <figure>
+          <a href="https://github.com/wpm-mh/Lidlomix-Hack/blob/96bb25d50ba984bd024be9581bcf237f7023bdab/assets/backup.png"><img src="https://raw.githubusercontent.com/wpm-mh/Lidlomix-Hack/96bb25d50ba984bd024be9581bcf237f7023bdab/assets/backup.png" width="1021" height="671" loading="lazy" alt="Widok kopii zapasowej w zakładce Readback narzędzia SP Flash Tool."></a>
+          <figcaption>Kopia zapasowa w SP Flash Tool. <a href="https://github.com/wpm-mh/Lidlomix-Hack#instalacja">Zrzut z poradnika Lidlomix-Hack</a></figcaption>
+        </figure>
+      </div>
+    </details>
+  </section>
+  <section aria-labelledby="launcher">
+    <h2 id="launcher">2. Jeden ekran startowy, dwie aplikacje</h2>
+    <p>Napisałem osobny launcher, czyli ekran startowy Androida. Otwiera fabryczne Monsieur Cuisine albo Lidlomix Pro. Powrót do wyboru działa gestem od prawej krawędzi, więc mogę przełączyć aplikację bez wyłączania robota.</p>
+    <p>W testach fabryczne odliczanie do uśpienia potrafiło wygasić ekran już po przejściu do Pro. Poprawiłem przełączanie. Gdy robot stoi i wychodzę z fabrycznego interfejsu, jego odliczanie się kończy, a usługa sprzętowa nadal udostępnia odczyty czujników.</p>
+    <figure class="tech-device">
+      <a href="media/connect-aktualne/foto-wybor.webp"><img src="media/connect-aktualne/foto-wybor.webp" loading="lazy" alt="Wybór fabrycznej aplikacji Monsieur Cuisine lub Lidlomix Pro na fizycznym Connect."></a>
+      <figcaption>Własny launcher na moim Connect. <a href="dwie-aplikacje.html">Zobacz oba ekrany na urządzeniu</a></figcaption>
+    </figure>
+  </section>
+  <section aria-labelledby="rust">
+    <h2 id="rust">3. Aplikacja napisana od podstaw w Rust</h2>
+    <p>Silnik Lidlomix Pro i jego interfejs napisałem od podstaw w Rust, bez użycia kodu źródłowego fabrycznych aplikacji Connecta ani Smarta. Zostawiłem znajomy układ tam, gdzie ułatwiał obsługę, a działanie programów, katalog offline i prowadzenie przez przepisy zaimplementowałem sam. Do odczytów czujników Pro komunikuje się z usługą sprzętową robota.</p>
+    <p>Zainspirowało mnie podejście zespołu ArtCraft, który buduje własne aplikacje z interfejsami znajomymi dla użytkowników. Rust dał mi kontrolę nad zużyciem pamięci i możliwość wyłapania części błędów przy kompilacji. Na starym Connect liczyła się też praca z jego grafiką. Musiałem dostosować renderowanie do układu Mali‑400, żeby aplikacja poprawnie wyświetlała interfejs. <a href="https://github.com/storytold/photocraft">PhotoCraft zespołu ArtCraft</a> · <a href="https://rust-lang.org/">O języku Rust</a></p>
+    <p>Fabryczna przeglądarka z Androida 6 nie radziła sobie w moich testach z logowaniem do ChatGPT. Aktualny Chrome wymaga Androida 10 lub nowszego. Dlatego przepis przygotowuję na telefonie, a gotowy plik JSON wysyłam do robota przez lokalne Wi‑Fi. Możliwości przeglądarek na Smarcie sprawdzę na egzemplarzu testowym. <a href="https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DAndroid">Wymagania Chrome</a></p>
+  </section>
+  <section aria-labelledby="waga">
+    <h2 id="waga">Co pokazała waga</h2>
+    <p>Sprawdziłem sygnał z płytki sterującej. Mój Connect raportuje wagę w krokach co 5 g i taki odczyt pokazuje Pro. Na Smarcie zależy to od wersji sprzętu. Instrukcja SKMS 1200 C1 podaje krok 1 g, a SKMS 1200 A1 opisuje ważenie co 5 g. <a href="https://manuals.sit-connect.com/public/articlemanual/9de24595-e86b-4e3e-b77e-b27c0aa0bf36.pdf">Instrukcja C1</a> · <a href="https://manuals.sit-connect.com/public/articlemanual/96160913-31a3-4dd2-be22-0b1200cbc16e.pdf">Instrukcja A1</a></p>
+    <p>Po rozpoznaniu Smarta aplikacja pokazuje wybór kroku 1 g lub 5 g. Sprawdzę na fizycznym egzemplarzu, które wersje rzeczywiście przekazują odczyt co 1 g. Mój Smart jest w codziennym użyciu, dlatego szukam drugiego do prób. Na Connect waga korzysta z czujnika, a sterowanie obrotami i grzaniem sprawdzam w trybie demonstracyjnym bez uruchamiania silnika, ostrzy ani grzałki. <a href="waga-i-przepisy.html">Zobacz ważenie w przepisie</a></p>
+  </section>
+  <section aria-labelledby="codex">
+    <h2 id="codex">Co przyspieszył Codex</h2>
+    <p>Codex, agent programistyczny OpenAI, pomagał mi analizować logi, przeglądać kod i pisać testy, na przykład dla odczytów czujników i reakcji programu przy utracie sygnału. Najwięcej dowiadywałem się po podłączeniu prawdziwego Connecta. To tam mogłem sprawdzić, co faktycznie robi ekran i co zgłasza płytka.</p>
+  </section>
+  <aside class="community-panel tech-forum" aria-labelledby="tech-forum-title">
+    <h2 id="tech-forum-title">Masz pytanie o sprzęt lub własne obserwacje?</h2>
+    <p><a href="spolecznosc.html#pomoc">Porozmawiaj na forum</a> · <a href="spolecznosc.html#sprzet">Zaproponuj Smarta do testów</a></p>
+  </aside>
+</article>
+</main><footer><div class="wrap">Dziennik niezależnego projektu. Monsieur Cuisine i SilverCrest to marki ich właścicieli. · <a href="https://github.com/Headlost/blog-lidlomix-pro">GitHub</a> · <button type="button" class="panel-opener" data-open-owner-panel>Panel projektu</button></div></footer>
+<dialog id="owner-panel" class="owner-panel" aria-labelledby="panel-title">
+  <div class="panel-header"><h2 id="panel-title">Panel projektu</h2><button type="button" id="panel-close">Zamknij</button></div>
+  <form id="panel-login" class="blog-form" method="post">
+    <label>Rola <select name="role"><option value="admin">Administrator</option><option value="moderator">Moderator</option></select></label>
+    <input class="visually-hidden" name="username" value="Lidlomix Pro" autocomplete="username" tabindex="-1" aria-hidden="true" readonly>
+    <label>Hasło <input type="password" name="password" autocomplete="current-password" maxlength="128" required></label>
+    <button type="submit">Zaloguj się</button>
+  </form>
+  <p id="panel-status" role="status"></p>
+  <div id="panel-area" hidden>
+    <div class="panel-actions">
+      <button type="button" data-panel-kind="pending">Moderacja</button>
+      <button type="button" data-panel-kind="waitlist" data-admin-only>Zapisy</button>
+      <button type="button" data-panel-kind="hardware" data-admin-only>Sprzęt</button>
+      <button type="button" id="panel-releases-toggle" data-admin-only>Aktualizacje</button>
+      <button type="button" id="panel-logout">Wyloguj</button>
+    </div>
+    <div id="panel-entries"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <form class="blog-form" id="panel-release" method="post" hidden>
+      <h3>Opublikuj aktualizację</h3>
+      <label>Wersja <input name="version" placeholder="0.15.1" inputmode="decimal" maxlength="14" pattern="[0-9]+\.[0-9]+\.[0-9]+" required></label>
+      <label>Tytuł <input name="title" maxlength="100" required></label>
+      <label>Co się zmieniło? <textarea name="body" minlength="10" maxlength="5000" rows="6" required></textarea></label>
+      <p class="form-hint">Ponowna publikacja tej samej wersji zastępuje jej tytuł i opis.</p>
+      <button type="submit">Opublikuj aktualizację</button>
+    </form>
+    <form class="blog-form" id="panel-roles" method="post" data-admin-only>
+      <label>Ustaw lub zmień hasło moderatora <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+      <button type="submit">Zapisz hasło moderatora</button>
+    </form>
+  </div>
+</dialog>
+<script src="panel.js?v=2" defer></script>
+</body></html>

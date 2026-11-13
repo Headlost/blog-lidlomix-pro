@@ -119,3 +119,17 @@ header nav [aria-current="page"] { font-weight: 750; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); }
 
 .release-body { white-space: pre-wrap; overflow-wrap: anywhere; }
+
+
+.tech-article > section { margin-top: 2rem; }
+.tech-nav { justify-content: flex-start; gap: .6rem 1.1rem; border-block: 1px solid #d9d1c3; padding: .8rem 0; }
+.tech-article h2[id] { scroll-margin-top: 1rem; }
+.tech-article ol { padding-inline-start: 1.45rem; }
+.tech-article li + li { margin-top: .55rem; }
+.tech-figures { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.tech-figures figure { margin: 1rem 0; }
+.tech-figures img { height: auto; aspect-ratio: 4/3; }
+.tech-device { max-width: 470px; }
+.tech-forum { margin-top: 2.5rem; }
+.tech-forum h2 { margin-top: 0; }
+@media (max-width: 580px) { .tech-figures { grid-template-columns: 1fr; gap: 0; } }
