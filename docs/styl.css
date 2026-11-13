@@ -16,3 +16,9 @@ header { background: #fffdf8; }
 @media (max-width: 760px) { .gpt-card { grid-template-columns: 1fr; } }
 
 .blog-form{display:grid;gap:.8rem;max-width:38rem}.blog-form label{display:grid;gap:.25rem}.blog-form input,.blog-form select,.blog-form textarea{font:inherit;padding:.55rem;border:1px solid #b6b9c5;border-radius:7px;background:#fff;color:#172442}.blog-form .consent{display:flex;align-items:baseline;gap:.45rem}.blog-form button{justify-self:start}.blog-form p{margin:0}.blog-form [role=status]:empty{display:none}.blog-form .form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.join .blog-form button{background:#f5c396;color:#182957}
+
+.device-photos { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(.5rem,2vw,1rem); align-items: start; }
+.hero .device-photo, .article .device-photo { margin: 0; padding: 0; overflow: hidden; transform: none; border: 1px solid #d9d1c3; border-radius: 12px; background: #fffcf7; color: #172442; box-shadow: none; }
+.article .device-photos { margin: 1.4rem 0; }
+.hero .device-photo img, .article .device-photo img { aspect-ratio: 4/5; width: 100%; max-height: none; object-fit: cover; object-position: center 73%; border-radius: 0; }
+.device-photo figcaption { padding: .55rem .65rem; }
