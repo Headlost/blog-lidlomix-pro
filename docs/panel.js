@@ -49,7 +49,7 @@ async function loadEntries(kind, cursor = '') {
     const card = document.createElement('article');
     const label = document.createElement('strong');
     const body = document.createElement('p');
-    label.textContent = [record.title, record.name, record.post, record.model, record.email].filter(Boolean).join(' · ');
+    label.textContent = [record.title, record.name, record.post, record.model, [record.postalCode, record.city].filter(Boolean).join(" "), record.email].filter(Boolean).join(' · ');
     body.textContent = [record.body, record.description, record.date].filter(Boolean).join('\n');
     card.append(label, body);
     if (kind === 'pending') {

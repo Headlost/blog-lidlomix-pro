@@ -62,24 +62,24 @@ header { background: #fffdf8; }
 
 @media (min-width: 681px) {
   .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) {
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(9, auto);
     row-gap: 0;
   }
   .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) > details {
     display: grid;
-    grid-row: span 8;
+    grid-row: span 9;
     grid-template-rows: subgrid;
   }
   .signup-grid > details[open]::details-content { display: contents; }
   .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) .blog-form {
-    grid-row: 3 / span 6;
+    grid-row: 3 / span 7;
     grid-template-rows: subgrid;
     align-items: start;
     max-width: none;
   }
-  .signup-grid .blog-form .consent { grid-row: 4; }
-  .signup-grid .blog-form button { grid-row: 5; }
-  .signup-grid .blog-form [role="status"] { grid-row: 6; }
+  .signup-grid .blog-form .consent { grid-row: 5; }
+  .signup-grid .blog-form button { grid-row: 6; }
+  .signup-grid .blog-form [role="status"] { grid-row: 7; }
 }
 header nav [aria-current="page"] { font-weight: 750; }
 .release-page { max-width: 850px; }
@@ -138,3 +138,6 @@ header nav [aria-current="page"] { font-weight: 750; }
 .site-footer > div { flex:1 1 35rem; }
 .site-footer p { margin:0 0 .35rem; }
 .footer-privacy { margin-inline-start:auto; }
+
+.form-location { display:grid; grid-template-columns:minmax(0, 1fr) minmax(0, 2fr); gap:.8rem; }
+.form-location input { min-width:0; width:100%; }
