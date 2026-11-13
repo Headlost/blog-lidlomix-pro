@@ -1,0 +1,41 @@
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Historia aktualizacji Lidlomix Pro i wyniki testów na Monsieur Cuisine Connect."><meta property="og:type" content="website"><meta property="og:title" content="Aktualizacje | Lidlomix Pro"><meta property="og:description" content="Historia aktualizacji Lidlomix Pro i wyniki testów na Monsieur Cuisine Connect."><meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/connect-aktualne/foto-wybor.webp"><meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/aktualizacje.html"><title>Aktualizacje | Lidlomix Pro</title><link rel="stylesheet" href="styl.css?v=aktualizacje-1"><script src="blog.js?v=aktualizacje-1" defer></script></head><body><header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="aktualizacje.html" aria-current="page">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header><main class="wrap release-page">
+<section class="community-heading"><h1>Aktualizacje</h1><p class="lead">Co zmieniło się w Lidlomix Pro i które funkcje sprawdzam na urządzeniu.</p></section>
+<article class="community-panel release" id="wersja-0-15-0">
+  <p class="eyebrow">Monsieur Cuisine Connect · Wersja testowa</p>
+  <h2>Lidlomix Pro 0.15.0</h2>
+  <p>Na Connect uruchomiłem ekran wyboru aplikacji. Po włączeniu robota mogę wybrać fabryczne Monsieur Cuisine albo Lidlomix Pro. W Pro mogę otworzyć przepis z katalogu offline i przejść przez kolejne kroki gotowania.</p>
+  <ul>
+    <li>Krok ważenia pokazuje aktualny odczyt z czujnika wagi i ilość potrzebną w przepisie.</li>
+    <li>Podczas krótkich testów programów sterowanie obrotami i temperaturą działa w trybie demonstracyjnym. Aplikacja pokazuje ustawienia bez uruchamiania silnika, ostrzy ani grzałki.</li>
+    <li>Przepis przygotowany w asystencie ChatGPT można zaimportować jako plik JSON. Lidlomix Pro układa z niego kroki, w tym czas, kierunek obrotów i dobór programu.</li>
+  </ul>
+  <p><a href="waga-i-przepisy.html">Zobacz ekran przepisu i ważenia</a></p>
+  <p><a class="btn" href="spolecznosc.html#zgloszenia">Omów wersję na forum</a></p>
+  <p class="form-hint">W treści lub tytule wpisu na forum wpisz <code>@0.15.0</code>, aby odsyłał do tej aktualizacji.</p>
+</article>
+</main><footer><div class="wrap">Dziennik niezależnego projektu. Monsieur Cuisine i SilverCrest to marki ich właścicieli. · <a href="https://github.com/Headlost/blog-lidlomix-pro">GitHub</a> · <button type="button" class="panel-opener" data-open-owner-panel>Panel projektu</button></div></footer>
+<dialog id="owner-panel" class="owner-panel" aria-labelledby="panel-title">
+  <div class="panel-header"><h2 id="panel-title">Panel projektu</h2><button type="button" id="panel-close">Zamknij</button></div>
+  <form id="panel-login" class="blog-form" method="post">
+    <label>Rola <select name="role"><option value="admin">Administrator</option><option value="moderator">Moderator</option></select></label>
+    <input class="visually-hidden" name="username" value="Lidlomix Pro" autocomplete="username" tabindex="-1" aria-hidden="true" readonly>
+    <label>Hasło <input type="password" name="password" autocomplete="current-password" maxlength="128" required></label>
+    <button type="submit">Zaloguj się</button>
+  </form>
+  <p id="panel-status" role="status"></p>
+  <div id="panel-area" hidden>
+    <div class="panel-actions">
+      <button type="button" data-panel-kind="pending">Moderacja</button>
+      <button type="button" data-panel-kind="waitlist" data-admin-only>Zapisy</button>
+      <button type="button" data-panel-kind="hardware" data-admin-only>Sprzęt</button>
+      <button type="button" id="panel-logout">Wyloguj</button>
+    </div>
+    <div id="panel-entries"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <form class="blog-form" id="panel-roles" method="post" data-admin-only>
+      <label>Ustaw lub zmień hasło moderatora <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+      <button type="submit">Zapisz hasło moderatora</button>
+    </form>
+  </div>
+</dialog>
+<script src="panel.js?v=1" defer></script>
+</body></html>

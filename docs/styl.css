@@ -17,7 +17,7 @@ header { background: #fffdf8; }
 
 .blog-form{display:grid;gap:.8rem;max-width:38rem}.blog-form label{display:grid;gap:.25rem}.blog-form input,.blog-form select,.blog-form textarea{font:inherit;padding:.55rem;border:1px solid #b6b9c5;border-radius:7px;background:#fff;color:#172442}.blog-form .consent{display:flex;align-items:baseline;gap:.45rem}.blog-form button{justify-self:start}.blog-form p{margin:0}.blog-form [role=status]:empty{display:none}.blog-form .form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.join .blog-form button{background:#f5c396;color:#182957}
 
-.device-photos { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(.5rem,2vw,1rem); align-items: start; }
+.device-photos { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(.5rem,2vw,1rem); align-items: stretch; }
 .hero .device-photo, .article .device-photo { margin: 0; padding: 0; overflow: hidden; transform: none; border: 1px solid #d9d1c3; border-radius: 12px; background: #fffcf7; color: #172442; box-shadow: none; }
 .article .device-photos { margin: 1.4rem 0; }
 .hero .device-photo img, .article .device-photo img { aspect-ratio: 4/5; width: 100%; max-height: none; object-fit: cover; object-position: center 73%; border-radius: 0; }
@@ -58,3 +58,62 @@ header { background: #fffdf8; }
 .forum-contact .blog-form { padding-bottom:1rem; }
 
 .forum-board [hidden] { display: none !important; }
+
+
+@media (min-width: 681px) {
+  .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) {
+    grid-template-rows: repeat(8, auto);
+    row-gap: 0;
+  }
+  .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) > details {
+    display: grid;
+    grid-row: span 8;
+    grid-template-rows: subgrid;
+  }
+  .signup-grid > details[open]::details-content { display: contents; }
+  .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) .blog-form {
+    grid-row: 3 / span 6;
+    grid-template-rows: subgrid;
+    align-items: start;
+    max-width: none;
+  }
+  .signup-grid .blog-form .consent { grid-row: 4; }
+  .signup-grid .blog-form button { grid-row: 5; }
+  .signup-grid .blog-form [role="status"] { grid-row: 6; }
+}
+header nav [aria-current="page"] { font-weight: 750; }
+.release-page { max-width: 850px; }
+.release { scroll-margin-top: 1rem; }
+.release:target { border-color: #2142aa; }
+.version-mention { color: #2142aa; font-weight: 700; }
+.panel-opener {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.panel-opener:hover { background: transparent; color: #2142aa; }
+.owner-panel {
+  width: min(680px, 92vw);
+  max-height: 86vh;
+  padding: clamp(1rem, 4vw, 2rem);
+  color: #172442;
+  background: #fffcf7;
+  border: 1px solid #d9d1c3;
+  border-radius: 14px;
+}
+.owner-panel::backdrop { background: #132140a6; }
+.owner-panel [hidden] { display: none !important; }
+.panel-header, .panel-actions { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
+.panel-header { justify-content: space-between; margin-bottom: 1rem; }
+.panel-header h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
+.panel-header button, .panel-actions button { padding: .45rem .8rem; }
+#panel-status:empty { display: none; }
+#panel-entries { margin: 1rem 0; }
+#panel-entries article { padding: .8rem 0; border-bottom: 1px solid #ded2bf; overflow-wrap: anywhere; }
+#panel-entries article p { white-space: pre-wrap; }
+#panel-entries img { margin-top: .65rem; max-height: 340px; object-fit: contain; }
+#panel-roles { margin-top: 1.5rem; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); }

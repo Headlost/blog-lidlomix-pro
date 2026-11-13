@@ -1,5 +1,22 @@
 const communityApi = "https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site";
 
+const publishedVersions = new Set(['0.15.0']);
+
+function renderVersionMentions(element, value) {
+  let offset = 0;
+  for (const match of value.matchAll(/(?<![\w@.])@(\d+\.\d+\.\d+)(?![\w-]|\.\d)/g)) {
+    const version = match[1];
+    if (!publishedVersions.has(version)) continue;
+    const link = document.createElement('a');
+    link.className = 'version-mention';
+    link.href = 'aktualizacje.html#wersja-' + version.replaceAll('.', '-');
+    link.textContent = match[0];
+    element.append(value.slice(offset, match.index), link);
+    offset = match.index + match[0].length;
+  }
+  element.append(value.slice(offset));
+}
+
 const boardLinks = [...document.querySelectorAll('[data-board-link]')];
 const boards = [...document.querySelectorAll('.forum-board')];
 function selectBoard() {
@@ -57,10 +74,10 @@ for (const section of document.querySelectorAll('[data-post]')) {
     const name = document.createElement('strong');
     const body = document.createElement('p');
     name.textContent = comment.name;
-    body.textContent = comment.body;
+    renderVersionMentions(body, comment.body);
     if (comment.title) {
       const title = document.createElement('h3');
-      title.textContent = comment.title;
+      renderVersionMentions(title, comment.title);
       item.append(title);
     }
     if (comment.replyTo) item.classList.add('forum-reply');
