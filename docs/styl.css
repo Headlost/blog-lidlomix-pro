@@ -133,3 +133,8 @@ header nav [aria-current="page"] { font-weight: 750; }
 .tech-forum { margin-top: 2.5rem; }
 .tech-forum h2 { margin-top: 0; }
 @media (max-width: 580px) { .tech-figures { grid-template-columns: 1fr; gap: 0; } }
+
+.site-footer { display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:.7rem 1.5rem; }
+.site-footer > div { flex:1 1 35rem; }
+.site-footer p { margin:0 0 .35rem; }
+.footer-privacy { margin-inline-start:auto; }
