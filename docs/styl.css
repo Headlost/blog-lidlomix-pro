@@ -141,4 +141,6 @@ header nav [aria-current="page"] { font-weight: 750; }
 .form-location { display:grid; grid-template-columns:minmax(0, 1fr) minmax(0, 2fr); gap:.8rem; }
 .form-location input { min-width:0; width:100%; }
 
-.contact-card h3 { margin:0; padding:1rem 0; border-bottom:1px solid #d9d1c3; font:750 1rem/1.65 system-ui,sans-serif; }
+.contact-card h3 { margin:0; padding:1rem 0; border-bottom:2px solid currentColor; font:700 clamp(1.3rem,2.2vw,1.65rem)/1.25 Georgia,serif; }
+#aktualizacje.contact-card h3 { color:#2142aa; }
+#sprzet.contact-card h3 { color:#854519; }
