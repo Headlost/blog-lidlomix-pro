@@ -1,4 +1,4 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Forum Lidlomix Pro. Pytania, pomysły, usprawnienia i zgłoszenia usterek."><meta property="og:type" content="website"><meta property="og:title" content="Forum | Lidlomix Pro"><meta property="og:description" content="Zapisy na testy Lidlomix Pro, rozmowy o AI i zgłoszenia po instalacji."><meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/connect-aktualne/foto-wybor.webp"><meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/spolecznosc.html"><title>Forum | Lidlomix Pro</title><link rel="stylesheet" href="styl.css?v=aktualizacje-1"><script src="blog.js?v=aktualizacje-1" defer></script><style>.hero .project-title-subtitle { display: block; margin-top: .32em; font-size: .49em; letter-spacing: -.025em; }</style></head><body><header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header><main class="wrap">
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Forum Lidlomix Pro. Pytania, pomysły, usprawnienia i zgłoszenia usterek."><meta property="og:type" content="website"><meta property="og:title" content="Forum | Lidlomix Pro"><meta property="og:description" content="Zapisy na testy Lidlomix Pro, rozmowy o AI i zgłoszenia po instalacji."><meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/connect-aktualne/foto-wybor.webp"><meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/spolecznosc.html"><title>Forum | Lidlomix Pro</title><link rel="stylesheet" href="styl.css?v=aktualizacje-2"><script src="blog.js?v=aktualizacje-2" defer></script><style>.hero .project-title-subtitle { display: block; margin-top: .32em; font-size: .49em; letter-spacing: -.025em; }</style></head><body><header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header><main class="wrap">
 <section class="community-heading"><p class="eyebrow">Lidlomix Pro</p><h1>Forum projektu</h1><p class="lead">Porozmawiaj z innymi użytkownikami o przepisach, działaniu robota i tym, co warto poprawić.</p><nav class="community-nav" aria-label="Informacje o forum"><a href="#zasady" data-open-rules>Zasady forum</a><a href="#kontakt">Kontakt prywatny</a></nav></section>
 <details class="demo forum-rules" id="zasady"><summary>Zasady forum</summary>
 <ol>
@@ -109,14 +109,23 @@
       <button type="button" data-panel-kind="pending">Moderacja</button>
       <button type="button" data-panel-kind="waitlist" data-admin-only>Zapisy</button>
       <button type="button" data-panel-kind="hardware" data-admin-only>Sprzęt</button>
+      <button type="button" id="panel-releases-toggle" data-admin-only>Aktualizacje</button>
       <button type="button" id="panel-logout">Wyloguj</button>
     </div>
     <div id="panel-entries"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <form class="blog-form" id="panel-release" method="post" hidden>
+      <h3>Opublikuj aktualizację</h3>
+      <label>Wersja <input name="version" placeholder="0.15.1" inputmode="decimal" maxlength="14" pattern="[0-9]+\.[0-9]+\.[0-9]+" required></label>
+      <label>Tytuł <input name="title" maxlength="100" required></label>
+      <label>Co się zmieniło? <textarea name="body" minlength="10" maxlength="5000" rows="6" required></textarea></label>
+      <p class="form-hint">Ponowna publikacja tej samej wersji zastępuje jej tytuł i opis.</p>
+      <button type="submit">Opublikuj aktualizację</button>
+    </form>
     <form class="blog-form" id="panel-roles" method="post" data-admin-only>
       <label>Ustaw lub zmień hasło moderatora <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
       <button type="submit">Zapisz hasło moderatora</button>
     </form>
   </div>
 </dialog>
-<script src="panel.js?v=1" defer></script>
+<script src="panel.js?v=2" defer></script>
 </body></html>

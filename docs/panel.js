@@ -4,6 +4,8 @@ const area = dialog.querySelector('#panel-area');
 const status = dialog.querySelector('#panel-status');
 const output = dialog.querySelector('#panel-entries');
 const passwordField = login.elements.password;
+const releaseForm = dialog.querySelector('#panel-release');
+const more = dialog.querySelector('#panel-more');
 const roleField = login.elements.role;
 let credentials;
 let activeKind = 'pending';
@@ -14,6 +16,9 @@ function lockPanel() {
   requestId++;
   login.reset();
   dialog.querySelector('#panel-roles').reset();
+  releaseForm.reset();
+  releaseForm.hidden = true;
+  more.hidden = true;
   login.hidden = false;
   area.hidden = true;
   output.replaceChildren();
@@ -33,6 +38,7 @@ async function callPanel(action, fields = {}, auth = credentials) {
 }
 
 async function loadEntries(kind, cursor = '') {
+  releaseForm.hidden = true;
   const currentRequest = ++requestId;
   const { entries, next } = await callPanel('list', { kind, cursor });
   if (currentRequest !== requestId) return;
@@ -81,7 +87,6 @@ async function loadEntries(kind, cursor = '') {
     }
     output.append(card);
   }
-  const more = dialog.querySelector('#panel-more');
   more.hidden = !next;
   more.onclick = next ? () => loadEntries(kind, next).catch(error => { status.textContent = error.message; }) : null;
 }
@@ -108,6 +113,31 @@ login.addEventListener('submit', async event => {
 for (const button of area.querySelectorAll('[data-panel-kind]')) {
   button.addEventListener('click', () => loadEntries(button.dataset.panelKind).catch(error => { status.textContent = error.message; }));
 }
+dialog.querySelector('#panel-releases-toggle').addEventListener('click', () => {
+  requestId++;
+  output.replaceChildren();
+  more.hidden = true;
+  status.textContent = '';
+  releaseForm.hidden = false;
+  releaseForm.elements.version.focus();
+});
+releaseForm.addEventListener('submit', async event => {
+  event.preventDefault();
+  const session = credentials;
+  const data = Object.fromEntries(new FormData(releaseForm));
+  const button = releaseForm.querySelector('button');
+  button.disabled = true;
+  try {
+    await callPanel('saveRelease', data, session);
+    if (credentials !== session) return;
+    releaseForm.reset();
+    status.textContent = 'Opublikowano wersję ' + data.version + '.';
+  } catch (error) {
+    if (credentials === session) status.textContent = error.message;
+  } finally {
+    button.disabled = false;
+  }
+});
 dialog.querySelector('#panel-roles').addEventListener('submit', async event => {
   event.preventDefault();
   try {

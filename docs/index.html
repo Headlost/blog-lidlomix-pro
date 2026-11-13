@@ -1,4 +1,4 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jak starszy Monsieur Cuisine Connect dostał drugie życie. Historia, zdjęcia z robota i kolejne aktualizacje."><meta property="og:type" content="website"><meta property="og:title" content="Lidlomix Pro – Monsieur Cuisine Upgrade"><meta property="og:description" content="Jak starszy Monsieur Cuisine Connect dostał drugie życie. Historia, zdjęcia z robota i kolejne aktualizacje."><meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/connect-aktualne/foto-wybor.webp"><meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/"><title>Lidlomix Pro – Monsieur Cuisine Upgrade</title><link rel="stylesheet" href="styl.css?v=aktualizacje-1"><script src="blog.js?v=aktualizacje-1" defer></script><style>.hero .project-title-subtitle { display: block; margin-top: .32em; font-size: .49em; letter-spacing: -.025em; }</style></head><body><header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="#wsparcie">Wsparcie</a></nav></div></header><main class="wrap">
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jak starszy Monsieur Cuisine Connect dostał drugie życie. Historia, zdjęcia z robota i kolejne aktualizacje."><meta property="og:type" content="website"><meta property="og:title" content="Lidlomix Pro – Monsieur Cuisine Upgrade"><meta property="og:description" content="Jak starszy Monsieur Cuisine Connect dostał drugie życie. Historia, zdjęcia z robota i kolejne aktualizacje."><meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/connect-aktualne/foto-wybor.webp"><meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/"><title>Lidlomix Pro – Monsieur Cuisine Upgrade</title><link rel="stylesheet" href="styl.css?v=aktualizacje-2"><script src="blog.js?v=aktualizacje-2" defer></script><style>.hero .project-title-subtitle { display: block; margin-top: .32em; font-size: .49em; letter-spacing: -.025em; }</style></head><body><header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="#wsparcie">Wsparcie</a></nav></div></header><main class="wrap">
 <div class="flour-mark"><img src="media/maka.webp" alt="Lidlomix Pro napisany w mące"></div>
 <section class="hero">
   <div><p class="eyebrow">Niezależny projekt dla Monsieur Cuisine Connect</p>
@@ -28,14 +28,23 @@
       <button type="button" data-panel-kind="pending">Moderacja</button>
       <button type="button" data-panel-kind="waitlist" data-admin-only>Zapisy</button>
       <button type="button" data-panel-kind="hardware" data-admin-only>Sprzęt</button>
+      <button type="button" id="panel-releases-toggle" data-admin-only>Aktualizacje</button>
       <button type="button" id="panel-logout">Wyloguj</button>
     </div>
     <div id="panel-entries"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <form class="blog-form" id="panel-release" method="post" hidden>
+      <h3>Opublikuj aktualizację</h3>
+      <label>Wersja <input name="version" placeholder="0.15.1" inputmode="decimal" maxlength="14" pattern="[0-9]+\.[0-9]+\.[0-9]+" required></label>
+      <label>Tytuł <input name="title" maxlength="100" required></label>
+      <label>Co się zmieniło? <textarea name="body" minlength="10" maxlength="5000" rows="6" required></textarea></label>
+      <p class="form-hint">Ponowna publikacja tej samej wersji zastępuje jej tytuł i opis.</p>
+      <button type="submit">Opublikuj aktualizację</button>
+    </form>
     <form class="blog-form" id="panel-roles" method="post" data-admin-only>
       <label>Ustaw lub zmień hasło moderatora <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
       <button type="submit">Zapisz hasło moderatora</button>
     </form>
   </div>
 </dialog>
-<script src="panel.js?v=1" defer></script>
+<script src="panel.js?v=2" defer></script>
 </body></html>

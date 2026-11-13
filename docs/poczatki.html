@@ -1,4 +1,4 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Od odręcznego przepisu i domowych miar do pierwszej aplikacji na Monsieur Cuisine."><meta property="og:type" content="article"><meta property="og:title" content="Przepisy z zeszytu | Lidlomix Pro"><meta property="og:description" content="Od odręcznego przepisu i domowych miar do pierwszej aplikacji na Monsieur Cuisine."><meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/connect-aktualne/wybor.webp"><meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/poczatki.html"><title>Przepisy z zeszytu | Lidlomix Pro</title><link rel="stylesheet" href="styl.css?v=aktualizacje-1"><script src="blog.js?v=aktualizacje-1" defer></script></head><body><header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header><main class="wrap"><article class="article"><a href="./#wpisy">← Wszystkie wpisy</a><p class="eyebrow">01 / Początki · <time datetime="2026-11-13">13 listopada 2026</time></p><h1>Przepisy z zeszytu</h1>
+<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Od odręcznego przepisu i domowych miar do pierwszej aplikacji na Monsieur Cuisine."><meta property="og:type" content="article"><meta property="og:title" content="Przepisy z zeszytu | Lidlomix Pro"><meta property="og:description" content="Od odręcznego przepisu i domowych miar do pierwszej aplikacji na Monsieur Cuisine."><meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/connect-aktualne/wybor.webp"><meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/poczatki.html"><title>Przepisy z zeszytu | Lidlomix Pro</title><link rel="stylesheet" href="styl.css?v=aktualizacje-2"><script src="blog.js?v=aktualizacje-2" defer></script></head><body><header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header><main class="wrap"><article class="article"><a href="./#wpisy">← Wszystkie wpisy</a><p class="eyebrow">01 / Początki · <time datetime="2026-11-13">13 listopada 2026</time></p><h1>Przepisy z zeszytu</h1>
 <p class="lead">W starych zeszytach z przepisami miary takie jak „kubeczek śmietanki” wystarczały, kiedy przepis znało się na pamięć. Na ekranie Lidlomiksa potrzebowałem gramów i kolejności, w jakiej mam dodać składniki.</p>
 <h2>Od kubeczka do gramów</h2>
 <p>Zrobiłem telefonem zdjęcie przepisu i wrzuciłem je do własnego asystenta w ChatGPT. Chciałem, żeby po poleceniu „Dostosuj przepis” odczytał kartkę i rozpisał przygotowanie na Monsieur Cuisine. Przy przeliczaniu miar musiał brać pod uwagę składnik. Szklanka wody i szklanka śmietanki mają tę samą objętość, ale mogą ważyć inaczej. Wynik można było zaokrąglić do 5 g, żeby łatwiej go odważyć na robocie.</p>
@@ -23,14 +23,23 @@
       <button type="button" data-panel-kind="pending">Moderacja</button>
       <button type="button" data-panel-kind="waitlist" data-admin-only>Zapisy</button>
       <button type="button" data-panel-kind="hardware" data-admin-only>Sprzęt</button>
+      <button type="button" id="panel-releases-toggle" data-admin-only>Aktualizacje</button>
       <button type="button" id="panel-logout">Wyloguj</button>
     </div>
     <div id="panel-entries"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <form class="blog-form" id="panel-release" method="post" hidden>
+      <h3>Opublikuj aktualizację</h3>
+      <label>Wersja <input name="version" placeholder="0.15.1" inputmode="decimal" maxlength="14" pattern="[0-9]+\.[0-9]+\.[0-9]+" required></label>
+      <label>Tytuł <input name="title" maxlength="100" required></label>
+      <label>Co się zmieniło? <textarea name="body" minlength="10" maxlength="5000" rows="6" required></textarea></label>
+      <p class="form-hint">Ponowna publikacja tej samej wersji zastępuje jej tytuł i opis.</p>
+      <button type="submit">Opublikuj aktualizację</button>
+    </form>
     <form class="blog-form" id="panel-roles" method="post" data-admin-only>
       <label>Ustaw lub zmień hasło moderatora <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
       <button type="submit">Zapisz hasło moderatora</button>
     </form>
   </div>
 </dialog>
-<script src="panel.js?v=1" defer></script>
+<script src="panel.js?v=2" defer></script>
 </body></html>

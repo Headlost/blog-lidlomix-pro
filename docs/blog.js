@@ -1,6 +1,48 @@
 const communityApi = "https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site";
 
 const publishedVersions = new Set(['0.15.0']);
+const releaseList = document.querySelector('[data-releases]');
+const forum = document.querySelector('[data-post]');
+const releasesReady = (releaseList || forum) ? loadReleases() : Promise.resolve();
+
+function releaseId(version) {
+  return 'wersja-' + version.replaceAll('.', '-');
+}
+
+function renderRelease(release) {
+  const article = document.createElement('article');
+  article.className = 'community-panel release';
+  article.id = releaseId(release.version);
+  const heading = document.createElement('h2');
+  heading.textContent = 'Lidlomix Pro ' + release.version + ' · ' + release.title;
+  const body = document.createElement('p');
+  body.className = 'release-body';
+  body.textContent = release.body;
+  const forumLink = document.createElement('a');
+  forumLink.href = 'spolecznosc.html#zgloszenia';
+  forumLink.textContent = 'Omów wersję na forum';
+  const mention = document.createElement('p');
+  mention.className = 'form-hint';
+  mention.textContent = 'Oznaczenie na forum: @' + release.version;
+  article.append(heading, body, forumLink, mention);
+  return article;
+}
+
+async function loadReleases() {
+  try {
+    const response = await fetch(communityApi + '/releases', {signal: AbortSignal.timeout(6000)});
+    if (!response.ok) throw new Error();
+    const {releases} = await response.json();
+    releases.sort((a, b) => b.version.localeCompare(a.version, 'pl', {numeric:true}));
+    for (const release of releases) publishedVersions.add(release.version);
+    if (releaseList) {
+      releaseList.replaceChildren(...releases.map(renderRelease));
+      if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+    }
+  } catch {
+    if (releaseList) releaseList.textContent = 'Kolejne aktualizacje są chwilowo niedostępne.';
+  }
+}
 
 function renderVersionMentions(element, value) {
   let offset = 0;
@@ -9,7 +51,7 @@ function renderVersionMentions(element, value) {
     if (!publishedVersions.has(version)) continue;
     const link = document.createElement('a');
     link.className = 'version-mention';
-    link.href = 'aktualizacje.html#wersja-' + version.replaceAll('.', '-');
+    link.href = 'aktualizacje.html#' + releaseId(version);
     link.textContent = match[0];
     element.append(value.slice(offset, match.index), link);
     offset = match.index + match[0].length;
@@ -139,6 +181,7 @@ for (const section of document.querySelectorAll('[data-post]')) {
       const response = await fetch(communityApi + '/comments?' + params);
       if (!response.ok) throw new Error();
       const page = await response.json();
+      await releasesReady;
       for (const comment of page.comments) {
         if (document.getElementById('wpis-' + comment.id)) continue;
         list.append(renderComment(comment));

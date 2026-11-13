@@ -117,3 +117,5 @@ header nav [aria-current="page"] { font-weight: 750; }
 #panel-entries img { margin-top: .65rem; max-height: 340px; object-fit: contain; }
 #panel-roles { margin-top: 1.5rem; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); }
+
+.release-body { white-space: pre-wrap; overflow-wrap: anywhere; }
