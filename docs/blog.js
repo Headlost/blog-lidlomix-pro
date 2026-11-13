@@ -204,6 +204,12 @@ for (const section of document.querySelectorAll('[data-post]')) {
       if (more) more.disabled = false;
     }
   }
+  form.addEventListener('comment-published', event => {
+    const comment = event.detail;
+    if (document.getElementById('wpis-' + comment.id)) return;
+    list.append(renderComment(comment));
+    status.textContent = '';
+  });
   more?.addEventListener('click', loadComments);
   replyNote?.querySelector('button').addEventListener('click', () => {
     setReply('');
@@ -257,8 +263,11 @@ for (const form of document.querySelectorAll('[data-endpoint]')) {
       form.reset();
       const replyNote = form.querySelector('.reply-note');
       if (replyNote) replyNote.hidden = true;
+      if (result.published) {
+        form.dispatchEvent(new CustomEvent('comment-published', { detail: result.published }));
+      }
       status.textContent = endpoint === 'comments'
-        ? 'Dziękuję. Wpis czeka na zatwierdzenie.'
+        ? (result.published ? 'Komentarz został opublikowany.' : 'Dziękuję. Wpis czeka na zatwierdzenie.')
         : result.emailed ? 'Zapisano i przesłano zgłoszenie. Dziękuję!' : 'Zapisano zgłoszenie. Dziękuję!';
     } catch (error) {
       status.textContent = 'Nie udało się wysłać. ' + error.message;
