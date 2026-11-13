@@ -61,17 +61,16 @@ header { background: #fffdf8; }
 
 
 @media (min-width: 681px) {
-  .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) {
+  .signup-grid {
     grid-template-rows: repeat(9, auto);
     row-gap: 0;
   }
-  .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) > details {
+  .signup-grid > .contact-card {
     display: grid;
     grid-row: span 9;
     grid-template-rows: subgrid;
   }
-  .signup-grid > details[open]::details-content { display: contents; }
-  .signup-grid:has(> details:first-child[open]):has(> details:last-child[open]) .blog-form {
+  .signup-grid .blog-form {
     grid-row: 3 / span 7;
     grid-template-rows: subgrid;
     align-items: start;
@@ -141,3 +140,5 @@ header nav [aria-current="page"] { font-weight: 750; }
 
 .form-location { display:grid; grid-template-columns:minmax(0, 1fr) minmax(0, 2fr); gap:.8rem; }
 .form-location input { min-width:0; width:100%; }
+
+.contact-card h3 { margin:0; padding:1rem 0; border-bottom:1px solid #d9d1c3; font:750 1rem/1.65 system-ui,sans-serif; }

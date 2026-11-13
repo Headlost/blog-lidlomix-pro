@@ -65,7 +65,6 @@ function selectBoard() {
   const hash = location.hash.slice(1);
   if (hash === 'connect' || hash === 'smart') {
     const signup = document.getElementById('aktualizacje');
-    signup.open = true;
     signup.querySelector('select').value = hash === 'connect' ? 'Connect' : 'Smart';
     signup.scrollIntoView();
   }
@@ -77,8 +76,7 @@ function selectBoard() {
     else link.removeAttribute('aria-current');
   }
   if (boardId) document.getElementById(boardId).scrollIntoView();
-  const detail = ['zasady', 'aktualizacje', 'sprzet'].includes(hash) && document.getElementById(hash);
-  if (detail) detail.open = true;
+  if (hash === 'zasady') document.getElementById('zasady').open = true;
 }
 if (boards.length) {
   for (const link of document.querySelectorAll('[data-open-rules]')) {
