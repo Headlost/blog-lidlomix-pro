@@ -1,6 +1,6 @@
-# Lidlomix Pro
+# Lidlomix Pro – Monsieur Cuisine Upgrade
 
-Dziennik rozwoju Lidlomix Pro na Monsieur Cuisine Connect. Zobacz zdjęcia urządzenia, katalog przepisów offline i historię projektu.
+Niezależny projekt rozwijający możliwości Monsieur Cuisine Connect. Zobacz zdjęcia urządzenia, katalog przepisów offline i historię projektu.
 
 - [Czytaj blog](https://headlost.github.io/blog-lidlomix-pro/)
 - [Zobacz Lidlomix Pro na urządzeniu](https://headlost.github.io/blog-lidlomix-pro/dwie-aplikacje.html)
