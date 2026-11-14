@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Wszystkie wydania Lidlomix Pro po 0.15.3. Nowe nastawy, pełne zdjęcia potraw i powrót do bieżącego kroku przepisu.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Lidlomix Pro 0.16.4. Nastawy, zdjęcia i skróty na Connect">
+  <meta property="og:description" content="Wszystkie zmiany po 0.15.3 i zrzuty z Monsieur Cuisine Connect.">
+  <meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/lidlomix-pro-0-16-4.html">
+  <meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/aktualizacja-0-16-4/temperatura-poziomo.webp">
+  <title>Lidlomix Pro 0.16.4. Nastawy, zdjęcia i skróty na Connect</title>
+  <link rel="stylesheet" href="styl.css?v=naglowki-2">
+  <style>
+    .release-story .shot-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.3rem 0; }
+    .release-story .shot-pair figure { margin: 0; }
+    .release-story .release-history li + li { margin-top: .6rem; }
+    @media (max-width: 620px) { .release-story .shot-pair { grid-template-columns: 1fr; } }
+  </style>
+<script src="blog.js?v=aktualizacje-2" defer></script>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="technika.html">Technika</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header>
+<main class="wrap">
+<article class="article release-story">
+  <a href="aktualizacje.html#wersja-0-16-4">← Aktualizacje</a>
+  <p class="eyebrow">Monsieur Cuisine Connect · <time datetime="2026-11-14">14 listopada 2026</time></p>
+  <h1>Lidlomix Pro 0.16.4. Nastawy, zdjęcia i skróty na Connect</h1>
+  <p class="lead">Od wersji 0.15.3 zmieniłem sposób ustawiania robota na ekranie. Minuty i sekundy przewijam osobno, temperaturę i prędkość przesuwam w bok, a po ustawieniu wszystkiego wystarczy nacisnąć Start. Zdjęcie potrawy można rozwinąć na cały ekran, a z Wagi, Turbo i Mycia wrócić do tego samego kroku przepisu.</p>
+
+  <h2>Temperatura i prędkość przesuwane w bok</h2>
+  <p>Pierwszy edytor miał kółko inspirowane Smartem. Po próbach pogrubiłem obwódkę i poszerzyłem obszar dotyku. Przy wybieraniu konkretnej temperatury albo biegu wygodniejszy okazał się poziomy ruch palca. Wybrana wartość jest duża i widoczna pośrodku, a po bokach widać sąsiednie nastawy. Przesunięcie w lewo podnosi wartość, w prawo ją obniża. Usunąłem dodatkową listę pod kółkiem.</p>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-16-4/predkosc-kolko.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/predkosc-kolko.webp" alt="Poprzedni ekran prędkości z kółkiem i listą pod nim"></a><figcaption>W 0.16.2 prędkość miała obwódkę i drugie pole z tą samą wartością.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-16-4/predkosc-poziomo.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/predkosc-poziomo.webp" alt="Poziomy wybór prędkości z dużą dwójką pomiędzy jedynką i trójką"></a><figcaption>Od 0.16.3 bieg jest pośrodku, a sąsiednie wartości są po bokach.</figcaption></figure>
+  </div>
+  <figure><a href="media/aktualizacja-0-16-4/temperatura-poziomo.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/temperatura-poziomo.webp" alt="Temperatura 115 stopni między nastawami 110 i 120"></a><figcaption>Temperatura ma tak samo duże cyfry jak czas.</figcaption></figure>
+
+  <h2>Czas w dwóch kolumnach i jeden Start</h2>
+  <p>Dotknij pola czasu, potem przesuń osobno minuty lub sekundy w górę albo w dół. Przesunięcie jednej kolumny pozostawia drugą bez zmian. Fizyczne pokrętło reguluje aktywną kolumnę. W długich programach, takich jak fermentowanie, kolumny pokazują godziny i minuty. Zmiany w edytowalnych polach obowiązują od razu. Można przejść od czasu do temperatury i nacisnąć Start bez osobnego zatwierdzania nastaw.</p>
+  <p>W Ustawieniach własnych przy prędkości 10 ekran pokazuje limit 15 minut. Na Connect limit dotyczy biegów 7–10. Po ustawieniu grzania widać komunikat o maksymalnej prędkości 3. Ten sam limit obowiązuje przy obrotach w lewo. Przy nastawach, które na to pozwalają, edytor czasu ręcznego obsługuje zapis do 99 min i 99 sek. Programy automatyczne stosują swoje zakresy.</p>
+  <figure><a href="media/aktualizacja-0-16-4/czas-limit.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/czas-limit.webp" alt="Osobne kolumny min i sek oraz komunikat o limicie 15 minut przy prędkości 10"></a><figcaption>Czas 15:00 przy prędkości 10. Przycisk Start jest pod kolumnami.</figcaption></figure>
+
+  <h2>Czytelniejsze programy i kierunek obrotów</h2>
+  <p>Jedno dotknięcie przełącza kierunek. Przy obrotach w prawo widać ostrze ze strzałkami, a przy obrotach w lewo trzepaczkę ze strzałkami. Ikony parametrów i wariantów ciasta powiększyłem mniej więcej o jedną trzecią. Ciasto twarde, miękkie i płynne mają własne grafiki. Nagłówek programu pokazuje małą ikonę z menu.</p>
+  <p>W Gotowaniu jaj powiększyłem opisy rozmiaru, stopnia ugotowania i czasu. W każdym rzędzie aktywne jest jedno niebieskie pole, pozostałe mają białe tło. W Gotowaniu na parze opcja <strong>Nagrzej przed odliczaniem</strong> ma większą powierzchnię i odstęp od Startu i Stopu. Podobny odstęp ma potwierdzenie założenia przystawki i pokrywy przy krojeniu warzyw.</p>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-16-4/gotowanie-jaj.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/gotowanie-jaj.webp" alt="Trzy rozmiary i trzy stopnie ugotowania jaj, po jednym niebieskim polu w każdym rzędzie"></a><figcaption>Niebieskie pola pokazują wybrany rozmiar i stopień ugotowania.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-16-4/para.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/para.webp" alt="Kafelek Nagrzej przed odliczaniem nad przyciskami Start i Stop"></a><figcaption>Opcja nagrzewania ma własny duży obszar dotyku.</figcaption></figure>
+  </div>
+
+  <h2>Pełne zdjęcie potrawy i krótsze kafelki</h2>
+  <p>W otwartym przepisie dwa razy dotknij paska ze zdjęciem, aby zobaczyć całe zdjęcie z zachowaniem proporcji. Jedno dotknięcie zamyka podgląd i wraca do przepisu. Gest działa w Katalogu offline Monsieur Cuisine i w Przepisach Dostosowanych Pro. W katalogu Pro karta rezerwuje trzy wiersze na tytuł, a pełna nazwa jest widoczna po jej otwarciu.</p>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-16-4/kafelki-pro.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/kafelki-pro.webp" alt="Cztery krótsze kafelki przepisów Pro i początek kolejnego rzędu"></a><figcaption>Po skróceniu kafelków szybciej widać następny rząd.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-16-4/zdjecie-pelne.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/zdjecie-pelne.webp" alt="Całe zdjęcie deseru w pełnoekranowym podglądzie na robocie"></a><figcaption>Pełne zdjęcie po dwukrotnym dotknięciu paska w przepisie.</figcaption></figure>
+  </div>
+
+  <h2>Turbo, Waga i Mycie jako pełne programy</h2>
+  <p>Turbo i Waga są obok Startu w Ustawieniach własnych. Z pływającego menu można otworzyć również Mycie. Każdy skrót pokazuje ten sam pełny ekran co osobny program. <strong>Wróć do przepisu</strong> przywraca bieżący krok, a <strong>Wróć do programu</strong> zachowuje wcześniej ustawione parametry. Aby użyć Turbo, trzeba przytrzymać przycisk na ekranie programu.</p>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-16-4/turbo-z-przepisu.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/turbo-z-przepisu.webp" alt="Pełny ekran Turbo z przyciskiem Wróć do przepisu"></a><figcaption>Turbo otwarte z pływającego menu w trakcie przepisu.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-16-4/powrot-do-przepisu.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-16-4/powrot-do-przepisu.webp" alt="Przywrócony krok 1 z 8 przepisu z instrukcją i zdjęciem"></a><figcaption>Po powrocie Connect nadal pokazuje krok 1 z 8.</figcaption></figure>
+  </div>
+
+  <h2>Wszystkie wydania po 0.15.3</h2>
+  <ol class="release-history">
+    <li><strong>0.15.4</strong> — pierścień fizycznego pokrętła gaśnie po uśpieniu Connecta i zapala się po wybudzeniu.</li>
+    <li><strong>0.15.5</strong> — przełączanie obrotów jednym dotknięciem i osobny wybór jednostki czasu do regulacji pokrętłem. W tej serii prac doszły też większe ikony, warianty ciasta i jaj, czytelniejsze opisy oraz większe pola opcji pary i przystawki.</li>
+    <li><strong>0.15.6</strong> — pełnoekranowy podgląd zdjęcia przepisu w obu katalogach.</li>
+    <li><strong>0.15.7</strong> — niższe kafelki w Przepisach Dostosowanych Pro, z trzema wierszami na tytuł.</li>
+    <li><strong>0.15.8</strong> — okrągłe pola czasu z wyborem jednostki i przyciskami + oraz −.</li>
+    <li><strong>0.15.9</strong> — osobny duży edytor czasu z obwódką po prawej stronie i wyborem jednostki.</li>
+    <li><strong>0.16.0</strong> — rozszerzony czas Ustawień własnych do 99 min i 99 sek, wyśrodkowane przyciski min i sek oraz obsługa tego zakresu w module Connect.</li>
+    <li><strong>0.16.1</strong> — ponad dwa razy grubsza obwódka dużego edytora i szersza strefa reagująca na krótkie przeciągnięcie.</li>
+    <li><strong>0.16.2</strong> — pionowe kolumny czasu, natychmiastowe zastosowanie nastaw, Start pod edytorem, komunikaty o limitach oraz skróty Turbo i Waga w Ustawieniach własnych.</li>
+    <li><strong>0.16.3</strong> — poziome selektory temperatury i prędkości, duże cyfry oraz usunięcie dodatkowej listy nastaw.</li>
+    <li><strong>0.16.4</strong> — pełne ekrany narzędzi ze skrótów oraz powrót do tego samego programu lub kroku przepisu.</li>
+  </ol>
+
+  <h2>Próby na Connect</h2>
+  <p>Na urządzeniu sprawdziłem przewijanie obu kolumn czasu, limit 15:00 przy prędkości 10, komunikat przy grzaniu, poziome nastawy i powrót z narzędzi. Na testowym egzemplarzu diagnozowałem też odczyt wagi zatrzymany na 0 g. Starszy moduł Connect i odłączenie zasilania nie przywróciły reakcji na woreczek 1 kg. Przyczyna usterki pozostaje niepotwierdzona.</p>
+  <p><a href="spolecznosc.html#zgloszenia">Podziel się uwagami na forum</a></p>
+</article>
+</main>
+<footer><div class="wrap site-footer"><div><p>Lidlomix Pro to autorski, niezależny projekt Beniamina Żaka. Powstaje bez oficjalnej współpracy z Lidlem i Monsieur Cuisine. Nazwy Lidl, Monsieur Cuisine i SilverCrest należą do ich właścicieli.</p><a href="https://github.com/Headlost/blog-lidlomix-pro">GitHub</a> · <button type="button" class="panel-opener" data-open-owner-panel>Panel projektu</button></div><a class="footer-privacy" href="prywatnosc.html">Polityka prywatności</a></div></footer>
+<dialog id="owner-panel" class="owner-panel" aria-labelledby="panel-title">
+  <div class="panel-header"><h2 id="panel-title">Panel projektu</h2><button type="button" id="panel-close">Zamknij</button></div>
+  <form id="panel-login" class="blog-form" method="post">
+    <label>Rola <select name="role"><option value="admin">Administrator</option><option value="moderator">Moderator</option></select></label>
+    <input class="visually-hidden" name="username" value="Lidlomix Pro" autocomplete="username" tabindex="-1" aria-hidden="true" readonly>
+    <label>Hasło <input type="password" name="password" autocomplete="current-password" maxlength="128" required></label>
+    <button type="submit">Zaloguj się</button>
+  </form>
+  <p id="panel-status" role="status"></p>
+  <div id="panel-area" hidden>
+    <div class="panel-actions">
+      <button type="button" data-panel-kind="pending">Moderacja</button>
+      <button type="button" data-panel-kind="waitlist" data-admin-only>Zapisy</button>
+      <button type="button" data-panel-kind="hardware" data-admin-only>Sprzęt</button>
+      <button type="button" id="panel-releases-toggle" data-admin-only>Aktualizacje</button>
+      <button type="button" id="panel-logout">Wyloguj</button>
+    </div>
+    <div id="panel-entries"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <form class="blog-form" id="panel-release" method="post" hidden>
+      <h3>Opublikuj aktualizację</h3>
+      <label>Wersja <input name="version" placeholder="0.15.1" inputmode="decimal" maxlength="14" pattern="[0-9]+\.[0-9]+\.[0-9]+" required></label>
+      <label>Tytuł <input name="title" maxlength="100" required></label>
+      <label>Co się zmieniło? <textarea name="body" minlength="10" maxlength="5000" rows="6" required></textarea></label>
+      <p class="form-hint">Ponowna publikacja tej samej wersji zastępuje jej tytuł i opis.</p>
+      <button type="submit">Opublikuj aktualizację</button>
+    </form>
+    <form class="blog-form" id="panel-roles" method="post" data-admin-only>
+      <label>Ustaw lub zmień hasło moderatora <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+      <button type="submit">Zapisz hasło moderatora</button>
+    </form>
+  </div>
+</dialog>
+<script src="panel.js?v=forum-approval-1" defer></script>
+</body>
+</html>
