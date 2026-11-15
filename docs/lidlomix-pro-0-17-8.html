@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Zmiany w Lidlomix Pro od 0.16.4 do 00.17.8. Porównania ekranów Connecta przed i po, nowe sterowanie programami i regulacja dźwięku.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Lidlomix Pro 00.17.8. Programy, ekran i dźwięk">
+  <meta property="og:description" content="Co zmieniło się na Monsieur Cuisine Connect od 0.16.4. Zrzuty przed i po oraz lista wydań.">
+  <meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/lidlomix-pro-0-17-8.html">
+  <meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/aktualizacja-0-17-8/czas-po.webp">
+  <title>Lidlomix Pro 00.17.8. Programy, ekran i dźwięk</title>
+  <link rel="stylesheet" href="styl.css?v=naglowki-2">
+  <style>
+    .release-story .shot-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.3rem 0; }
+    .release-story .shot-pair figure { margin: 0; }
+    .release-story .release-history li + li { margin-top: .6rem; }
+    @media (max-width: 620px) { .release-story .shot-pair { grid-template-columns: 1fr; } }
+  </style>
+  <script src="blog.js?v=aktualizacje-2" defer></script>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="technika.html">Technika</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header>
+<main class="wrap">
+<article class="article release-story">
+  <a href="aktualizacje.html#wersja-00-17-8">← Aktualizacje</a>
+  <p class="eyebrow">Monsieur Cuisine Connect · <time datetime="2026-11-15">15 listopada 2026</time></p>
+  <h1>Lidlomix Pro 00.17.8. Programy, ekran i dźwięk</h1>
+  <p class="lead">Po wydaniu 0.16.4 poprawiłem obsługę programów na ekranie Connecta. Start widać podczas ustawiania czasu, w trakcie pracy można zrobić pauzę, a głośność kliknięć i sygnału końca programu można odsłuchać bezpośrednio w ustawieniach. Poniżej pokazuję, jak ekrany zmieniły się na robocie.</p>
+
+  <h2>Start widoczny podczas ustawiania czasu</h2>
+  <p>W 0.16.4 komunikat o nastawach potrafił zejść pod przyciski. Przeniosłem wskazówki wyżej, a przy kolumnach minut i sekund dodałem pionowe strzałki. W edytorach temperatury i prędkości pozioma strzałka pokazuje kierunek przesuwania. Aktualny czas pozostaje w lewym polu programu.</p>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-17-8/czas-przed.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/czas-przed.webp" alt="Edycja czasu w 0.16.4 z komunikatem pod przyciskami"></a><figcaption>Przed. Własne ustawienia w 0.16.4. Komunikat Connect jest przy dolnej krawędzi.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-17-8/czas-po.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/czas-po.webp" alt="Edycja czasu ze strzałkami przy minutach i sekundach, komunikatem u góry i widocznym Startem"></a><figcaption>Po. Komunikat jest nad edytorem, a strzałki pokazują ruch góra–dół w obu kolumnach.</figcaption></figure>
+  </div>
+  <p>W programach obsługujących pauzę po naciśnięciu Start pojawia się <strong>Pauza</strong>, a pod nią <strong>Stop</strong>. Po pauzie można wznowić cykl od miejsca zatrzymania. Pasek akcji jest wyrównany do ostatniego pola po lewej. Przy ograniczonej wysokości pierwszeństwo ma dostęp do przycisków. W Gotowaniu na parze przełącznik <strong>Nagrzej przed odliczaniem</strong> znajduje się bezpośrednio nad Startem.</p>
+  <figure><a href="media/aktualizacja-0-17-8/para.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/para.webp" alt="Edytor czasu Gotowania na parze z przełącznikiem nagrzewania i przyciskiem Start"></a><figcaption>Gotowanie na parze. Obie kolumny czasu, nagrzewanie i Start mieszczą się na ekranie.</figcaption></figure>
+
+  <h2>Ugniatanie, Przypiekanie, Mycie i podgrzewanie wody</h2>
+  <ul>
+    <li><strong>Ugniatanie</strong> zaczyna z nastawą 2:00 zamiast 0:45.</li>
+    <li><strong>Przypiekanie</strong> domyślnie wybiera 130°C. Powyżej 100°C można ustawić do 14 minut, a przy 100°C lub mniej do 30 minut. Zmiana temperatury zachowuje interwały tego programu, czyli 5 sekund pracy ostrza i 30 sekund przerwy na testowanym Connect.</li>
+    <li><strong>Mycie pojemnika</strong> ma trzeci tryb, Gruntowne czyszczenie. Pierwszy etap trwa 40 minut przy 60°C i prędkości 2 w prawo. Następnie ekran prosi o wymianę wody i potwierdzenie krótkiego cyklu płukania.</li>
+    <li><strong>Podgrzewanie wody</strong> znów pokazuje ikonę czajnika i aktualny odczyt temperatury. Przy odczycie poniżej zakresu pomiaru ekran wyświetla „Zimna woda”.</li>
+  </ul>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-17-8/mycie-przed.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/mycie-przed.webp" alt="Mycie pojemnika w 0.16.4 z krótkim i długim czyszczeniem"></a><figcaption>Przed. Krótkie i długie czyszczenie w 0.16.4.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-17-8/mycie-po.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/mycie-po.webp" alt="Wybrane Gruntowne czyszczenie z czasem 40 minut i przypomnieniem o płukaniu"></a><figcaption>Po. Gruntowne czyszczenie w 00.17.8 pokazuje nastawy i przypomina o płukaniu.</figcaption></figure>
+  </div>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-17-8/przypiekanie-120.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/przypiekanie-120.webp" alt="Przypiekanie ustawione na 120 stopni z czasem 14 minut"></a><figcaption>Przypiekanie przy 120°C. Limit wynosi 14 minut.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-17-8/przypiekanie-100.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/przypiekanie-100.webp" alt="Przypiekanie ustawione na 100 stopni z czasem 30 minut"></a><figcaption>Przypiekanie przy 100°C. Edytor pozwala ustawić 30 minut.</figcaption></figure>
+  </div>
+  <figure><a href="media/aktualizacja-0-17-8/czajnik.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/czajnik.webp" alt="Czajnik i komunikat Zimna woda na ekranie Podgrzewania wody"></a><figcaption>Podgrzewanie wody z komunikatem „Zimna woda” przed startem.</figcaption></figure>
+
+  <h2>Turbo, Waga i czytelniejsze ikony</h2>
+  <p>Turbo ma większą ikonę, jeden środkowy przycisk i wskazówki pod nim. Przytrzymanie fizycznej gałki uruchamia Turbo tylko na aktywnym ekranie Turbo. Puszczenie gałki zatrzymuje silnik. Ze skrótu nadal można wrócić do bieżącego programu albo przepisu.</p>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-17-8/turbo-przed.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/turbo-przed.webp" alt="Turbo z osobnym panelem tekstowym po lewej i przyciskiem po prawej"></a><figcaption>Przed. Turbo w 0.16.9 zajmowało dwie kolumny.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-17-8/turbo-po.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/turbo-po.webp" alt="Wyśrodkowany ekran Turbo z jedną ikoną i instrukcjami pod przyciskiem"></a><figcaption>Po. Ikona, przycisk i wskazówki Turbo są na środku jednego ekranu.</figcaption></figure>
+  </div>
+  <p>Temperatura, czas, prędkość i kierunek obrotów mają wspólną oś wartości. Po lewej podpisy i ikony są wyrównane względem siebie. Teksty interfejsu używają kroju Manrope z polskimi znakami. Ikony przy nazwach programów wzrosły z 32 do 48 pikseli, a pływający przycisk narzędzi o 30%. Na ekranie Wagi pozostała jedna duża ikona i czytelniejszy komunikat o odczycie.</p>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-17-8/waga-przed.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/waga-przed.webp" alt="Wcześniejsza Waga z ikoną w rogu i mniejszym napisem o odczycie"></a><figcaption>Przed. Waga miała drugą ikonę w rogu i mniejszy komunikat pod odczytem.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-17-8/waga-po.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/waga-po.webp" alt="Waga z jedną centralną ikoną i czytelnym komunikatem o odczycie"></a><figcaption>Po. Komunikat „Odczyt z fabrycznego sterownika” jest większy, a narożnik jest pusty.</figcaption></figure>
+  </div>
+
+  <h2>Kliknięcia i sygnał końca programu</h2>
+  <p>W <strong>Ustawieniach → Dźwięk</strong> można osobno włączyć tapnięcia i alarm, a także ustawić ich głośność od 0 do 100%. Po puszczeniu suwaka słychać próbkę z wybraną głośnością. Kolejny odsłuch alarmu zastępuje poprzedni. Domyślne wartości w 00.17.8 to 10% dla tapnięć i 80% dla alarmu. Alarm odtwarza się raz po naturalnym zakończeniu programu.</p>
+  <div class="shot-pair">
+    <figure><a href="media/aktualizacja-0-17-8/dzwiek-przed.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/dzwiek-przed.webp" alt="Pierwszy ekran ustawień dźwięku z małymi polami wyboru"></a><figcaption>Przed. Pierwsza wersja Ustawień dźwięku miała małe pola wyboru.</figcaption></figure>
+    <figure><a href="media/aktualizacja-0-17-8/dzwiek-po.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/dzwiek-po.webp" alt="Duże klikalne wiersze i osobne suwaki tapnięć oraz alarmu"></a><figcaption>Po. Całe wiersze są klikalne. Na tym robocie zapisano alarm na 75%.</figcaption></figure>
+  </div>
+
+  <h2>Powrót do wyboru aplikacji po starcie robota</h2>
+  <p>Moduł Connect 0.9 przywraca szybki start usługi nawigacji po włączeniu robota i po aktualizacji modułu. Po restarcie Android odkładał start nawigacji, gdy w kolejce wciąż czekał Firefox. Na urządzeniu sprawdziłem po restarcie obie ścieżki. Przeciągnięcie uchwytu od prawej krawędzi w lewo wraca do ekranu wyboru zarówno z Lidlomix Pro, jak i z fabrycznej aplikacji Monsieur Cuisine.</p>
+  <figure><a href="media/aktualizacja-0-17-8/wybor.webp"><img loading="lazy" width="1024" height="600" src="media/aktualizacja-0-17-8/wybor.webp" alt="Ekran wyboru z kartami Monsieur Cuisine i Lidlomix Pro"></a><figcaption>Ekran wyboru po przeciągnięciu uchwytu na robocie.</figcaption></figure>
+
+  <h2>Lista zmian od 0.16.4</h2>
+  <ol class="release-history">
+    <li><strong>0.16.4</strong> — pełne ekrany Wagi, Turbo i Mycia ze skrótów oraz powrót do bieżącego programu lub kroku przepisu. <a href="lidlomix-pro-0-16-4.html">Poprzedni wpis ze zrzutami</a>.</li>
+    <li><strong>0.16.5</strong> — dodanie Gruntownego czyszczenia z płukaniem po potwierdzeniu oraz przywrócenie ekranu podgrzewania wody.</li>
+    <li><strong>0.16.6</strong> — korekty układu trybów Mycia i Gotowania ryżu oraz komunikat „Zimna woda”.</li>
+    <li><strong>0.16.7</strong> — Start, Pauza, Wznów i Stop w programach z obsługą pauzy, 2 minuty w Ugniataniu i dłuższy czas Przypiekania po obniżeniu temperatury.</li>
+    <li><strong>0.16.8</strong> — widoczny Start podczas edycji, komunikaty nad edytorem, nagrzewanie obok Startu i obsługa przytrzymania gałki na ekranie Turbo.</li>
+    <li><strong>0.16.9</strong> — szerszy Start w paskach programów, większa ikona kierunku obrotów i przeniesienie obsługi Turbo niżej.</li>
+    <li><strong>0.16.10</strong> — wyśrodkowany ekran Turbo z większą ikoną i jedną grupą wskazówek.</li>
+    <li><strong>0.16.11</strong> — dolna krawędź paska akcji wyrównana z ostatnim polem parametrów.</li>
+    <li><strong>0.16.12</strong> — napisy kierunku obrotów na osi czasu i prędkości.</li>
+    <li><strong>0.16.13</strong> — wspólne osie ikon i podpisów, krój Manrope i czytelniejszy ekran Wagi.</li>
+    <li><strong>0.16.14</strong> — strzałki i większe podpowiedzi gestów w selektorach czasu, temperatury i prędkości.</li>
+    <li><strong>0.16.15 / 00.17.5</strong> — ikony nagłówków większe o 50%, pływające narzędzia większe o 30% i jedna ikona na Wadze. Wydanie otrzymało numer 00.17.5 po uporządkowaniu numeracji.</li>
+    <li><strong>Moduł Connect 0.9</strong> — wcześniejsze uruchamianie obsługi gestu powrotu przy starcie robota i automatyczny start po aktualizacji modułu.</li>
+    <li><strong>00.17.6</strong> — kliknięcia, jednorazowy alarm końca programu oraz osobne przełączniki i suwaki.</li>
+    <li><strong>00.17.7</strong> — większe pola wyboru i odsłuch po puszczeniu suwaka, z domyślną głośnością alarmu 80%.</li>
+    <li><strong>00.17.8</strong> — domyślna głośność tapnięć zmniejszona do 10%.</li>
+  </ol>
+
+  <h2>Sprawdzone na Connect</h2>
+  <p>Na robocie sprawdziłem widoczność Startu w edytorach, uruchomienie i zatrzymanie Turbo gałką, powrót gestem z obu aplikacji po restarcie oraz odtwarzanie kliknięcia i jednego alarmu po krótkim cyklu. Sprawdziłem też, że puszczenie obu suwaków wywołuje próbkę z wybraną głośnością.</p>
+  <p><a href="spolecznosc.html#zgloszenia">Podziel się uwagami na forum</a></p>
+</article>
+</main>
+<footer><div class="wrap site-footer"><div><p>Lidlomix Pro to autorski, niezależny projekt Beniamina Żaka. Powstaje bez oficjalnej współpracy z Lidlem i Monsieur Cuisine. Nazwy Lidl, Monsieur Cuisine i SilverCrest należą do ich właścicieli.</p><a href="https://github.com/Headlost/blog-lidlomix-pro">GitHub</a> · <button type="button" class="panel-opener" data-open-owner-panel>Panel projektu</button></div><a class="footer-privacy" href="prywatnosc.html">Polityka prywatności</a></div></footer>
+<dialog id="owner-panel" class="owner-panel" aria-labelledby="panel-title">
+  <div class="panel-header"><h2 id="panel-title">Panel projektu</h2><button type="button" id="panel-close">Zamknij</button></div>
+  <form id="panel-login" class="blog-form" method="post">
+    <label>Rola <select name="role"><option value="admin">Administrator</option><option value="moderator">Moderator</option></select></label>
+    <input class="visually-hidden" name="username" value="Lidlomix Pro" autocomplete="username" tabindex="-1" aria-hidden="true" readonly>
+    <label>Hasło <input type="password" name="password" autocomplete="current-password" maxlength="128" required></label>
+    <button type="submit">Zaloguj się</button>
+  </form>
+  <p id="panel-status" role="status"></p>
+  <div id="panel-area" hidden>
+    <div class="panel-actions">
+      <button type="button" data-panel-kind="pending">Moderacja</button>
+      <button type="button" data-panel-kind="waitlist" data-admin-only>Zapisy</button>
+      <button type="button" data-panel-kind="hardware" data-admin-only>Sprzęt</button>
+      <button type="button" id="panel-releases-toggle" data-admin-only>Aktualizacje</button>
+      <button type="button" id="panel-logout">Wyloguj</button>
+    </div>
+    <div id="panel-entries"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <form class="blog-form" id="panel-release" method="post" hidden>
+      <h3>Opublikuj aktualizację</h3>
+      <label>Wersja <input name="version" placeholder="0.15.1" inputmode="decimal" maxlength="14" pattern="[0-9]+\.[0-9]+\.[0-9]+" required></label>
+      <label>Tytuł <input name="title" maxlength="100" required></label>
+      <label>Co się zmieniło? <textarea name="body" minlength="10" maxlength="5000" rows="6" required></textarea></label>
+      <p class="form-hint">Ponowna publikacja tej samej wersji zastępuje jej tytuł i opis.</p>
+      <button type="submit">Opublikuj aktualizację</button>
+    </form>
+    <form class="blog-form" id="panel-roles" method="post" data-admin-only>
+      <label>Ustaw lub zmień hasło moderatora <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+      <button type="submit">Zapisz hasło moderatora</button>
+    </form>
+  </div>
+</dialog>
+<script src="panel.js?v=forum-approval-1" defer></script>
+</body>
+</html>
