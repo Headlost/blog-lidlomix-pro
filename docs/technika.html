@@ -4,7 +4,7 @@
   <h1>Technikalia</h1>
   <p class="lead">Uruchomienie Lidlomix Pro na Connect wymagało dostępu do Androida i przygotowania ekranu wyboru aplikacji. Odczyty czujników i działanie aplikacji sprawdzono na urządzeniu.</p>
   <nav class="tech-nav" aria-label="Na tej stronie">
-    <a href="#android-usb">Dostęp do Androida</a><a href="#launcher">Ekran wyboru</a><a href="#rust">Aplikacja w Rust</a><a href="#waga">Waga i Smart</a>
+    <a href="#android-usb">Dostęp do Androida</a><a href="#launcher">Ekran wyboru</a><a href="#rust">Aplikacja w Rust</a><a href="#waga">Waga i Smart</a><a href="#serwer-aktualizacji">Serwer aktualizacji</a>
   </nav>
   <section aria-labelledby="android-usb">
     <h2 id="android-usb">1. Dostęp do Androida</h2>
@@ -50,6 +50,14 @@
     <h2 id="waga">Co pokazała waga</h2>
     <p>W testach płytka sterująca Connecta raportowała wagę w krokach co 5 g i taką rozdzielczość pokazuje Lidlomix Pro. Na Smarcie zależy to od wersji sprzętu. Instrukcja SKMS 1200 C1 podaje krok 1 g, a SKMS 1200 A1 opisuje ważenie co 5 g. <a href="https://manuals.sit-connect.com/public/articlemanual/9de24595-e86b-4e3e-b77e-b27c0aa0bf36.pdf">Instrukcja C1</a> · <a href="https://manuals.sit-connect.com/public/articlemanual/96160913-31a3-4dd2-be22-0b1200cbc16e.pdf">Instrukcja A1</a></p>
     <p>Po rozpoznaniu Smarta aplikacja pokazuje wybór kroku 1 g lub 5 g. Potwierdzenie odczytu co 1 g dla poszczególnych wersji wymaga testów na fizycznych egzemplarzach. W aktualnej wersji Pro korzysta z odczytów płytki i przekazuje do niej polecenia sterujące w zgodnych trybach. Na Connect sprawdzono ważenie, obroty, temperaturę, odliczanie i interwały. <a href="waga-i-przepisy.html">Zobacz ważenie w przepisie</a></p>
+  </section>
+  <section aria-labelledby="serwer-aktualizacji">
+    <h2 id="serwer-aktualizacji">Prace nad serwerem aktualizacji</h2>
+    <p class="eyebrow"><time datetime="2026-11-17">17 listopada 2026</time></p>
+    <p>Trwają prace nad serwerem aktualizacji Lidlomix Pro. Ma on dostarczać na robota nowe i poprawione przepisy ze zdjęciami oraz kolejne wersje aplikacji.</p>
+    <p>Serwer udostępnia panel do publikowania przepisów, zdjęć i plików APK oraz API, z którym łączy się aplikacja robota przez HTTPS. Przed instalacją pobranej paczki aplikacja sprawdza jej podpis i sumę kontrolną. Instalację nowej wersji APK użytkownik zatwierdza w systemowym instalatorze Androida.</p>
+    <p>Po jednorazowej aktualizacji systemu do wersji obsługującej serwer kolejne przepisy i wersje aplikacji będzie można pobierać przez menu aktualizacji na robocie. Pozwoli to na bieżąco uzupełniać bazę przepisów i korzystać z nowych funkcji bez ponownego wgrywania całego systemu.</p>
+    <p>Dotychczas jednorazowe wgranie systemu pozostawiało użytkownika z dostarczoną wersją aplikacji i bazą przepisów, a kolejne zmiany wymagały ręcznej instalacji. <a href="aktualizacje.html#serwer-aktualizacji">Zobacz wpis w historii zmian</a>.</p>
   </section>
   <section aria-labelledby="codex">
     <h2 id="codex">Co przyspieszył Codex</h2>
