@@ -3,6 +3,7 @@
 Niezależny projekt rozwijający możliwości Monsieur Cuisine Connect. Zobacz zdjęcia urządzenia, katalog przepisów offline i historię projektu.
 
 - [Czytaj blog](https://headlost.github.io/blog-lidlomix-pro/)
+- [Obejrzyj prezentację funkcji na YouTube](https://www.youtube.com/watch?v=CEdpGuIteqA)
 - [Zobacz Lidlomix Pro na urządzeniu](https://headlost.github.io/blog-lidlomix-pro/dwie-aplikacje.html)
 - [Dołącz do listy chętnych](https://headlost.github.io/blog-lidlomix-pro/#zapisy)
 
