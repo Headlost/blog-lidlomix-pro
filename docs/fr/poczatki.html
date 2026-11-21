@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Les recettes du carnet de famille · Lidlomix Pro">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Les recettes du carnet de famille · Lidlomix Pro">
+  <meta property="og:image" content="https://headlost.github.io/blog-lidlomix-pro/media/jezyki/fr/programs.webp">
+  <meta property="og:url" content="https://headlost.github.io/blog-lidlomix-pro/fr/poczatki.html">
+  <link rel="canonical" href="https://headlost.github.io/blog-lidlomix-pro/fr/poczatki.html">
+  <link rel="alternate" hreflang="pl" href="https://headlost.github.io/blog-lidlomix-pro/poczatki.html">
+<link rel="alternate" hreflang="en" href="https://headlost.github.io/blog-lidlomix-pro/en/poczatki.html">
+<link rel="alternate" hreflang="de" href="https://headlost.github.io/blog-lidlomix-pro/de/poczatki.html">
+<link rel="alternate" hreflang="fr" href="https://headlost.github.io/blog-lidlomix-pro/fr/poczatki.html">
+<link rel="alternate" hreflang="it" href="https://headlost.github.io/blog-lidlomix-pro/it/poczatki.html">
+<link rel="alternate" hreflang="es" href="https://headlost.github.io/blog-lidlomix-pro/es/poczatki.html">
+<link rel="alternate" hreflang="x-default" href="https://headlost.github.io/blog-lidlomix-pro/poczatki.html">
+  <link rel="stylesheet" href="../styl.css?v=naglowki-2">
+  <link rel="stylesheet" href="../languages.css?v=installation-3">
+  <title>Les recettes du carnet de famille · Lidlomix Pro</title>
+</head>
+<body class="localized-site history-page">
+<a class="localized-skip" href="#content">Aller au contenu</a>
+<header class="localized-header">
+  <div class="wrap"><a class="brand" href="index.html">Lidlomix <b>Pro</b></a>
+    <nav class="localized-nav">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#wpisy">Histoire du projet</a>
+      <a href="index.html#updates">Mises à jour</a>
+      <a href="spolecznosc.html">Forum</a>
+    </nav>
+  </div>
+  <nav class="site-languages" aria-label="Langue du site"><a lang="pl" hreflang="pl" href="../poczatki.html">Polski</a><a lang="en" hreflang="en" href="../en/poczatki.html">English</a><a lang="de" hreflang="de" href="../de/poczatki.html">Deutsch</a><a lang="fr" hreflang="fr" href="../fr/poczatki.html" aria-current="true">Français</a><a lang="it" hreflang="it" href="../it/poczatki.html">Italiano</a><a lang="es" hreflang="es" href="../es/poczatki.html">Español</a></nav>
+</header>
+<main class="wrap" id="content">
+  <div class="history-article-nav"><a href="index.html#wpisy">← Tous les articles sur le projet</a></div>
+
+  <article class="article"><p class="eyebrow">01 / Débuts · <time datetime="2026-11-13">13 novembre 2026</time></p><h1>Les recettes du carnet de famille</h1>
+<p class="lead">Quand ma grand-mère disait « prends une poignée », elle savait exactement quelle quantité il fallait. Et c’était toujours délicieux. Ces recettes se transmettaient de génération en génération, et les pages portaient les traces de toutes ces années en cuisine. J’avais justement un cahier comme celui-là, avec des pages tachées et des notes manuscrites. En le feuilletant, j’ai eu envie de photographier une page et de préparer la recette sur mon Lidlomix.</p>
+<h2>Une photo de la page</h2>
+<p>À l’époque, les modèles lisaient l’écriture manuscrite polonaise avec plus ou moins de succès. Une boucle qui me semblait évidente pouvait être interprétée par ChatGPT comme un tout autre chiffre. Je lui donnais des exemples, je corrigeais ses erreurs et je vérifiais s’il pouvait transcrire toute la page et signaler les passages incertains.</p>
+<p>Ces essais ont donné naissance à l’amorce « Recettes de grand-mère » dans Lidlomix GPT. Il suffisait de l’ouvrir, de joindre une photo et d’écrire « Adapte la recette ». L’assistant lisait le texte de la photo et montrait ce qu’il avait trouvé sur la page. On pouvait alors corriger un ingrédient, une mesure ou des étapes lues dans le mauvais ordre. Il préparait la version pour Monsieur Cuisine une fois la transcription confirmée.</p>
+<h2>Combien pèse une poignée ?</h2>
+<p>« Un petit pot de crème », « une poignée de noix », « autant de farine que la pâte peut absorber ». Ces indications s’adressaient à quelqu’un qui connaissait déjà la façon de préparer la recette. Pour la transposer au robot, il me fallait des quantités à peser et des étapes à suivre. L’assistant convertissait les mesures selon les ingrédients, ordonnait les étapes et choisissait les programmes, les accessoires, la durée, la température et la vitesse.</p>
+<p>Je pouvais enregistrer la recette adaptée dans Word et l’emporter en cuisine. Pourtant, en mode manuel, je devais ressaisir la durée, la vitesse et la température. La page était lisible et la recette adaptée. Il me restait à pouvoir l’ouvrir sur le robot et suivre les étapes avec les réglages déjà prêts.</p>
+<h2>Recette sur l'écran du robot</h2>
+<p>Dans l’application d’origine, je n’ai pas trouvé de moyen d’importer une recette préparée par l’assistant. Je voulais aussi connecter un outil local via MCP, un protocole qui permet à l’assistant de proposer une recette à l’application pour validation. J’ai donc commencé à écrire Lidlomix Pro de zéro en Rust. Les écrans d’origine m’ont aidé à placer les commandes à des endroits familiers. J’ai développé le catalogue, la recherche et le guidage moi-même.</p>
+<p>La mémoire du Connect comptait aussi. L’application conserve les recettes dans une base SQLite locale et charge les résultats nécessaires à l’écran, sans placer tout le catalogue en mémoire vive. Une recette du chat peut être enregistrée en JSON puis envoyée depuis un téléphone en Wi-Fi. Elle s’ouvre dans Brouillons de recettes sur le robot, où vous pouvez la vérifier et la valider. Une fois enregistrée, elle reste sur l’appareil. Le même fichier peut contenir une photo du plat de 500 kB maximum.</p>
+<p>Aujourd’hui, je peux reprendre le cahier, photographier une page et passer d’une « poignée de noix » manuscrite à une recette à l’écran du Connect. À chaque étape, je vois quoi ajouter et quel programme lancer. Les réglages sont déjà prêts et j’appuie sur Démarrer quand tout est dans le bol.</p>
+<p><a href="index.html#gpt-title">Voici l'assistant de Lidlomix à ChatGPT</a></p>
+<p><a class="btn" href="dwie-aplikacje.html">Suivant: Premier démarrage sur Connect</a></p>
+</article>
+</main>
+<footer><div class="wrap site-footer">
+  <p>Lidlomix Pro est un projet indépendant de Beniamin Żak. Les marques appartiennent à leurs propriétaires respectifs.</p>
+  <div><a href="https://github.com/Headlost/blog-lidlomix-pro">GitHub</a> · <a href="prywatnosc.html">Politique de confidentialité</a></div>
+</div></footer>
+
+</body>
+</html>

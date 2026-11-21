@@ -1,0 +1,288 @@
+{
+  "pl": {
+    "nav": ["Funkcje", "Aktualizacje", "Zrzuty z robota", "Kontakt"],
+    "language": "Język strony",
+    "latest": "Najnowsza aktualizacja",
+    "update_title": "Sześć języków i porządki w katalogu przepisów",
+    "date": "21 listopada 2026",
+    "update_intro": "Interfejs robota i telefonu oraz oba katalogi są dostępne w sześciu językach. To wydanie porządkuje wyniki w katalogu Monsieur Cuisine i ułatwia znalezienie właściwej aktualizacji na robocie.",
+    "changes": [
+      ["0.19.2", "Wybór języka w aplikacji", "Polski, angielski, niemiecki, francuski, włoski i hiszpański obejmują menu, programy, wskazówki do akcesoriów i treść obu katalogów offline."],
+      ["0.19.3–0.19.8", "Przejrzystsze przepisy i oceny", "W katalogu MC widać ocenę i liczbę głosów. Filtr pomaga zawęzić wyniki, a w języku polskim można wyszukiwać również bez znaków diakrytycznych."],
+      ["0.19.9", "Oddzielne aktualizacje katalogów", "Na robocie można osobno sprawdzić aktualizację katalogu wszystkich MC, katalogu Dostosowane Pro i aplikacji. Każdy pakiet jest sprawdzany przed instalacją."],
+      ["Katalog MC", "Jedna karta tego samego przepisu", "Usunięto z wyników 890 dodatkowych powtórzeń. Sprawdzony katalog zawiera 8 742 karty w każdym języku. Nadziewane awokado z Funchal ma teraz jedną kartę z krokami prowadzonymi."]
+    ],
+    "gallery_title": "Jak to wygląda na Connect",
+    "gallery_intro": "Zrzuty przedstawiają rzeczywisty interfejs z testów na robocie.",
+    "shots": {
+      "programs": "Menu programów w języku polskim",
+      "catalog": "Katalog Monsieur Cuisine i filtr ocen",
+      "cards": "Karty przepisów ze zdjęciami i ocenami",
+      "steam": "Program gotowania na parze",
+      "scale": "Waga z tarowaniem",
+      "peeler": "Instrukcja montażu WunderPeelera",
+      "language": "Wybór języka aplikacji",
+      "updates": "Ekran aktualizacji w wersji z testów"
+    }
+  },
+  "en": {
+    "nav": ["Features", "Updates", "Screenshots", "Contact"],
+    "language": "Site language",
+    "skip": "Skip to content",
+    "tagline": "More ways to cook with your Connect",
+    "intro": "Lidlomix Pro is an independent project for the Monsieur Cuisine Connect. Browse recipes offline, cook step by step and use the scale and cooking programmes in six languages.",
+    "primary": "See what’s new",
+    "demo_status": "The English demo is in preparation.",
+    "features_title": "What you can do with Lidlomix Pro",
+    "features": [
+      ["Find a recipe offline", "Browse the full MC catalogue or recipes adapted for Pro. Search by title or ingredient, narrow down MC results by rating and keep your own recipes in one place."],
+      ["Cook with step-by-step guidance", "Open the instructions, weigh ingredients and follow the settings for supported steps. Open a quick tool and return to the same point in the recipe."],
+      ["Use programmes and accessories", "Open the scale, steam, knead or use selected accessories. On-screen instructions with photos explain how to fit the vegetable slicer or WunderPeeler."],
+      ["Send recipes from your phone", "Prepare a recipe with the Lidlomix assistant in ChatGPT, save it as a JSON file and send it from the phone app to the robot over Wi-Fi."]
+    ],
+    "latest": "First English update",
+    "update_title": "Six languages, fewer duplicate recipes and clearer updates",
+    "date": "21 November 2026",
+    "update_intro": "This first English update brings together the project’s milestones and the latest changes. You can use the robot and phone interfaces and both offline recipe catalogues in any of the six languages.",
+    "changes": [
+      ["0.19.2", "Pick your language", "The menus, programmes, accessory instructions and recipe catalogues are available in Polish, English, German, French, Italian and Spanish."],
+      ["0.19.3–0.19.8", "Clearer ratings and search results", "MC recipes show their rating and vote count. Use the rating filter to narrow your search, and type accented words with or without their accents."],
+      ["0.19.9", "Check for catalogue updates individually", "On the robot, you can check for updates to the full MC catalogue, recipes adapted for Pro and the app separately. Each update package is verified before installation."],
+      ["MC catalogue", "One card for each recipe", "The latest clean-up removed 890 additional duplicates from the results. The checked catalogue contains 8,742 cards per language. Funchal-style stuffed avocado now appears once, with guided steps."]
+    ],
+    "history_title": "How the project got here",
+    "history_intro": "Explore how the recipe catalogue, cooking programmes and updates developed over time.",
+    "history": [
+      ["0.3–0.14", "From a recipe file to the cooking screen", "Early versions introduced ChatGPT recipe imports, a private library, favourites, a shopping list and planning. The apps gradually gained guided steps and quick tools."],
+      ["0.15.0–0.15.3", "Two apps on the same Connect", "The start screen offered a choice between the factory app and Lidlomix Pro. Tests on the Connect covered weighing, temperature, speed and timed steps."],
+      ["0.15.4–0.16.4", "Easier settings during cooking", "Temperature and speed moved to horizontal controls, minutes and seconds got separate columns, and quick tools could return you to the current recipe step."],
+      ["0.16.5–0.17.8", "A clearer Start button and redesigned tools", "Start remained visible while editing settings. Pause and resume, Turbo, deep cleaning and a sound preview in settings were refined."],
+      ["0.17.9–0.19.1", "Potato peeling and online updates", "WunderPeeler got a dedicated programme with weighing and fitting instructions. MC and Pro became separate catalogues, and online downloads gained a progress indicator."]
+    ],
+    "gallery_title": "A closer look at the Connect",
+    "gallery_intro": "Screenshots captured on a physical Monsieur Cuisine Connect during development.",
+    "shots": {
+      "programs": "Programmes on the Connect in English",
+      "catalog": "Monsieur Cuisine catalogue and rating filter",
+      "cards": "Recipe cards with photos and ratings",
+      "steam": "Steam cooking programme",
+      "scale": "Scale with tare control",
+      "peeler": "How to fit the WunderPeeler",
+      "language": "Language selection on the robot",
+      "updates": "Update screen from a test build"
+    },
+    "contact_intro": "Use the project forum to ask questions, report a problem or find out how to take part in testing.",
+    "forum": "Open the project forum",
+    "private_contact": "Private contact",
+    "privacy": "Privacy policy",
+    "footer": "Lidlomix Pro is an independent project by Beniamin Żak. All trademarks belong to their owners."
+  },
+  "de": {
+    "nav": ["Funktionen", "Updates", "Bildschirmfotos", "Kontakt"],
+    "language": "Sprache der Website",
+    "skip": "Zum Inhalt springen",
+    "tagline": "Mehr Möglichkeiten für deinen Connect",
+    "intro": "Lidlomix Pro ist ein unabhängiges Projekt für den Monsieur Cuisine Connect. Du kannst Rezepte offline durchsuchen, Schritt für Schritt kochen und Waage sowie Programme in einer von sechs Sprachen bedienen.",
+    "primary": "Neuerungen ansehen",
+    "demo_status": "Die Demo auf Deutsch ist in Vorbereitung.",
+    "features_title": "Das kannst du mit Lidlomix Pro machen",
+    "features": [
+      ["Rezepte offline finden", "Durchsuche den gesamten MC-Katalog oder die für Pro angepassten Rezepte. Suche nach Namen oder Zutaten, filtere die MC-Rezepte nach Bewertung und sammle deine eigenen Rezepte."],
+      ["Schritt für Schritt kochen", "Öffne die Anleitung, wiege Zutaten ab und folge den Einstellungen der unterstützten Schritte. Nach dem Einsatz eines Schnellwerkzeugs kannst du an derselben Stelle weitermachen."],
+      ["Programme und Zubehör nutzen", "Wiege, dampfgare oder knete direkt am Gerät. Bebilderte Anleitungen zeigen, wie du den Gemüseschneider oder den WunderPeeler einsetzt."],
+      ["Rezepte vom Smartphone senden", "Bereite ein Rezept mit dem Lidlomix-Assistenten in ChatGPT vor, speichere es als JSON-Datei und sende es per WLAN von der Smartphone-App an den Connect."]
+    ],
+    "latest": "Erstes Update auf Deutsch",
+    "update_title": "Sechs Sprachen, weniger doppelte Rezepte und übersichtlichere Updates",
+    "date": "21. November 2026",
+    "update_intro": "Der erste Beitrag auf Deutsch fasst die Entwicklung und die wichtigsten Neuerungen zusammen. Die Oberfläche von Gerät und Smartphone sowie beide Offline-Rezeptkataloge stehen in sechs Sprachen zur Verfügung.",
+    "changes": [
+      ["0.19.2", "Sprache in der App wählen", "Menüs, Programme, Zubehöranleitungen und Rezeptkataloge gibt es auf Deutsch, Polnisch, Englisch, Französisch, Italienisch und Spanisch."],
+      ["0.19.3–0.19.8", "Übersichtlichere Bewertungen und Suchergebnisse", "MC-Rezepte zeigen Sterne und die Zahl der abgegebenen Bewertungen. Der Bewertungsfilter grenzt die Suche ein. Suchbegriffe funktionieren auch ohne Akzente."],
+      ["0.19.9", "Kataloge getrennt aktualisieren", "Am Gerät kannst du getrennt nach Updates für den gesamten MC-Katalog, die für Pro angepassten Rezepte und die App suchen. Jedes Paket wird vor der Installation geprüft."],
+      ["MC-Katalog", "Eine Karte pro Rezept", "Die letzte Bereinigung entfernte 890 weitere doppelte Karten aus den Ergebnissen. Der geprüfte Katalog zeigt 8.742 Karten pro Sprache. Gefüllte Avocado nach Funchal-Art erscheint einmal und mit geführten Schritten."]
+    ],
+    "history_title": "Wie sich das Projekt entwickelt hat",
+    "history_intro": "So haben sich der Rezeptkatalog, die Kochprogramme und die Updates im Laufe der Zeit entwickelt.",
+    "history": [
+      ["0.3–0.14", "Von der Rezeptdatei zum Kochprogramm", "Die ersten Versionen brachten den Rezeptimport aus ChatGPT, eine eigene Bibliothek, Favoriten, Einkaufslisten und Wochenplanung. Geführte Schritte und Schnellwerkzeuge kamen nach und nach hinzu."],
+      ["0.15.0–0.15.3", "Zwei Apps auf einem Connect", "Beim Start konntest du zwischen der Werks-App und Lidlomix Pro wählen. Auf dem Connect wurden Waage, Temperatur, Drehzahl und zeitgesteuerte Schritte geprüft."],
+      ["0.15.4–0.16.4", "Einfachere Einstellungen beim Kochen", "Temperatur und Drehzahl bekamen horizontale Bedienelemente, Minuten und Sekunden eigene Spalten. Nach einem Schnellwerkzeug ging es beim aktuellen Rezeptschritt weiter."],
+      ["0.16.5–0.17.8", "Start, Pause und überarbeitete Werkzeuge", "Die Starttaste blieb bei Änderungen sichtbar. Pause, Fortsetzen, Turbo, gründliche Reinigung und die Hörprobe in den Einstellungen wurden verbessert."],
+      ["0.17.9–0.19.1", "Kartoffeln schälen und Updates online laden", "Für den WunderPeeler kam ein Programm mit Waage und Montageanleitung. MC und Pro erhielten getrennte Kataloge, Downloads eine Fortschrittsanzeige."]
+    ],
+    "gallery_title": "Ein Blick auf den Connect",
+    "gallery_intro": "Diese Bildschirmfotos stammen von Tests auf einem echten Monsieur Cuisine Connect.",
+    "shots": {
+      "programs": "Menü mit Programmen auf Deutsch",
+      "catalog": "Monsieur-Cuisine-Katalog mit Bewertungsfilter",
+      "cards": "Rezeptkarten mit Fotos und Bewertungen",
+      "steam": "Programm zum Dampfgaren",
+      "scale": "Waage mit Tara-Funktion",
+      "peeler": "Anleitung für den WunderPeeler",
+      "language": "Sprachauswahl am Gerät",
+      "updates": "Update-Bildschirm aus einer Testversion"
+    },
+    "contact_intro": "Im Projektforum kannst du Fragen stellen, Probleme melden und dich über die Teilnahme an Tests informieren.",
+    "forum": "Projektforum öffnen",
+    "private_contact": "Private Nachricht",
+    "privacy": "Datenschutzerklärung",
+    "footer": "Lidlomix Pro ist ein unabhängiges Projekt von Beniamin Żak. Alle Marken gehören ihren jeweiligen Inhabern."
+  },
+  "fr": {
+    "nav": ["Fonctionnalités", "Mises à jour", "Captures", "Contact"],
+    "language": "Langue du site",
+    "skip": "Aller au contenu",
+    "tagline": "Cuisinez autrement avec votre Connect",
+    "intro": "Lidlomix Pro est un projet indépendant pour le Monsieur Cuisine Connect. Consultez des recettes hors ligne, cuisinez étape par étape et utilisez la balance et les programmes en six langues.",
+    "primary": "Découvrir les nouveautés",
+    "demo_status": "La démonstration en français est en préparation.",
+    "features_title": "Ce que vous pouvez faire avec Lidlomix Pro",
+    "features": [
+      ["Trouver une recette hors ligne", "Parcourez le catalogue MC complet ou les recettes adaptées pour Pro. Recherchez un nom ou un ingrédient, filtrez les recettes MC par note et retrouvez vos propres recettes au même endroit."],
+      ["Cuisiner étape par étape", "Suivez la préparation, pesez les ingrédients et retrouvez les réglages des étapes prises en charge. Après avoir utilisé un outil rapide, reprenez la recette là où vous en étiez."],
+      ["Utiliser les programmes et les accessoires", "Pesez, lancez une cuisson vapeur ou pétrissez depuis le robot. Des instructions illustrées expliquent comment installer le coupe-légumes ou le WunderPeeler."],
+      ["Envoyer une recette depuis le téléphone", "Préparez une recette avec l’assistant Lidlomix dans ChatGPT, enregistrez-la au format JSON, puis envoyez-la au robot en Wi-Fi depuis l’application mobile."]
+    ],
+    "latest": "Première mise à jour en français",
+    "update_title": "Six langues, moins de doublons et des mises à jour plus claires",
+    "date": "21 novembre 2026",
+    "update_intro": "Ce premier article en français revient sur les grandes étapes du projet et présente les dernières nouveautés. L’interface du robot et du téléphone, ainsi que les deux catalogues hors ligne, sont disponibles en six langues.",
+    "changes": [
+      ["0.19.2", "Choisir la langue de l’application", "Les menus, les programmes, les instructions pour les accessoires et les catalogues sont disponibles en français, polonais, anglais, allemand, italien et espagnol."],
+      ["0.19.3–0.19.8", "Des notes et des résultats plus lisibles", "Les recettes MC affichent leur note et le nombre de votes. Affinez la recherche avec le filtre par note et saisissez vos mots-clés avec ou sans accents."],
+      ["0.19.9", "Des mises à jour distinctes pour chaque catalogue", "Sur le robot, vous pouvez vérifier séparément les mises à jour du catalogue MC complet, des recettes adaptées pour Pro et de l’application. Chaque fichier est vérifié avant son installation."],
+      ["Catalogue MC", "Une seule fiche pour la même recette", "Le dernier nettoyage a retiré 890 doublons supplémentaires des résultats. Le catalogue vérifié contient 8 742 fiches par langue. Les avocats farcis à la mode de Funchal apparaissent une seule fois, avec leurs étapes guidées."]
+    ],
+    "history_title": "Les grandes étapes du projet",
+    "history_intro": "Retrouvez les grandes étapes du catalogue de recettes, des programmes de cuisson et des mises à jour.",
+    "history": [
+      ["0.3–0.14", "Du fichier de recette à l’écran de cuisson", "Les premières versions ont apporté l’import de recettes depuis ChatGPT, une bibliothèque personnelle, des favoris, une liste de courses et un planning. Les étapes guidées et les outils rapides ont suivi."],
+      ["0.15.0–0.15.3", "Deux applications sur le même Connect", "Au démarrage, le robot permettait de choisir entre l’application d’origine et Lidlomix Pro. Les essais sur le Connect ont porté sur la pesée, la température, la vitesse et les étapes minutées."],
+      ["0.15.4–0.16.4", "Des réglages plus faciles pendant la cuisson", "La température et la vitesse ont adopté des commandes horizontales. Les minutes et les secondes ont été séparées et les outils rapides permettaient de revenir à l’étape en cours."],
+      ["0.16.5–0.17.8", "Démarrage, pause et outils repensés", "Le bouton Démarrer est resté visible pendant les réglages. La pause, la reprise, le mode Turbo, le nettoyage approfondi et l’aperçu des sons ont été améliorés."],
+      ["0.17.9–0.19.1", "Épluchage des pommes de terre et mises à jour en ligne", "Un programme dédié au WunderPeeler a ajouté la pesée et des instructions de montage. Les catalogues MC et Pro ont été séparés et les téléchargements ont reçu une barre de progression."]
+    ],
+    "gallery_title": "Le Connect à l’écran",
+    "gallery_intro": "Ces captures ont été réalisées sur un Monsieur Cuisine Connect lors des essais du projet.",
+    "shots": {
+      "programs": "Menu des programmes du Connect en français",
+      "catalog": "Catalogue Monsieur Cuisine et filtre par note",
+      "cards": "Fiches de recettes avec photos et notes",
+      "steam": "Programme de cuisson vapeur",
+      "scale": "Balance et fonction tare",
+      "peeler": "Instructions de montage du WunderPeeler",
+      "language": "Choix de la langue sur le robot",
+      "updates": "Écran de mise à jour d’une version d’essai"
+    },
+    "contact_intro": "Le forum du projet est le point de contact pour poser une question, signaler un problème ou participer aux essais.",
+    "forum": "Ouvrir le forum du projet",
+    "private_contact": "Contacter l’équipe en privé",
+    "privacy": "Politique de confidentialité",
+    "footer": "Lidlomix Pro est un projet indépendant de Beniamin Żak. Les marques appartiennent à leurs propriétaires respectifs."
+  },
+  "it": {
+    "nav": ["Funzioni", "Aggiornamenti", "Schermate", "Contatti"],
+    "language": "Lingua del sito",
+    "skip": "Vai al contenuto",
+    "tagline": "Nuovi modi di cucinare con il tuo Connect",
+    "intro": "Lidlomix Pro è un progetto indipendente per Monsieur Cuisine Connect. Puoi consultare le ricette offline, cucinare passo dopo passo e usare bilancia e programmi in sei lingue.",
+    "primary": "Scopri le novità",
+    "demo_status": "La dimostrazione in italiano è in preparazione.",
+    "features_title": "Cosa puoi fare con Lidlomix Pro",
+    "features": [
+      ["Trova una ricetta offline", "Sfoglia il catalogo completo MC o le ricette adattate per Pro. Cerca per nome o ingrediente, filtra le ricette MC per valutazione e ritrova tutte le tue ricette in un unico posto."],
+      ["Cucina passo dopo passo", "Segui le istruzioni, pesa gli ingredienti e consulta le impostazioni dei passaggi supportati. Dopo aver usato uno strumento rapido, torna al punto della ricetta in cui eri."],
+      ["Usa programmi e accessori", "Pesa, cuoci a vapore o impasta dal robot. Le istruzioni illustrate mostrano come montare l’affettaverdure o il WunderPeeler."],
+      ["Invia ricette dal telefono", "Prepara una ricetta con l’assistente Lidlomix in ChatGPT, salvala come file JSON e inviala al robot dall’app per telefono tramite Wi-Fi."]
+    ],
+    "latest": "Primo aggiornamento in italiano",
+    "update_title": "Sei lingue, meno doppioni e aggiornamenti più chiari",
+    "date": "21 novembre 2026",
+    "update_intro": "Il primo articolo in italiano ripercorre le tappe del progetto e presenta le ultime novità. L’interfaccia del robot e del telefono e i due cataloghi offline sono disponibili in sei lingue.",
+    "changes": [
+      ["0.19.2", "Scegli la lingua nell’app", "Menu, programmi, istruzioni per gli accessori e cataloghi di ricette sono disponibili in italiano, polacco, inglese, tedesco, francese e spagnolo."],
+      ["0.19.3–0.19.8", "Valutazioni e risultati più chiari", "Le ricette MC mostrano la valutazione e il numero di voti. Puoi restringere la ricerca con il filtro per valutazione e digitare le parole con o senza accenti."],
+      ["0.19.9", "Aggiornamenti separati per i due cataloghi", "Dal robot puoi cercare separatamente gli aggiornamenti del catalogo MC completo, delle ricette adattate per Pro e dell’app. Ogni pacchetto viene verificato prima dell’installazione."],
+      ["Catalogo MC", "Una sola scheda per la stessa ricetta", "L’ultima revisione ha eliminato dai risultati altri 890 doppioni. Il catalogo verificato mostra 8.742 schede per lingua. L’avocado ripieno alla maniera di Funchal compare una sola volta, con i passaggi guidati."]
+    ],
+    "history_title": "Le tappe del progetto",
+    "history_intro": "Scopri come si sono evoluti il catalogo delle ricette, i programmi di cottura e gli aggiornamenti.",
+    "history": [
+      ["0.3–0.14", "Dal file della ricetta alla schermata di cottura", "Le prime versioni hanno introdotto l’importazione da ChatGPT, la raccolta personale, i preferiti, la lista della spesa e la pianificazione. In seguito sono arrivati i passaggi guidati e gli strumenti rapidi."],
+      ["0.15.0–0.15.3", "Due app sullo stesso Connect", "All’avvio si poteva scegliere tra l’app originale e Lidlomix Pro. Sul Connect sono stati verificati la pesatura, la temperatura, la velocità e i passaggi a tempo."],
+      ["0.15.4–0.16.4", "Regolazioni più semplici durante la cottura", "Temperatura e velocità hanno adottato comandi orizzontali, minuti e secondi sono stati separati e gli strumenti rapidi permettevano di tornare al passaggio in corso."],
+      ["0.16.5–0.17.8", "Avvio, pausa e strumenti rinnovati", "Il pulsante Avvia rimaneva visibile durante le regolazioni. Sono stati affinati pausa e ripresa, Turbo, pulizia intensiva e anteprima dei suoni."],
+      ["0.17.9–0.19.1", "Pelatura delle patate e aggiornamenti online", "Il WunderPeeler ha ricevuto un programma con pesatura e istruzioni di montaggio. I cataloghi MC e Pro sono stati separati e i download hanno ottenuto un indicatore di avanzamento."]
+    ],
+    "gallery_title": "Uno sguardo al Connect",
+    "gallery_intro": "Le schermate sono state acquisite su un Monsieur Cuisine Connect durante i test del progetto.",
+    "shots": {
+      "programs": "Menu dei programmi del Connect in italiano",
+      "catalog": "Catalogo Monsieur Cuisine e filtro per valutazione",
+      "cards": "Schede delle ricette con foto e valutazioni",
+      "steam": "Programma di cottura a vapore",
+      "scale": "Bilancia con funzione tara",
+      "peeler": "Istruzioni per montare il WunderPeeler",
+      "language": "Scelta della lingua sul robot",
+      "updates": "Schermata degli aggiornamenti di una versione di prova"
+    },
+    "contact_intro": "Nel forum del progetto puoi fare domande, segnalare problemi o informarti su come partecipare ai test.",
+    "forum": "Apri il forum del progetto",
+    "private_contact": "Contatta il progetto in privato",
+    "privacy": "Informativa sulla privacy",
+    "footer": "Lidlomix Pro è un progetto indipendente di Beniamin Żak. I marchi appartengono ai rispettivi titolari."
+  },
+  "es": {
+    "nav": ["Funciones", "Actualizaciones", "Capturas", "Contacto"],
+    "language": "Idioma del sitio",
+    "skip": "Ir al contenido",
+    "tagline": "Más formas de cocinar con tu Connect",
+    "intro": "Lidlomix Pro es un proyecto independiente para Monsieur Cuisine Connect. Consulta recetas sin conexión, cocina paso a paso y usa la báscula y los programas en seis idiomas.",
+    "primary": "Ver las novedades",
+    "demo_status": "La demostración en español está en preparación.",
+    "features_title": "Qué puedes hacer con Lidlomix Pro",
+    "features": [
+      ["Encuentra recetas sin conexión", "Explora el catálogo completo de MC o las recetas adaptadas para Pro. Busca por nombre o ingrediente, filtra las recetas MC por valoración y reúne tus propias recetas."],
+      ["Cocina paso a paso", "Sigue las instrucciones, pesa los ingredientes y consulta los ajustes de los pasos compatibles. Después de usar una herramienta rápida, vuelve al punto en el que estabas."],
+      ["Usa programas y accesorios", "Pesa, cocina al vapor o amasa desde el robot. Las instrucciones con imágenes muestran cómo montar el cortador de verduras o el WunderPeeler."],
+      ["Envía recetas desde el teléfono", "Prepara una receta con el asistente Lidlomix en ChatGPT, guárdala como archivo JSON y envíala al robot por Wi-Fi desde la aplicación móvil."]
+    ],
+    "latest": "Primera actualización en español",
+    "update_title": "Seis idiomas, menos recetas duplicadas y actualizaciones más claras",
+    "date": "21 de noviembre de 2026",
+    "update_intro": "Esta primera publicación en español repasa la evolución del proyecto y reúne las novedades. La interfaz del robot y del teléfono, así como los dos catálogos sin conexión, están disponibles en seis idiomas.",
+    "changes": [
+      ["0.19.2", "Elige el idioma en la aplicación", "Los menús, programas, instrucciones de los accesorios y catálogos de recetas están disponibles en español, polaco, inglés, alemán, francés e italiano."],
+      ["0.19.3–0.19.8", "Valoraciones y resultados más claros", "Las recetas de MC muestran la puntuación y el número de votos. Puedes acotar la búsqueda con el filtro por valoración y escribir las palabras con o sin tildes."],
+      ["0.19.9", "Actualizaciones independientes para cada catálogo", "Desde el robot puedes comprobar por separado las actualizaciones del catálogo completo de MC, las recetas adaptadas para Pro y la aplicación. Cada paquete se verifica antes de instalarse."],
+      ["Catálogo MC", "Una sola ficha para cada receta", "La última revisión eliminó otros 890 duplicados de los resultados. El catálogo comprobado muestra 8.742 fichas por idioma. El aguacate relleno al estilo de Funchal aparece una sola vez, con los pasos guiados."]
+    ],
+    "history_title": "Cómo ha evolucionado el proyecto",
+    "history_intro": "Repasa cómo han evolucionado el catálogo de recetas, los programas de cocina y las actualizaciones.",
+    "history": [
+      ["0.3–0.14", "Del archivo de receta a la pantalla de cocina", "Las primeras versiones incorporaron la importación desde ChatGPT, la biblioteca personal, los favoritos, la lista de la compra y la planificación. Más adelante llegaron los pasos guiados y las herramientas rápidas."],
+      ["0.15.0–0.15.3", "Dos aplicaciones en el mismo Connect", "Al encender el robot se podía elegir entre la aplicación de fábrica y Lidlomix Pro. En el Connect se probaron la báscula, la temperatura, la velocidad y los pasos con temporizador."],
+      ["0.15.4–0.16.4", "Ajustes más sencillos al cocinar", "La temperatura y la velocidad pasaron a controles horizontales, los minutos y segundos se separaron y las herramientas rápidas permitían volver al paso en curso."],
+      ["0.16.5–0.17.8", "Inicio, pausa y herramientas renovadas", "El botón Iniciar seguía visible al cambiar los ajustes. Se mejoraron la pausa y la reanudación, Turbo, la limpieza a fondo y la vista previa del sonido."],
+      ["0.17.9–0.19.1", "Pelado de patatas y actualizaciones por internet", "El WunderPeeler recibió un programa con pesaje e instrucciones de montaje. Los catálogos MC y Pro se separaron y las descargas incorporaron una barra de progreso."]
+    ],
+    "gallery_title": "Así se ve en el Connect",
+    "gallery_intro": "Las capturas se tomaron en un Monsieur Cuisine Connect durante las pruebas del proyecto.",
+    "shots": {
+      "programs": "Menú de programas del Connect en español",
+      "catalog": "Catálogo de Monsieur Cuisine y filtro de valoraciones",
+      "cards": "Fichas de recetas con fotos y valoraciones",
+      "steam": "Programa de cocción al vapor",
+      "scale": "Báscula con función de tara",
+      "peeler": "Instrucciones para montar el WunderPeeler",
+      "language": "Selección del idioma en el robot",
+      "updates": "Pantalla de actualizaciones de una versión de prueba"
+    },
+    "contact_intro": "En el foro del proyecto puedes hacer preguntas, comunicar un problema o informarte sobre cómo participar en las pruebas.",
+    "forum": "Abrir el foro del proyecto",
+    "private_contact": "Contacto privado",
+    "privacy": "Política de privacidad",
+    "footer": "Lidlomix Pro es un proyecto independiente de Beniamin Żak. Las marcas pertenecen a sus respectivos titulares."
+  }
+}

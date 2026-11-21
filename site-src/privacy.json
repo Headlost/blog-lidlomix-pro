@@ -1,0 +1,212 @@
+{
+  "en": {
+    "title": "Privacy policy",
+    "intro": "The email address you provide in a form is used only to contact you about your request. Data from the blog and forum is used for neither marketing nor training AI models.",
+    "controller_title": "Who is responsible for your data",
+    "controller": "The data controller is Beniamin Żak, a private individual and the creator of Lidlomix Pro. For questions about your data, use {contact}.",
+    "contact_link": "the private form on this page",
+    "data_title": "What data is processed and why",
+    "data": [
+      [
+        "Update sign-ups and offers of devices for testing",
+        "The controller records your email address, device model and submission date. Your postcode and town are recorded if you provide them. Location helps determine where an update can be carried out or a test device collected. If you sign up for updates, you can add a comment. If you offer a device, the controller records its description. Your email address is used only to reply and follow up on your request, including updates for your chosen model if you ask for them. Processing is based on consent under Article 6(1)(a) of the GDPR. Your email address is kept private."
+      ],
+      [
+        "Privacy enquiries",
+        "The controller processes your email address, message and submission date to reply to your question or handle your request. The legal basis is compliance with a legal obligation when handling GDPR rights under Article 6(1)(c), and the controller’s legitimate interest in handling correspondence for other enquiries under Article 6(1)(f)."
+      ],
+      [
+        "Forum and comments",
+        "The controller records your name or nickname, post, date and the article or topic it relates to. Bug reports can also include an optional screenshot. Article comments become public on submission. Forum posts become public on submission or after approval, depending on the moderation settings. The legal basis is the controller’s legitimate interest in running and moderating discussions under Article 6(1)(f). Before sending a screenshot, remove any personal data visible on it. External illustrations in the Technical details section load from GitHub."
+      ],
+      [
+        "Security and spam prevention",
+        "GitHub Pages logs visitors’ IP addresses. The forms server uses a hash of the IP address to limit request frequency. The legal basis for this measure is the controller’s legitimate interest in protecting the service and its users under Article 6(1)(f)."
+      ]
+    ],
+    "voluntary": "Providing data is voluntary. An email address is needed to reply, and a name and message are required to publish a comment. You can use a nickname. The controller does not profile users or make solely automated decisions that produce legal effects or affect users in a similarly significant way.",
+    "access_title": "Who can access your data",
+    "access": "GitHub Pages hosts the blog, OpenAI Sites runs the backend for the forms and forum, and Web3Forms delivers private requests to the controller’s Outlook inbox (Microsoft). Moderators can access posts awaiting approval. Private requests are accessible to the project controller and the service providers needed to handle them. Technical data and requests may be processed outside the European Economic Area in accordance with the relevant providers’ policies. You can ask through the contact form about the basis for a transfer and the safeguards available.",
+    "retention_title": "How long data is kept",
+    "retention": "The controller keeps requests and correspondence for as long as needed to handle them. For update sign-ups, this is the waiting period for an update for the relevant model or until consent is withdrawn. Pending posts are kept until reviewed. Published posts are kept while they form part of the discussion or until they are removed earlier. Data needed to handle a request, defend claims or comply with a legal obligation may be kept for as long as required for that purpose. Service providers set the retention periods for their own technical logs.",
+    "cookies_title": "Cookies and external links",
+    "cookies": "The blog uses no first-party cookies for advertising or analytics. Links to services such as BuyCoffee.to, Ko-fi, GitHub and ChatGPT open sites with their own privacy policies. An embedded YouTube video, where available in a post, connects to YouTube when you press play.",
+    "rights_title": "Your rights",
+    "rights": "You can request access to and a copy of your data, correction, deletion, restriction of processing and, where the GDPR provides for it, data portability. You can object to processing based on a legitimate interest. You can withdraw consent at any time. Withdrawal does not affect the lawfulness of earlier processing. You can also lodge a complaint with the President of the Polish Personal Data Protection Office.",
+    "authority": "Information from Poland’s data protection authority",
+    "contact_title": "Contact about your data",
+    "email": "Email address for a reply",
+    "message": "Message",
+    "consent": "Please reply to the email address provided.",
+    "send": "Send a private message",
+    "preview": "Local preview. You can send your message from the published site."
+  },
+  "de": {
+    "title": "Datenschutzerklärung",
+    "intro": "Die im Formular angegebene E-Mail-Adresse dient ausschließlich der Rückmeldung zu deiner Anfrage. Daten aus dem Blog und dem Forum werden weder für Marketing noch für das Training von KI-Modellen verwendet.",
+    "controller_title": "Wer für deine Daten verantwortlich ist",
+    "controller": "Verantwortlicher ist Beniamin Żak, eine natürliche Person und Urheber des Projekts Lidlomix Pro. Bei Fragen zu deinen Daten nutze {contact}.",
+    "contact_link": "das private Formular auf dieser Seite",
+    "data_title": "Welche Daten verarbeitet werden und warum",
+    "data": [
+      [
+        "Anmeldungen für Updates und Geräteangebote für Tests",
+        "Der Verantwortliche speichert deine E-Mail-Adresse, das Gerätemodell und das Datum der Anfrage. Postleitzahl und Ort werden gespeichert, wenn du sie angibst. Der Standort hilft, einen Ort für das Update oder für die Abholung des Testgeräts zu finden. Bei einer Anmeldung für Updates kannst du einen Kommentar hinzufügen. Wenn du ein Gerät anbietest, wird dessen Beschreibung gespeichert. Die E-Mail-Adresse dient ausschließlich der Antwort und weiteren Rückfragen zu deinem Anliegen, einschließlich Updates für dein Modell, wenn du darum bittest. Die Verarbeitung erfolgt auf Grundlage deiner Einwilligung gemäß Art. 6 Abs. 1 Buchst. a DSGVO. Deine E-Mail-Adresse bleibt privat."
+      ],
+      [
+        "Datenschutzanfragen",
+        "Der Verantwortliche verarbeitet deine E-Mail-Adresse, den Inhalt und das Datum der Nachricht, um deine Frage zu beantworten oder deinen Antrag zu bearbeiten. Rechtsgrundlage ist bei der Wahrnehmung von Rechten nach der DSGVO die Erfüllung einer rechtlichen Verpflichtung gemäß Art. 6 Abs. 1 Buchst. c und bei sonstigen Anfragen das berechtigte Interesse an der Bearbeitung der Korrespondenz gemäß Art. 6 Abs. 1 Buchst. f."
+      ],
+      [
+        "Forum und Kommentare",
+        "Der Verantwortliche speichert Namen oder Alias, Inhalt, Datum und die Zuordnung zum Artikel oder Thema. Fehlerberichte können ein optionales Bildschirmfoto enthalten. Kommentare unter Artikeln sind nach dem Absenden öffentlich. Forumsbeiträge werden je nach Moderationseinstellung sofort oder nach Freigabe öffentlich. Rechtsgrundlage ist das berechtigte Interesse am Betrieb und an der Moderation der Diskussionen gemäß Art. 6 Abs. 1 Buchst. f. Entferne vor dem Senden eines Bildschirmfotos sichtbare personenbezogene Daten. Externe Abbildungen im Bereich Technik werden von GitHub geladen."
+      ],
+      [
+        "Sicherheit und Schutz vor Spam",
+        "GitHub Pages protokolliert die IP-Adressen der Besucher. Der Formularserver verwendet einen aus der IP-Adresse gebildeten Hashwert, um die Häufigkeit von Anfragen zu begrenzen. Rechtsgrundlage ist das berechtigte Interesse am Schutz des Angebots und seiner Nutzer gemäß Art. 6 Abs. 1 Buchst. f."
+      ]
+    ],
+    "voluntary": "Die Angabe von Daten ist freiwillig. Für eine Antwort ist eine E-Mail-Adresse erforderlich, für einen öffentlichen Kommentar ein Name und der Inhalt. Du kannst einen Alias verwenden. Der Verantwortliche erstellt keine Nutzerprofile und trifft keine ausschließlich automatisierten Entscheidungen, die rechtliche Wirkungen entfalten oder Nutzer in ähnlicher Weise erheblich beeinträchtigen.",
+    "access_title": "Wer auf die Daten zugreifen kann",
+    "access": "GitHub Pages hostet den Blog. OpenAI Sites betreibt die Infrastruktur für Formulare und Forum. Web3Forms stellt private Anfragen dem Outlook-Postfach des Verantwortlichen (Microsoft) zu. Moderatoren haben Zugriff auf Beiträge, die auf Freigabe warten. Private Anfragen sind für den Projektverantwortlichen und die zur Bearbeitung benötigten Dienstleister zugänglich. Technische Daten und Anfragen können nach den Bedingungen der jeweiligen Anbieter außerhalb des Europäischen Wirtschaftsraums verarbeitet werden. Über das Kontaktformular kannst du die Grundlage für die Übermittlung und die verfügbaren Schutzmaßnahmen erfragen.",
+    "retention_title": "Wie lange Daten gespeichert werden",
+    "retention": "Der Verantwortliche speichert Anfragen und Korrespondenz so lange, wie es zur Bearbeitung erforderlich ist. Anmeldungen für Updates bleiben bis zum Update des jeweiligen Modells oder bis zum Widerruf der Einwilligung gespeichert. Beiträge, die auf Freigabe warten, werden bis zur Prüfung gespeichert. Veröffentlichte Beiträge bleiben gespeichert, solange sie Teil der Diskussion sind oder bis sie vorher gelöscht werden. Daten, die zur Bearbeitung eines Antrags, zur Abwehr von Ansprüchen oder zur Erfüllung einer gesetzlichen Pflicht benötigt werden, dürfen für die dafür erforderliche Dauer aufbewahrt werden. Dienstleister bestimmen die Aufbewahrungsdauer ihrer eigenen technischen Protokolle.",
+    "cookies_title": "Cookies und externe Links",
+    "cookies": "Der Blog verwendet keine eigenen Cookies für Werbung oder Analysen. Links zu Diensten wie BuyCoffee.to, Ko-fi, GitHub und ChatGPT führen zu Seiten mit eigenen Datenschutzregeln. Ein eingebettetes YouTube-Video in einem Beitrag stellt die Verbindung zu YouTube erst her, wenn du auf Wiedergabe klickst.",
+    "rights_title": "Deine Rechte",
+    "rights": "Du kannst Auskunft über deine Daten und eine Kopie, Berichtigung, Löschung, Einschränkung der Verarbeitung und, soweit die DSGVO dies vorsieht, Datenübertragbarkeit verlangen. Du kannst einer auf berechtigtem Interesse beruhenden Verarbeitung widersprechen. Eine Einwilligung kannst du jederzeit widerrufen. Der Widerruf berührt die Rechtmäßigkeit der vorherigen Verarbeitung nicht. Du kannst dich auch beim Präsidenten der polnischen Datenschutzbehörde beschweren.",
+    "authority": "Informationen der polnischen Datenschutzbehörde",
+    "contact_title": "Kontakt zum Datenschutz",
+    "email": "E-Mail-Adresse für die Antwort",
+    "message": "Nachricht",
+    "consent": "Bitte antworte an die angegebene Adresse.",
+    "send": "Private Nachricht senden",
+    "preview": "Lokale Vorschau. Auf der veröffentlichten Website kannst du deine Nachricht senden."
+  },
+  "fr": {
+    "title": "Politique de confidentialité",
+    "intro": "L’adresse e-mail indiquée dans un formulaire sert uniquement à vous recontacter au sujet de votre demande. Les données du blog et du forum ne sont utilisées ni à des fins de marketing ni pour entraîner des modèles d’IA.",
+    "controller_title": "Qui est responsable de vos données",
+    "controller": "Le responsable du traitement est Beniamin Żak, personne physique et auteur du projet Lidlomix Pro. Pour toute question concernant vos données, vous pouvez utiliser {contact}.",
+    "contact_link": "le formulaire privé sur cette page",
+    "data_title": "Quelles données sont traitées et pourquoi",
+    "data": [
+      [
+        "Inscriptions aux mises à jour et propositions de robots pour les essais",
+        "Le responsable enregistre votre adresse e-mail, le modèle du robot et la date de la demande. Si vous les indiquez, il enregistre aussi le code postal et la ville. La localisation aide à déterminer où effectuer la mise à jour ou récupérer le robot pour les essais. En vous inscrivant aux mises à jour, vous pouvez ajouter un commentaire. Si vous proposez un robot, sa description est enregistrée. L’adresse e-mail sert uniquement à répondre et à poursuivre les échanges au sujet de votre demande, y compris pour les mises à jour du modèle choisi si vous les demandez. Le traitement repose sur le consentement en vertu de l’article 6, paragraphe 1, point a), du RGPD. L’adresse e-mail reste privée."
+      ],
+      [
+        "Demandes relatives à la confidentialité",
+        "Le responsable traite votre adresse e-mail, le texte et la date du message pour répondre à votre question ou traiter votre demande. Pour l’exercice des droits prévus par le RGPD, la base juridique est le respect d’une obligation légale en vertu de l’article 6, paragraphe 1, point c). Pour les autres questions, elle est l’intérêt légitime du responsable à traiter sa correspondance en vertu de l’article 6, paragraphe 1, point f)."
+      ],
+      [
+        "Forum et commentaires",
+        "Le responsable enregistre le nom ou pseudonyme, le contenu, la date et le lien avec l’article ou le sujet. Un signalement de problème peut aussi inclure une capture d’écran facultative. Les commentaires sous les articles sont publics dès leur envoi. Les messages du forum sont publics dès leur envoi ou après validation, selon les paramètres de modération. Le traitement repose sur l’intérêt légitime à gérer et modérer les discussions en vertu de l’article 6, paragraphe 1, point f). Retirez les données personnelles visibles sur une capture avant de l’envoyer. Les illustrations externes de la rubrique Technique sont chargées depuis GitHub."
+      ],
+      [
+        "Sécurité et lutte contre le spam",
+        "GitHub Pages journalise les adresses IP des visiteurs. Le serveur de formulaires utilise une empreinte calculée à partir de l’adresse IP pour limiter la fréquence des requêtes. Cette mesure repose sur l’intérêt légitime à protéger le service et ses utilisateurs en vertu de l’article 6, paragraphe 1, point f)."
+      ]
+    ],
+    "voluntary": "La communication des données est volontaire. Une adresse e-mail est nécessaire pour répondre, et un nom ainsi que le texte sont nécessaires pour publier un commentaire. Vous pouvez utiliser un pseudonyme. Le responsable ne profile pas les utilisateurs et ne prend pas de décisions exclusivement automatisées produisant des effets juridiques ou les affectant de manière significative de façon similaire.",
+    "access_title": "Qui peut accéder aux données",
+    "access": "GitHub Pages héberge le blog. OpenAI Sites gère le système qui traite les formulaires et le forum. Web3Forms achemine les demandes privées vers la boîte Outlook du responsable (Microsoft). Les modérateurs peuvent consulter les messages en attente de validation. Les demandes privées sont accessibles au responsable du projet et aux prestataires nécessaires à leur traitement. Des données techniques et des demandes peuvent être traitées hors de l’Espace économique européen selon les règles des prestataires concernés. Le formulaire de contact vous permet de demander des informations sur la base du transfert et les garanties disponibles.",
+    "retention_title": "Combien de temps les données sont conservées",
+    "retention": "Le responsable conserve les demandes et la correspondance le temps nécessaire pour les traiter. Les inscriptions aux mises à jour sont conservées le temps d’attente pour le modèle concerné ou jusqu’au retrait du consentement. Les messages en attente sont conservés jusqu’à leur examen. Les messages publics le restent tant qu’ils font partie d’une discussion, sauf suppression anticipée. Les données nécessaires au traitement d’une demande, à la défense de droits ou au respect d’une obligation légale peuvent être conservées pendant la durée nécessaire à cet objectif. Les prestataires fixent la durée de conservation de leurs propres journaux techniques.",
+    "cookies_title": "Cookies et liens externes",
+    "cookies": "Le blog n’utilise pas de cookies propres à des fins publicitaires ou d’analyse d’audience. Les liens vers BuyCoffee.to, Ko-fi, GitHub, ChatGPT et d’autres services conduisent à des sites qui appliquent leurs propres règles de confidentialité. Une vidéo YouTube intégrée à un article se connecte à YouTube lorsque vous cliquez sur le bouton de lecture.",
+    "rights_title": "Vos droits",
+    "rights": "Vous pouvez demander l’accès à vos données et une copie, leur rectification, leur effacement, la limitation du traitement et, dans les situations prévues par le RGPD, leur portabilité. Vous pouvez vous opposer au traitement fondé sur un intérêt légitime et retirer votre consentement à tout moment. Le retrait ne remet pas en cause la licéité du traitement effectué auparavant. Vous pouvez également déposer une réclamation auprès du président de l’autorité polonaise de protection des données personnelles.",
+    "authority": "Informations de l’autorité polonaise de protection des données",
+    "contact_title": "Contact au sujet de vos données",
+    "email": "Adresse e-mail pour la réponse",
+    "message": "Message",
+    "consent": "Merci de répondre à l’adresse indiquée.",
+    "send": "Envoyer un message privé",
+    "preview": "Aperçu local. Vous pourrez envoyer votre message depuis le site publié."
+  },
+  "it": {
+    "title": "Informativa sulla privacy",
+    "intro": "L’indirizzo e-mail indicato nel modulo serve solo per ricontattarti in merito alla richiesta. I dati del blog e del forum non vengono utilizzati per finalità di marketing né per addestrare modelli di IA.",
+    "controller_title": "Chi è responsabile dei tuoi dati",
+    "controller": "Il titolare del trattamento è Beniamin Żak, persona fisica e autore del progetto Lidlomix Pro. Per questioni relative ai tuoi dati puoi utilizzare {contact}.",
+    "contact_link": "il modulo privato su questa pagina",
+    "data_title": "Quali dati vengono trattati e per quali finalità",
+    "data": [
+      [
+        "Iscrizioni agli aggiornamenti e proposte di robot per i test",
+        "Il titolare registra l’indirizzo e-mail, il modello del robot e la data della richiesta. Se li indichi, registra anche il codice postale e la città. La posizione aiuta a stabilire dove eseguire l’aggiornamento o ritirare il robot per i test. Se ti iscrivi agli aggiornamenti puoi aggiungere un commento. Se proponi un robot, il titolare ne registra la descrizione. L’indirizzo e-mail serve solo per rispondere e ricontattarti in merito alla richiesta, anche per gli aggiornamenti del modello scelto se li richiedi. Il trattamento si basa sul consenso ai sensi dell’articolo 6, paragrafo 1, lettera a), del GDPR. L’indirizzo e-mail resta privato."
+      ],
+      [
+        "Richieste relative alla privacy",
+        "Il titolare tratta l’indirizzo e-mail, il contenuto e la data del messaggio per rispondere alla domanda o gestire la richiesta. Per l’esercizio dei diritti previsti dal GDPR, la base giuridica è l’adempimento di un obbligo legale ai sensi dell’articolo 6, paragrafo 1, lettera c). Per le altre domande, è il legittimo interesse del titolare a gestire la corrispondenza ai sensi dell’articolo 6, paragrafo 1, lettera f)."
+      ],
+      [
+        "Forum e commenti",
+        "Il titolare registra il nome o lo pseudonimo, il contenuto, la data e il collegamento con l’articolo o l’argomento. Le segnalazioni di problemi possono includere una schermata facoltativa. I commenti agli articoli diventano pubblici al momento dell’invio. I messaggi sul forum sono resi pubblici al momento dell’invio o dopo l’approvazione, secondo le impostazioni di moderazione. La base giuridica è il legittimo interesse a gestire e moderare le discussioni ai sensi dell’articolo 6, paragrafo 1, lettera f). Prima di inviare una schermata, rimuovi i dati personali visibili. Le immagini esterne della sezione Tecnica vengono caricate da GitHub."
+      ],
+      [
+        "Sicurezza e protezione dallo spam",
+        "GitHub Pages registra gli indirizzi IP dei visitatori. Il server dei moduli utilizza un hash ricavato dall’indirizzo IP per limitare la frequenza delle richieste. La base giuridica di questa misura è il legittimo interesse a proteggere il servizio e i suoi utenti ai sensi dell’articolo 6, paragrafo 1, lettera f)."
+      ]
+    ],
+    "voluntary": "Il conferimento dei dati è facoltativo. L’indirizzo e-mail serve per rispondere, mentre per pubblicare un commento sono richiesti il nome e il contenuto. Puoi usare uno pseudonimo. Il titolare non profila gli utenti e non adotta decisioni basate unicamente su trattamenti automatizzati che producano effetti giuridici o incidano sugli utenti in modo analogo e significativo.",
+    "access_title": "Chi può accedere ai dati",
+    "access": "GitHub Pages ospita il blog. OpenAI Sites gestisce la parte del servizio che elabora moduli e forum. Web3Forms inoltra le richieste private alla casella Outlook del titolare (Microsoft). I moderatori possono consultare i messaggi in attesa di approvazione. Il responsabile del progetto e i fornitori di servizi necessari al trattamento possono accedere alle richieste private. I dati tecnici e le richieste possono essere trattati al di fuori dello Spazio economico europeo secondo le regole dei singoli fornitori. Tramite il modulo di contatto puoi chiedere informazioni sulla base del trasferimento e sulle garanzie disponibili.",
+    "retention_title": "Per quanto tempo vengono conservati i dati",
+    "retention": "Il titolare conserva le richieste e la corrispondenza per il tempo necessario a gestirle. Le iscrizioni agli aggiornamenti vengono conservate per il periodo di attesa dell’aggiornamento del modello interessato o fino alla revoca del consenso. I messaggi in attesa di approvazione vengono conservati fino alla valutazione. I messaggi pubblicati si conservano finché fanno parte della discussione o fino alla loro eventuale rimozione anticipata. I dati necessari a gestire una richiesta, difendersi da pretese o adempiere a un obbligo legale possono essere conservati per il tempo necessario a tale finalità. I fornitori determinano i tempi di conservazione dei propri registri tecnici.",
+    "cookies_title": "Cookie e link esterni",
+    "cookies": "Il blog non usa cookie propri per la pubblicità o per l’analisi del traffico. I link a BuyCoffee.to, Ko-fi, GitHub, ChatGPT e altri servizi rimandano a siti che applicano le proprie regole sulla privacy. Un video di YouTube incorporato in un articolo si collega a YouTube quando premi il pulsante di riproduzione.",
+    "rights_title": "I tuoi diritti",
+    "rights": "Puoi chiedere l’accesso ai dati e una loro copia, la rettifica, la cancellazione, la limitazione del trattamento e, nei casi previsti dal GDPR, la portabilità. Puoi opporti al trattamento basato sul legittimo interesse e revocare il consenso in qualsiasi momento. La revoca non incide sulla liceità del trattamento precedente. Puoi anche presentare un reclamo al presidente dell’autorità polacca per la protezione dei dati personali.",
+    "authority": "Informazioni dell’autorità polacca per la protezione dei dati",
+    "contact_title": "Contatto per questioni relative ai dati",
+    "email": "Indirizzo e-mail per la risposta",
+    "message": "Messaggio",
+    "consent": "Chiedo una risposta all’indirizzo indicato.",
+    "send": "Invia un messaggio privato",
+    "preview": "Anteprima locale. Puoi inviare il messaggio dal sito pubblicato."
+  },
+  "es": {
+    "title": "Política de privacidad",
+    "intro": "La dirección de correo electrónico indicada en un formulario se usa únicamente para responder a tu solicitud. Los datos del blog y del foro no se utilizan con fines de marketing ni para entrenar modelos de IA.",
+    "controller_title": "Quién es responsable de tus datos",
+    "controller": "El responsable del tratamiento es Beniamin Żak, persona física y creador del proyecto Lidlomix Pro. Para asuntos relacionados con tus datos, puedes utilizar {contact}.",
+    "contact_link": "el formulario privado de esta página",
+    "data_title": "Qué datos se tratan y para qué",
+    "data": [
+      [
+        "Inscripciones a actualizaciones y propuestas de robots para pruebas",
+        "El responsable registra tu dirección de correo, el modelo del robot y la fecha de la solicitud. También registra el código postal y la localidad si los facilitas. La ubicación ayuda a determinar dónde se puede realizar la actualización o recoger el robot para las pruebas. Si te inscribes a las actualizaciones, puedes añadir un comentario. Si propones un robot, se registra su descripción. Tu correo solo se usa para responder y mantener el contacto sobre la solicitud, también en relación con actualizaciones para el modelo elegido si las pides. El tratamiento se basa en el consentimiento, de conformidad con el artículo 6, apartado 1, letra a), del RGPD. El correo electrónico se mantiene en privado."
+      ],
+      [
+        "Solicitudes sobre privacidad",
+        "El responsable trata la dirección de correo, el contenido y la fecha del mensaje para contestar a la pregunta o tramitar la solicitud. Para el ejercicio de los derechos previstos en el RGPD, la base jurídica es el cumplimiento de una obligación legal conforme al artículo 6, apartado 1, letra c). Para otras consultas, es el interés legítimo del responsable en gestionar la correspondencia conforme al artículo 6, apartado 1, letra f)."
+      ],
+      [
+        "Foro y comentarios",
+        "El responsable registra el nombre o alias, el contenido, la fecha y el artículo o tema con el que se relaciona el mensaje. Los avisos de fallos pueden incluir una captura de pantalla opcional. Los comentarios de los artículos se publican al enviarse. Los mensajes en el foro se publican tras el envío o tras la aprobación, según la configuración de moderación. La base jurídica es el interés legítimo en gestionar y moderar los debates conforme al artículo 6, apartado 1, letra f). Antes de enviar una captura, elimina los datos personales que aparezcan. Las ilustraciones externas de la sección técnica se cargan desde GitHub."
+      ],
+      [
+        "Seguridad y protección contra el spam",
+        "GitHub Pages registra las direcciones IP de los visitantes. El servidor de formularios utiliza un resumen criptográfico de la dirección IP para limitar la frecuencia de las solicitudes. La base jurídica es el interés legítimo en proteger el servicio y a sus usuarios conforme al artículo 6, apartado 1, letra f)."
+      ]
+    ],
+    "voluntary": "Facilitar los datos es voluntario. El correo es necesario para responder. Para publicar un comentario, se requieren un nombre y el contenido del mensaje. Puedes utilizar un alias. El responsable no elabora perfiles de los usuarios ni toma decisiones exclusivamente automatizadas que produzcan efectos jurídicos o les afecten significativamente de forma similar.",
+    "access_title": "Quién puede acceder a los datos",
+    "access": "GitHub Pages aloja el blog. OpenAI Sites gestiona la infraestructura de los formularios y del foro. Web3Forms entrega las solicitudes privadas en el buzón de Outlook del responsable (Microsoft). Los moderadores pueden acceder a los mensajes pendientes de aprobación. Las solicitudes privadas son accesibles para el responsable del proyecto y los proveedores necesarios para tramitarlas. Los datos técnicos y las solicitudes pueden tratarse fuera del Espacio Económico Europeo según las normas de cada proveedor. Puedes utilizar el formulario de contacto para preguntar por la base de la transferencia y las garantías disponibles.",
+    "retention_title": "Cuánto tiempo se conservan los datos",
+    "retention": "El responsable conserva las solicitudes y la correspondencia durante el tiempo necesario para tramitarlas. Las inscripciones a actualizaciones se conservan durante la espera de la actualización del modelo en cuestión o hasta la retirada del consentimiento. Los mensajes pendientes se conservan hasta su revisión. Los mensajes publicados se conservan mientras formen parte del debate o hasta que se eliminen antes. Los datos necesarios para tramitar una solicitud, defender reclamaciones o cumplir una obligación legal pueden conservarse el tiempo que requiera esa finalidad. Los proveedores fijan el plazo de conservación de sus propios registros técnicos.",
+    "cookies_title": "Cookies y enlaces externos",
+    "cookies": "El blog no utiliza cookies propias para publicidad ni análisis de tráfico. Los enlaces a BuyCoffee.to, Ko-fi, GitHub, ChatGPT y otros servicios llevan a sitios con sus propias políticas de privacidad. Un vídeo de YouTube insertado en un artículo se conecta a YouTube al pulsar reproducir.",
+    "rights_title": "Tus derechos",
+    "rights": "Puedes solicitar el acceso a tus datos y una copia de ellos, la rectificación, la supresión, la limitación del tratamiento y, en los casos previstos por el RGPD, la portabilidad. Puedes oponerte al tratamiento basado en un interés legítimo y retirar tu consentimiento en cualquier momento. La retirada no afecta a la licitud del tratamiento anterior. También puedes presentar una reclamación ante el presidente de la autoridad polaca de protección de datos personales.",
+    "authority": "Información de la autoridad polaca de protección de datos",
+    "contact_title": "Contacto sobre tus datos",
+    "email": "Correo electrónico para la respuesta",
+    "message": "Mensaje",
+    "consent": "Solicito que se responda a la dirección indicada.",
+    "send": "Enviar mensaje privado",
+    "preview": "Vista previa local. Puedes enviar el mensaje desde el sitio publicado."
+  }
+}

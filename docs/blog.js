@@ -1,22 +1,29 @@
-const communityApi = "https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site";
+const forumCopyElement = document.getElementById('forum-copy');
+const forumCopy = forumCopyElement ? JSON.parse(forumCopyElement.textContent) : null;
+const forumPreview = forumCopy && ['127.0.0.1', 'localhost', '[::1]'].includes(location.hostname);
+const communityApi = forumPreview
+  ? new URL('/__forum', location.href).href
+  : 'https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site';
 
 const forumApprovalStatus = document.querySelector('[data-forum-approval-status]');
-if (forumApprovalStatus) {
+if (forumApprovalStatus && forumCopy) {
   fetch(communityApi + '/forum-settings', { signal: AbortSignal.timeout(6000) })
     .then(response => response.ok ? response.json() : null)
     .then(settings => {
       if (typeof settings?.approvalRequired !== 'boolean') return;
-      forumApprovalStatus.textContent = settings.approvalRequired
-        ? 'Nowe tematy i odpowiedzi pojawiają się po zatwierdzeniu.'
-        : 'Nowe tematy i odpowiedzi pojawiają się od razu po wysłaniu.';
+      forumApprovalStatus.textContent = settings.approvalRequired ? forumCopy.moderated : forumCopy.immediate;
     })
     .catch(() => {});
 }
 
 const publishedVersions = new Set(['0.15.0', '0.15.3']);
+const translatedHistory = new Set(['0.16.4', '0.17.8', '0.19.1']);
+if (forumCopy) {
+  for (const version of [...translatedHistory, '0.19.9']) publishedVersions.add(version);
+}
 const releaseList = document.querySelector('[data-releases]');
 const forum = document.querySelector('[data-post]');
-const releasesReady = (releaseList || forum) ? loadReleases() : Promise.resolve();
+const releasesReady = (releaseList || forum || document.getElementById('forum')) ? loadReleases() : Promise.resolve();
 
 function releaseId(version) {
   return 'wersja-' + version.replaceAll('.', '-');
@@ -64,39 +71,14 @@ function renderVersionMentions(element, value) {
     if (!publishedVersions.has(version)) continue;
     const link = document.createElement('a');
     link.className = 'version-mention';
-    link.href = 'aktualizacje.html#' + releaseId(version);
+    link.href = document.documentElement.lang === 'pl'
+      ? 'aktualizacje.html#' + releaseId(version === '0.17.8' ? '00.17.8' : version)
+      : translatedHistory.has(version) ? 'lidlomix-pro-' + version.replaceAll('.', '-') + '.html' : 'index.html#updates';
     link.textContent = match[0];
     element.append(value.slice(offset, match.index), link);
     offset = match.index + match[0].length;
   }
   element.append(value.slice(offset));
-}
-
-const boardLinks = [...document.querySelectorAll('[data-board-link]')];
-const boards = [...document.querySelectorAll('.forum-board')];
-function selectBoard() {
-  const hash = location.hash.slice(1);
-  if (hash === 'connect' || hash === 'smart') {
-    const signup = document.getElementById('aktualizacje');
-    signup.querySelector('select').value = hash === 'connect' ? 'Connect' : 'Smart';
-    signup.scrollIntoView();
-  }
-  const boardId = boards.find(board => board.id === hash)?.id;
-  const active = boardId || document.querySelector('.forum-board:not([hidden])')?.id || boards[0]?.id;
-  for (const board of boards) board.hidden = board.id !== active;
-  for (const link of boardLinks) {
-    if (link.hash === '#' + active) link.setAttribute('aria-current', 'true');
-    else link.removeAttribute('aria-current');
-  }
-  if (boardId) document.getElementById(boardId).scrollIntoView();
-  if (hash === 'zasady') document.getElementById('zasady').open = true;
-}
-if (boards.length) {
-  for (const link of document.querySelectorAll('[data-open-rules]')) {
-    link.addEventListener('click', () => { document.getElementById('zasady').open = true; });
-  }
-  selectBoard();
-  addEventListener('hashchange', selectBoard);
 }
 
 for (const section of document.querySelectorAll('[data-post]')) {
@@ -234,7 +216,7 @@ for (const section of document.querySelectorAll('[data-post]')) {
 
 async function encodeScreenshot(file) {
   if (!['image/png', 'image/jpeg', 'image/webp'].includes(file.type) || file.size > 1048576) {
-    throw new Error('Wybierz plik PNG, JPG lub WebP do 1 MB.');
+    throw new Error(forumCopy?.fileHint || 'Wybierz plik PNG, JPG lub WebP do 1 MB.');
   }
   // Re-encode the pixels so the public attachment does not carry file metadata.
   const bitmap = await createImageBitmap(file);
@@ -257,11 +239,15 @@ for (const form of document.querySelectorAll('[data-endpoint]')) {
     event.preventDefault();
     const button = form.querySelector('button[type=submit]');
     const status = form.querySelector('[role=status]');
-    const data = Object.fromEntries(new FormData(form));
     const endpoint = form.dataset.endpoint;
+    if (forumPreview && (endpoint !== 'comments' || !form.closest('#forum'))) {
+      status.textContent = forumCopy.previewPrivate || forumCopy.preview;
+      return;
+    }
+    const data = Object.fromEntries(new FormData(form));
     if (form.elements.consent) data.consent = form.elements.consent.checked;
     button.disabled = true;
-    status.textContent = 'Wysyłam…';
+    status.textContent = forumCopy?.posting || 'Wysyłam…';
     try {
       const screenshot = data.image;
       delete data.image;
@@ -279,11 +265,15 @@ for (const form of document.querySelectorAll('[data-endpoint]')) {
       if (result.published) {
         form.dispatchEvent(new CustomEvent('comment-published', { detail: result.published }));
       }
-      status.textContent = endpoint === 'comments'
+      status.textContent = forumCopy
+        ? (endpoint === 'comments' ? (result.published ? (forumPreview ? forumCopy.previewSaved : forumCopy.posted) : forumCopy.pending) : forumCopy.saved)
+        : endpoint === 'comments'
         ? (result.published ? 'Komentarz został opublikowany.' : 'Dziękuję. Wpis czeka na zatwierdzenie.')
         : result.emailed ? 'Zapisano i przesłano zgłoszenie. Dziękuję!' : 'Zapisano zgłoszenie. Dziękuję!';
     } catch (error) {
-      status.textContent = 'Nie udało się wysłać. ' + error.message;
+      status.textContent = forumCopy && document.documentElement.lang !== 'pl'
+        ? forumCopy.sendError
+        : 'Nie udało się wysłać. ' + error.message;
     } finally {
       button.disabled = false;
     }

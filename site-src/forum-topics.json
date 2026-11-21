@@ -1,0 +1,87 @@
+{
+  "zgloszenia": [
+    {
+      "id": "0eb8433b-4494-4b5e-b2f5-9bfb80b63bf8",
+      "pl": ["Jak zgłosić usterkę, żeby dało się ją odtworzyć?", "Podaj model robota, wersję Lidlomix Pro, nazwę programu lub przepisu i kroki prowadzące do błędu. Napisz, czego się spodziewałeś i co zobaczyłeś. Jeśli kłopot się powtarza, dodaj, czy zdarza się za każdym razem. Zrzut ekranu pomaga po usunięciu danych konta i kodów parowania.\n\nPrzykładowy opis zgłoszenia\n1. Otworzyłem katalog i włączyłem filtr ocen.\n2. Otworzyłem przepis i wróciłem do listy.\n3. Spodziewałem się tej samej listy. Po powrocie filtr był wyłączony."],
+      "en": ["How do I report a bug others can reproduce?", "Include your device model, Lidlomix Pro version, programme or recipe name, and the steps that led to the issue. Say what you expected and what you saw. If it happens repeatedly, tell us whether it happens every time. A screenshot helps once account details and pairing codes have been removed.\n\nExample report\n1. I opened the catalogue and enabled the rating filter.\n2. I opened a recipe and went back to the list.\n3. I expected the same list. The filter was off when I returned."],
+      "de": ["Wie melde ich einen Fehler, damit man ihn nachstellen kann?", "Nenne Gerätemodell, Lidlomix-Pro-Version, Programm oder Rezept und die Schritte bis zum Fehler. Schreib, was du erwartet und was du gesehen hast. Tritt der Fehler jedes Mal auf? Ein Bildschirmfoto hilft, wenn du Kontodaten und Kopplungscodes vorher entfernst.\n\nBeispiel für eine Meldung\n1. Ich habe den Katalog geöffnet und den Bewertungsfilter aktiviert.\n2. Ich habe ein Rezept geöffnet und bin zur Liste zurückgekehrt.\n3. Ich habe dieselbe Liste erwartet. Bei der Rückkehr war der Filter aus."],
+      "fr": ["Comment signaler un problème pour qu’on puisse le reproduire ?", "Indiquez le modèle, la version de Lidlomix Pro, le programme ou la recette et les étapes qui mènent au problème. Dites ce que vous attendiez et ce qui s’est passé. Précisez si le problème survient à chaque fois. Une capture est utile après retrait des données du compte et des codes d’association.\n\nExemple de signalement\n1. J’ai ouvert le catalogue et activé le filtre par note.\n2. J’ai ouvert une recette, puis je suis revenu à la liste.\n3. Je m’attendais à retrouver la même liste. À mon retour, le filtre était désactivé."],
+      "it": ["Come si segnala un problema in modo che si possa riprodurre?", "Indica il modello, la versione di Lidlomix Pro, il programma o la ricetta e i passaggi che causano il problema. Descrivi cosa ti aspettavi e cosa hai visto. Specifica se accade ogni volta. Una schermata è utile dopo aver rimosso i dati dell’account e i codici di abbinamento.\n\nEsempio di segnalazione\n1. Ho aperto il catalogo e attivato il filtro per valutazione.\n2. Ho aperto una ricetta e sono tornato all’elenco.\n3. Mi aspettavo di ritrovare lo stesso elenco. Al ritorno il filtro era disattivato."],
+      "es": ["¿Cómo informo de un fallo para que otros puedan reproducirlo?", "Indica el modelo, la versión de Lidlomix Pro, el programa o la receta y los pasos que provocaron el fallo. Cuenta qué esperabas y qué pasó. Indica si ocurre siempre. Una captura ayuda si antes eliminas los datos de la cuenta y los códigos de vinculación.\n\nEjemplo de aviso\n1. Abrí el catálogo y activé el filtro por valoración.\n2. Abrí una receta y volví a la lista.\n3. Esperaba ver la misma lista. Al volver, el filtro estaba desactivado."]
+    }
+  ],
+  "pomysly": [
+    {
+      "id": "286c19ce-158b-4e21-9625-3cd1be483e77",
+      "pl": ["Jakiej funkcji najbardziej brakuje Ci na Connect?", "Opisz jedną funkcję, której jeszcze nie ma, oraz sytuację w kuchni, w której by Ci pomogła. Jak dziś sobie radzisz? Pomysły mogą dotyczyć na przykład wspólnej listy zakupów lub kolejki przepisów do ugotowania."],
+      "en": ["Which feature do you miss most on the Connect?", "Describe one new feature and a moment in the kitchen when it would help. How do you handle it today? Ideas could include a shared shopping list or a queue of recipes to cook."],
+      "de": ["Welche Funktion fehlt dir am Connect am meisten?", "Beschreibe eine neue Funktion und eine Situation in der Küche, in der sie dir helfen würde. Wie löst du das heute? Beispiele wären eine gemeinsame Einkaufsliste oder eine Liste mit Rezepten, die du als Nächstes kochen möchtest."],
+      "fr": ["Quelle fonctionnalité vous manque le plus sur le Connect ?", "Décrivez une nouvelle fonction et une situation en cuisine où elle vous aiderait. Comment faites-vous aujourd’hui ? Une liste de courses partagée ou une file de recettes à cuisiner sont deux exemples."],
+      "it": ["Quale funzione ti manca di più sul Connect?", "Descrivi una funzione nuova e un momento in cucina in cui ti sarebbe utile. Come fai oggi? Potrebbe essere una lista della spesa condivisa o una coda delle prossime ricette da preparare."],
+      "es": ["¿Qué función echas más en falta en el Connect?", "Describe una función nueva y una situación en la cocina en la que te ayudaría. ¿Cómo lo resuelves ahora? Podría ser una lista de la compra compartida o una cola de recetas por preparar."]
+    }
+  ],
+  "usprawnienia": [
+    {
+      "id": "9cc25819-1e07-413f-8340-7dd3d35868ac",
+      "pl": ["Co można uprościć w katalogu przepisów?", "Pokaż, gdzie tracisz czas w funkcji, która już działa. Czy chodzi o wyszukiwanie, filtry, powrót do wyników czy porównywanie przepisów? Opisz, jak ten sam krok mógłby wyglądać po Twojemu."],
+      "en": ["What would make the recipe catalogue easier to use?", "Tell us where an existing feature slows you down. Is it search, filters, going back to results or comparing recipes? Describe how you would like that same step to work."],
+      "de": ["Was würde die Bedienung des Rezeptkatalogs vereinfachen?", "Erzähl, bei welcher vorhandenen Funktion du Zeit verlierst. Geht es um Suche, Filter, die Rückkehr zu den Ergebnissen oder den Vergleich von Rezepten? Beschreibe, wie der Schritt für dich besser funktionieren könnte."],
+      "fr": ["Comment rendre le catalogue de recettes plus simple à utiliser ?", "Dites-nous où une fonction existante vous fait perdre du temps. Est-ce la recherche, les filtres, le retour aux résultats ou la comparaison des recettes ? Décrivez le fonctionnement que vous préféreriez."],
+      "it": ["Cosa renderebbe più semplice usare il catalogo delle ricette?", "Racconta dove una funzione esistente ti fa perdere tempo. È la ricerca, un filtro, il ritorno ai risultati o il confronto delle ricette? Descrivi come vorresti che funzionasse quel passaggio."],
+      "es": ["¿Qué haría más fácil usar el catálogo de recetas?", "Cuéntanos en qué función existente pierdes tiempo. ¿Es al buscar, filtrar, volver a los resultados o comparar recetas? Describe cómo te gustaría que funcionara ese paso."]
+    }
+  ],
+  "rozmowy-ai": [
+    {
+      "id": "8f31e6a6-fd12-56e3-ae76-47d4fbbe2227",
+      "pl": ["Gdzie szukasz sprawdzonych przepisów?", "Podziel się swoim ulubionym źródłem. Podaj nazwę strony, książki albo autora, poleć jedno danie i napisz, czy gotowałeś je na Connect. Link do publicznego przepisu dodaj w polu źródła. Wystarczy własny opis i odnośnik do oryginału."],
+      "en": ["Where do you find dependable recipes?", "Share a source you like. Name the site, book or author, recommend one dish and say whether you have made it on the Connect. Put the public recipe link in the source field. A description in your own words and a link to the original are enough."],
+      "de": ["Wo findest du erprobte Rezepte?", "Teile eine Quelle, die du magst. Nenne die Website, das Buch oder den Autor, empfehle ein Gericht und sag, ob du es auf dem Connect gekocht hast. Einen öffentlichen Rezeptlink kannst du ins Feld für die Quelle eintragen. Eine eigene Beschreibung und ein Link zum Original genügen."],
+      "fr": ["Où trouvez-vous des recettes qui marchent ?", "Partagez une source que vous aimez. Indiquez le site, le livre ou l’auteur, recommandez un plat et dites si vous l’avez préparé sur le Connect. Vous pouvez mettre le lien de la recette publique dans le champ prévu. Une description personnelle et un lien vers l’original suffisent."],
+      "it": ["Dove trovi ricette affidabili?", "Condividi una fonte che apprezzi. Indica il sito, il libro o l’autore, consiglia un piatto e racconta se l’hai preparato sul Connect. Usa il campo della fonte per il link alla ricetta pubblica. Bastano una descrizione con parole tue e il link all’originale."],
+      "es": ["¿Dónde encuentras recetas que salen bien?", "Comparte una fuente que te guste. Indica el sitio, el libro o el autor, recomienda un plato y cuenta si lo has hecho en el Connect. Añade el enlace público en el campo de la fuente. Basta con una descripción propia y un enlace al original."]
+    },
+    {
+      "id": "7d64b4ab-9896-5050-b676-c484c0feb2aa",
+      "pl": ["Który przepis udało Ci się dostosować do Connecta?", "Podaj nazwę potrawy, sposób przygotowania przed dostosowaniem i jedną zmianę, która zadziałała. Jeśli pomagał Ci asystent Lidlomix, opisz, które nastawy sprawdziłeś samodzielnie i co zmienisz przy następnej próbie."],
+      "en": ["Which recipe have you adapted for the Connect?", "Name the dish, describe how it was originally prepared and share one change that worked. If you used the Lidlomix assistant, say which settings you tested yourself and what you would change next time."],
+      "de": ["Welches Rezept hast du für den Connect angepasst?", "Nenne das Gericht, beschreibe die ursprüngliche Zubereitung und teile eine Änderung, die funktioniert hat. Falls du den Lidlomix-Assistenten genutzt hast, sag, welche Einstellungen du selbst geprüft hast und was du beim nächsten Mal ändern würdest."],
+      "fr": ["Quelle recette avez-vous adaptée au Connect ?", "Donnez le nom du plat, expliquez comment il se préparait à l’origine et partagez une modification qui a fonctionné. Si l’assistant Lidlomix vous a aidé, indiquez les réglages que vous avez vérifiés et ce que vous changeriez la prochaine fois."],
+      "it": ["Quale ricetta hai adattato al Connect?", "Indica il piatto e come si preparava in origine, poi racconta una modifica che ha funzionato. Se hai usato l’assistente Lidlomix, di’ quali impostazioni hai provato di persona e cosa cambieresti la prossima volta."],
+      "es": ["¿Qué receta has adaptado al Connect?", "Di qué plato es, cómo se preparaba originalmente y qué cambio te funcionó. Si utilizaste el asistente Lidlomix, indica qué ajustes probaste tú y qué cambiarías la próxima vez."]
+    }
+  ],
+  "pomoc": [
+    {
+      "id": "f1f9c330-980e-5632-afe3-dc8ee7f1f20e",
+      "pl": ["Pierwsze gotowanie z Lidlomix Pro", "Od czego zacząłeś po otwarciu aplikacji? Możesz zapytać o wybór języka, zapisanie przepisu albo powrót do aplikacji fabrycznej. Jeśli polecasz prosty pierwszy przepis lub program, napisz dlaczego."],
+      "en": ["Your first cook with Lidlomix Pro", "Where did you start after opening the app? Ask about choosing a language, saving a recipe or returning to the factory app. If you recommend an easy first recipe or programme, tell us why."],
+      "de": ["Zum ersten Mal mit Lidlomix Pro kochen", "Womit hast du nach dem Öffnen der App angefangen? Frag nach der Sprachauswahl, dem Speichern eines Rezepts oder der Rückkehr zur Werks-App. Wenn du ein einfaches erstes Rezept oder Programm empfiehlst, sag uns warum."],
+      "fr": ["Votre première recette avec Lidlomix Pro", "Par quoi avez-vous commencé après avoir ouvert l’application ? Posez vos questions sur le choix de la langue, l’enregistrement d’une recette ou le retour à l’application d’origine. Si vous recommandez une recette ou un programme facile pour débuter, dites-nous pourquoi."],
+      "it": ["La prima ricetta con Lidlomix Pro", "Da cosa hai iniziato dopo aver aperto l’app? Puoi chiedere come scegliere la lingua, salvare una ricetta o tornare all’app di fabbrica. Se consigli una prima ricetta o un programma semplice, spiegaci perché."],
+      "es": ["Tu primera receta con Lidlomix Pro", "¿Por dónde empezaste al abrir la aplicación? Pregunta cómo elegir el idioma, guardar una receta o volver a la aplicación de fábrica. Si recomiendas una receta sencilla o un programa para empezar, cuéntanos por qué."]
+    }
+  ],
+  "instalacja": [
+    {
+      "id": "43b55321-6e6c-5e15-9f1e-0d05b31bb1d4",
+      "guide": true,
+      "pl": ["Instalacja na Monsieur Cuisine Connect krok po kroku", "Zacznij od sprawdzenia modelu robota i wymagań komputera. W przewodniku znajdziesz przygotowanie paczki, połączenie USB i pierwsze uruchomienie. W tym wątku możesz zapytać o konkretny krok lub opisać wynik próby. Podaj numer kroku i model urządzenia."],
+      "en": ["Installing on a Monsieur Cuisine Connect step by step", "Start by checking your robot model and the computer requirements. The guide covers preparing the package, connecting by USB and the first launch. Use this topic to ask about a particular step or report how it went. Include the step number and model."],
+      "de": ["Installation auf dem Monsieur Cuisine Connect Schritt für Schritt", "Prüfe zuerst Gerätemodell und Computeranforderungen. Die Anleitung erklärt das Entpacken, die USB-Verbindung und den ersten Start. Hier kannst du zu einzelnen Schritten fragen oder von deinem Versuch berichten. Nenne die Schrittnummer und das Modell."],
+      "fr": ["Installer Lidlomix Pro sur Monsieur Cuisine Connect pas à pas", "Commencez par vérifier le modèle et la configuration de l’ordinateur. Le guide explique comment préparer le fichier, connecter le robot en USB et effectuer le premier démarrage. Posez ici une question sur une étape précise ou partagez le résultat. Indiquez le numéro de l’étape et le modèle."],
+      "it": ["Installare Lidlomix Pro su Monsieur Cuisine Connect passo dopo passo", "Controlla prima il modello del robot e i requisiti del computer. La guida spiega come preparare il pacchetto, collegare il robot via USB e avviarlo per la prima volta. Qui puoi chiedere aiuto per un passaggio o raccontare com’è andata. Indica il numero del passaggio e il modello."],
+      "es": ["Instalar Lidlomix Pro en Monsieur Cuisine Connect paso a paso", "Empieza verificando el modelo y los requisitos del ordenador. La guía explica cómo preparar el paquete, conectar el robot por USB y abrir la aplicación por primera vez. Usa este tema para preguntar por un paso o contar cómo te fue. Indica el número del paso y el modelo."]
+    },
+    {
+      "id": "e432eafd-a7eb-5799-aa3a-aa8e12ab768e",
+      "pl": ["Co sprawdzić, gdy instalator nie widzi Connecta przez USB?", "Podaj model urządzenia, wersję Windows i komunikat pokazany przez instalator. Napisz, czy robot wyświetlił pytanie o debugowanie USB i czy ekran był odblokowany. Jeśli dodajesz fragment logu, usuń numer seryjny i inne identyfikatory."],
+      "en": ["What should I check if the installer cannot see the Connect over USB?", "Share your model, Windows version and the message the installer displayed. Note whether the robot showed a USB debugging prompt and whether its screen was unlocked. Remove serial numbers and other identifiers from any log excerpt."],
+      "de": ["Was tun, wenn das Installationsprogramm den Connect per USB nicht erkennt?", "Nenne das Modell, die Windows-Version und die Meldung des Installationsprogramms. Sag, ob die USB-Debugging-Abfrage erschien und der Bildschirm entsperrt war. Entferne Seriennummern und andere Kennungen aus Protokollauszügen."],
+      "fr": ["Que vérifier si l’installateur ne détecte pas le Connect en USB ?", "Indiquez le modèle, la version de Windows et le message affiché par l’installateur. Précisez si le robot a demandé d’autoriser le débogage USB et si l’écran était déverrouillé. Retirez les numéros de série et autres identifiants des extraits de journaux."],
+      "it": ["Cosa controllare se l’installatore non rileva il Connect via USB?", "Indica il modello, la versione di Windows e il messaggio dell’installatore. Specifica se il robot ha mostrato la richiesta di debug USB e se lo schermo era sbloccato. Rimuovi numeri di serie e altri identificativi dagli estratti del registro."],
+      "es": ["¿Qué reviso si el instalador no detecta el Connect por USB?", "Indica el modelo, la versión de Windows y el mensaje del instalador. Di si el robot mostró la solicitud de depuración USB y si la pantalla estaba desbloqueada. Elimina los números de serie y otros identificadores de cualquier fragmento del registro."]
+    }
+  ]
+}

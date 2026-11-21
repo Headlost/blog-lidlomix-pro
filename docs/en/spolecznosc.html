@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lidlomix Pro forum</title>
+  <meta name="description" content="Report a bug, ask a question or share an idea with other Connect users.">
+  <link rel="alternate" hreflang="pl" href="https://headlost.github.io/blog-lidlomix-pro/spolecznosc.html">
+<link rel="alternate" hreflang="en" href="https://headlost.github.io/blog-lidlomix-pro/en/spolecznosc.html">
+<link rel="alternate" hreflang="de" href="https://headlost.github.io/blog-lidlomix-pro/de/spolecznosc.html">
+<link rel="alternate" hreflang="fr" href="https://headlost.github.io/blog-lidlomix-pro/fr/spolecznosc.html">
+<link rel="alternate" hreflang="it" href="https://headlost.github.io/blog-lidlomix-pro/it/spolecznosc.html">
+<link rel="alternate" hreflang="es" href="https://headlost.github.io/blog-lidlomix-pro/es/spolecznosc.html">
+<link rel="alternate" hreflang="x-default" href="https://headlost.github.io/blog-lidlomix-pro/spolecznosc.html">
+  <link rel="stylesheet" href="../styl.css?v=naglowki-2">
+  <link rel="stylesheet" href="../languages.css">
+  <link rel="stylesheet" href="../forum.css?v=boards-1">
+  <script src="../blog.js?v=boards-1" defer></script>
+  <script src="../forum.js?v=boards-1" defer></script>
+</head>
+<body class="forum-page">
+<a class="localized-skip" href="#forum">Skip to content</a>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">Lidlomix <b>Pro</b></a>
+    <a class="forum-home" href="index.html"><span aria-hidden="true">←</span> Home</a>
+  </div>
+  <nav class="site-languages" aria-label="Site language"><a lang="pl" hreflang="pl" href="../spolecznosc.html">Polski</a><a lang="en" hreflang="en" href="../en/spolecznosc.html" aria-current="true">English</a><a lang="de" hreflang="de" href="../de/spolecznosc.html">Deutsch</a><a lang="fr" hreflang="fr" href="../fr/spolecznosc.html">Français</a><a lang="it" hreflang="it" href="../it/spolecznosc.html">Italiano</a><a lang="es" hreflang="es" href="../es/spolecznosc.html">Español</a></nav>
+</header>
+<main class="wrap" id="forum">
+  <div class="forum-intro">
+    <div><h1>Lidlomix Pro forum</h1><p>Report a bug, ask a question or share an idea with other Connect users.</p></div>
+    <nav aria-label="Lidlomix Pro forum">
+      <a href="#zasady" data-open-rules>Forum rules</a>
+      <a href="#kontakt">Private contact</a>
+    </nav>
+  </div>
+  <p class="forum-preview" data-forum-preview hidden>Local preview. Topics and replies added here stay in this preview.</p>
+  <div class="forum-layout">
+    <aside class="board-sidebar">
+      <h2>Categories</h2>
+      <nav aria-label="Categories"><a href="#zgloszenia" data-board="zgloszenia">Bugs and issues</a>
+<a href="#pomysly" data-board="pomysly">Ideas</a>
+<a href="#usprawnienia" data-board="usprawnienia">Improvements</a>
+<a href="#rozmowy-ai" data-board="rozmowy-ai">Recipes and sources</a>
+<a href="#pomoc" data-board="pomoc">Questions and experiences</a>
+<a href="#instalacja" data-board="instalacja">Installation</a></nav>
+    </aside>
+    <section class="topic-panel" id="zgloszenia" aria-labelledby="board-title">
+      <div class="board-heading">
+        <div><h2 id="board-title">Bugs and issues</h2>
+        <p data-board-description>Describe the issue and include the model, app version and steps to reproduce it.</p></div>
+        <button type="button" data-compose>New topic</button>
+      </div>
+      <div class="topic-controls">
+        <h3>Topics</h3>
+        <input type="search" data-topic-search aria-label="Search this category" placeholder="Search this category">
+      </div>
+      <div class="topic-language-note">
+        <label><input type="checkbox" data-all-languages> Show all languages</label>
+        <p>Community topics appear in the language they were written in.</p>
+      </div>
+      <section data-pinned-section>
+        <h4 class="topic-section-title">Pinned topics</h4>
+        <div data-pinned-list></div>
+      </section>
+      <section>
+        <h4 class="topic-section-title">Community topics</h4>
+        <div data-topic-list></div>
+      </section>
+      <div class="topic-state">
+        <p data-topic-status role="status">Loading topics…</p>
+        <button type="button" class="forum-neutral" data-topic-more hidden>Load more</button>
+        <button type="button" class="forum-neutral" data-topic-retry hidden>Try again</button>
+      </div>
+    </section>
+  </div>
+  <details class="forum-contact-card forum-rules" id="zasady">
+    <summary>Forum rules</summary>
+    <ol><li>Be respectful. Choose the right category and check for an existing topic first.</li><li>Describe your own experience. Leave out links, advertising and installers. For bugs, include the model, version and steps.</li><li>Remove account details, email addresses, serial numbers, network names and pairing codes before posting. Keep instructions for bypassing device protections off the forum.</li><li>In the recipe category, put a public recipe link in the separate source field.</li></ol>
+    <p data-forum-approval-status>Publication depends on the moderation settings.</p>
+  </details>
+  <section class="forum-private" id="kontakt">
+    <h2>Private contact</h2><p>Sign up for update news or offer a robot for testing. Your request goes to the project owner.</p>
+    <div class="forum-contact-options">
+    <details class="forum-contact-card" id="aktualizacje" name="contact-forms">
+      <summary>Update notifications</summary>
+      <form class="blog-form" data-endpoint="waitlist" method="post">
+        <label>Contact email <input name="email" type="email" maxlength="254" autocomplete="email" required></label>
+        <label>Robot model <select name="model" required>
+          <option value="">Choose a model</option><option>Connect</option><option>Smart</option><option value="Inny">Other</option>
+        </select></label>
+        <div class="form-location">
+          <label>Postal code <input name="postalCode" autocomplete="section-waitlist postal-code" maxlength="16"></label>
+          <label>City <input name="city" autocomplete="section-waitlist address-level2" maxlength="100"></label>
+        </div>
+        <label>Comment (optional) <textarea name="description" maxlength="800" rows="4"></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required> I agree to be contacted about this request.</label>
+        <div class="form-trap" aria-hidden="true"><input name="website" aria-label="Website" tabindex="-1" autocomplete="off"></div>
+        <div class="forum-submit"><button type="submit">Sign up</button> <a href="prywatnosc.html">Privacy policy</a></div>
+        <p role="status"></p>
+      </form>
+    </details>
+    <details class="forum-contact-card" id="sprzet" name="contact-forms">
+      <summary>Offer a robot for testing</summary>
+      <form class="blog-form" data-endpoint="hardware" method="post">
+        <label>Contact email <input name="email" type="email" maxlength="254" autocomplete="email" required></label>
+        <label>Robot model <select name="model" required>
+          <option value="">Choose a model</option><option>Connect</option><option>Smart</option><option value="Inny">Other</option>
+        </select></label>
+        <div class="form-location">
+          <label>Postal code <input name="postalCode" autocomplete="section-hardware postal-code" maxlength="16"></label>
+          <label>City <input name="city" autocomplete="section-hardware address-level2" maxlength="100"></label>
+        </div>
+        <label>Device condition and proposal <textarea name="description" maxlength="800" rows="4" minlength="8" required></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required> I agree to be contacted about this request.</label>
+        <div class="form-trap" aria-hidden="true"><input name="website" aria-label="Website" tabindex="-1" autocomplete="off"></div>
+        <div class="forum-submit"><button type="submit">Send proposal</button> <a href="prywatnosc.html">Privacy policy</a></div>
+        <p role="status"></p>
+      </form>
+    </details>
+    </div>
+  </section>
+  <dialog class="forum-dialog" id="forum-composer" aria-labelledby="compose-title">
+    <div class="forum-dialog-heading"><h2 id="compose-title">New topic</h2>
+      <button type="button" class="forum-neutral" data-close-dialog>Close</button></div>
+    <form class="blog-form" data-endpoint="comments" method="post">
+      <input name="post" type="hidden"><input name="replyTo" type="hidden">
+      <input name="locale" type="hidden" value="en">
+      <label data-topic-title>Title <input name="title" minlength="4" maxlength="100" required></label>
+      <label>Name or nickname <input name="name" maxlength="40" required></label>
+      <label>Message <textarea name="body" minlength="3" maxlength="1200" rows="6" required></textarea></label>
+      <div data-recipe-source hidden>
+        <label>Public recipe link (optional) <input name="recipeUrl" type="url" maxlength="512" pattern="https://.+" placeholder="https://" disabled></label>
+      </div>
+      <div data-topic-attachment hidden>
+        <label>Screenshot (optional) <input type="file" name="image" accept="image/png,image/jpeg,image/webp" disabled></label>
+        <p class="form-hint">PNG, JPG or WebP up to 1 MB.</p>
+      </div>
+      <div class="form-trap" aria-hidden="true"><input name="website" aria-label="Website" tabindex="-1" autocomplete="off"></div>
+      <div class="forum-submit"><button type="submit">Submit post</button>
+        <a href="#zasady" data-open-rules>Forum rules</a> <a href="prywatnosc.html">Privacy policy</a></div>
+      <p role="status"></p>
+    </form>
+  </dialog>
+  <dialog class="forum-dialog image-dialog" id="forum-image" aria-label="Attachment">
+    <button type="button" class="forum-neutral" data-close-dialog>Close</button>
+    <img alt="Attachment">
+  </dialog>
+</main>
+<footer><div class="wrap site-footer">
+  <div><p>Lidlomix Pro is an independent project by Beniamin Żak. All trademarks belong to their owners.</p><a href="https://github.com/Headlost/blog-lidlomix-pro">GitHub</a></div><a href="prywatnosc.html">Privacy policy</a>
+</div></footer>
+<script type="application/json" id="forum-copy">{"title": "Lidlomix Pro forum", "home": "Home", "intro": "Report a bug, ask a question or share an idea with other Connect users.", "original": "Community topics appear in the language they were written in.", "sections": "Categories", "topics": "Topics", "search": "Search this category", "newTopic": "New topic", "reply": "Reply", "replyTo": "Reply to {name}", "replies": "Replies", "loading": "Loading topics…", "empty": "There are no community topics in this view.", "noMatch": "No matching topics among the loaded results.", "loadError": "Could not load topics.", "retry": "Try again", "more": "Load more", "attachment": "Attachment", "enlarge": "Enlarge screenshot", "close": "Close", "subject": "Title", "name": "Name or nickname", "message": "Message", "file": "Screenshot (optional)", "fileHint": "PNG, JPG or WebP up to 1 MB.", "send": "Submit post", "rules": "Forum rules", "rule1": "Be respectful. Choose the right category and check for an existing topic first.", "rule2": "Describe your own experience. Leave out links, advertising and installers. For bugs, include the model, version and steps.", "rule3": "Remove account details, email addresses, serial numbers, network names and pairing codes before posting. Keep instructions for bypassing device protections off the forum.", "approval": "Publication depends on the moderation settings.", "moderated": "New topics and replies appear after approval.", "immediate": "New topics and replies appear immediately.", "posting": "Sending…", "posted": "Your post was published.", "pending": "Your post is awaiting approval.", "saved": "Your request was saved.", "sendError": "Could not submit. Check your details and try again.", "preview": "Local preview. Topics and replies added here stay in this preview.", "private": "Private contact", "contactIntro": "Sign up for update news or offer a robot for testing. Your request goes to the project owner.", "waitlist": "Update notifications", "hardware": "Offer a robot for testing", "email": "Contact email", "model": "Robot model", "choose": "Choose a model", "other": "Other", "postal": "Postal code", "city": "City", "condition": "Device condition and proposal", "comment": "Comment (optional)", "consent": "I agree to be contacted about this request.", "join": "Sign up", "offer": "Send proposal", "boardNames": ["Bugs and issues", "Ideas", "Improvements", "Recipes and sources", "Questions and experiences", "Installation"], "boardDescriptions": ["Describe the issue and include the model, app version and steps to reproduce it.", "Suggest a new feature and explain when it would help.", "Tell us what could be simpler in an existing feature.", "Share a recipe or recommend a source. Add the public link in the form’s source field.", "Ask about using the Connect or share something you have tried.", "Get your robot and computer ready, follow the guide and ask if you get stuck."], "pinned": "Pinned topics", "community": "Community topics", "allLanguages": "Show all languages", "recipeSource": "Public recipe link (optional)", "openRecipeSource": "Open the recipe source", "installationGuide": "Open the installation guide", "recipeRule": "In the recipe category, put a public recipe link in the separate source field.", "previewSaved": "Saved in the local preview.", "previewPrivate": "Private forms can be submitted from the published site.", "pinnedTopics": {"zgloszenia": [{"id": "0eb8433b-4494-4b5e-b2f5-9bfb80b63bf8", "name": "Lidlomix Pro", "title": "How do I report a bug others can reproduce?", "body": "Include your device model, Lidlomix Pro version, programme or recipe name, and the steps that led to the issue. Say what you expected and what you saw. If it happens repeatedly, tell us whether it happens every time. A screenshot helps once account details and pairing codes have been removed.\n\nExample report\n1. I opened the catalogue and enabled the rating filter.\n2. I opened a recipe and went back to the list.\n3. I expected the same list. The filter was off when I returned."}], "pomysly": [{"id": "286c19ce-158b-4e21-9625-3cd1be483e77", "name": "Lidlomix Pro", "title": "Which feature do you miss most on the Connect?", "body": "Describe one new feature and a moment in the kitchen when it would help. How do you handle it today? Ideas could include a shared shopping list or a queue of recipes to cook."}], "usprawnienia": [{"id": "9cc25819-1e07-413f-8340-7dd3d35868ac", "name": "Lidlomix Pro", "title": "What would make the recipe catalogue easier to use?", "body": "Tell us where an existing feature slows you down. Is it search, filters, going back to results or comparing recipes? Describe how you would like that same step to work."}], "rozmowy-ai": [{"id": "8f31e6a6-fd12-56e3-ae76-47d4fbbe2227", "name": "Lidlomix Pro", "title": "Where do you find dependable recipes?", "body": "Share a source you like. Name the site, book or author, recommend one dish and say whether you have made it on the Connect. Put the public recipe link in the source field. A description in your own words and a link to the original are enough."}, {"id": "7d64b4ab-9896-5050-b676-c484c0feb2aa", "name": "Lidlomix Pro", "title": "Which recipe have you adapted for the Connect?", "body": "Name the dish, describe how it was originally prepared and share one change that worked. If you used the Lidlomix assistant, say which settings you tested yourself and what you would change next time."}], "pomoc": [{"id": "f1f9c330-980e-5632-afe3-dc8ee7f1f20e", "name": "Lidlomix Pro", "title": "Your first cook with Lidlomix Pro", "body": "Where did you start after opening the app? Ask about choosing a language, saving a recipe or returning to the factory app. If you recommend an easy first recipe or programme, tell us why."}], "instalacja": [{"id": "43b55321-6e6c-5e15-9f1e-0d05b31bb1d4", "name": "Lidlomix Pro", "title": "Installing on a Monsieur Cuisine Connect step by step", "body": "Start by checking your robot model and the computer requirements. The guide covers preparing the package, connecting by USB and the first launch. Use this topic to ask about a particular step or report how it went. Include the step number and model.", "guide": true}, {"id": "e432eafd-a7eb-5799-aa3a-aa8e12ab768e", "name": "Lidlomix Pro", "title": "What should I check if the installer cannot see the Connect over USB?", "body": "Share your model, Windows version and the message the installer displayed. Note whether the robot showed a USB debugging prompt and whether its screen was unlocked. Remove serial numbers and other identifiers from any log excerpt."}]}}</script>
+
+</body>
+</html>

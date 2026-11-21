@@ -1,0 +1,606 @@
+{
+  "title": [
+    "Forum Lidlomix Pro",
+    "Lidlomix Pro forum",
+    "Lidlomix Pro Forum",
+    "Forum Lidlomix Pro",
+    "Forum Lidlomix Pro",
+    "Foro de Lidlomix Pro"
+  ],
+  "home": [
+    "Strona główna",
+    "Home",
+    "Startseite",
+    "Accueil",
+    "Pagina iniziale",
+    "Inicio"
+  ],
+  "intro": [
+    "Zgłoś usterkę, zadaj pytanie albo podziel się pomysłem z innymi użytkownikami Connecta.",
+    "Report a bug, ask a question or share an idea with other Connect users.",
+    "Melde einen Fehler, stelle eine Frage oder teile eine Idee mit anderen Connect-Nutzern.",
+    "Signalez un problème, posez une question ou partagez une idée avec les utilisateurs du Connect.",
+    "Segnala un problema, fai una domanda o condividi un’idea con chi usa Connect.",
+    "Comunica un problema, haz una pregunta o comparte una idea con otros usuarios de Connect."
+  ],
+  "original": [
+    "Tematy użytkowników są wyświetlane w języku, w którym powstały.",
+    "Community topics appear in the language they were written in.",
+    "Themen der Community erscheinen in der Sprache, in der sie geschrieben wurden.",
+    "Les sujets de la communauté s’affichent dans leur langue d’origine.",
+    "Le discussioni della community appaiono nella lingua in cui sono state scritte.",
+    "Los temas de la comunidad aparecen en el idioma en que se escribieron."
+  ],
+  "sections": [
+    "Działy",
+    "Categories",
+    "Kategorien",
+    "Rubriques",
+    "Categorie",
+    "Categorías"
+  ],
+  "topics": [
+    "Tematy",
+    "Topics",
+    "Themen",
+    "Sujets",
+    "Discussioni",
+    "Temas"
+  ],
+  "search": [
+    "Szukaj w dziale",
+    "Search this category",
+    "Kategorie durchsuchen",
+    "Rechercher dans la rubrique",
+    "Cerca nella categoria",
+    "Buscar en la categoría"
+  ],
+  "newTopic": [
+    "Nowy temat",
+    "New topic",
+    "Neues Thema",
+    "Nouveau sujet",
+    "Nuova discussione",
+    "Nuevo tema"
+  ],
+  "reply": [
+    "Odpowiedz",
+    "Reply",
+    "Antworten",
+    "Répondre",
+    "Rispondi",
+    "Responder"
+  ],
+  "replyTo": [
+    "Odpowiedź do {name}",
+    "Reply to {name}",
+    "Antwort an {name}",
+    "Réponse à {name}",
+    "Risposta a {name}",
+    "Respuesta a {name}"
+  ],
+  "replies": [
+    "Odpowiedzi",
+    "Replies",
+    "Antworten",
+    "Réponses",
+    "Risposte",
+    "Respuestas"
+  ],
+  "loading": [
+    "Wczytuję tematy…",
+    "Loading topics…",
+    "Themen werden geladen…",
+    "Chargement des sujets…",
+    "Caricamento delle discussioni…",
+    "Cargando temas…"
+  ],
+  "empty": [
+    "Brak tematów społeczności w tym widoku.",
+    "There are no community topics in this view.",
+    "In dieser Ansicht gibt es noch keine Themen der Community.",
+    "Il n’y a pas de sujets de la communauté dans cette vue.",
+    "In questa vista non ci sono discussioni della community.",
+    "No hay temas de la comunidad en esta vista."
+  ],
+  "noMatch": [
+    "Brak pasujących tematów wśród wczytanych.",
+    "No matching topics among the loaded results.",
+    "Unter den geladenen Themen gibt es keine Treffer.",
+    "Aucun sujet chargé ne correspond à la recherche.",
+    "Nessun risultato tra le discussioni caricate.",
+    "No hay coincidencias entre los temas cargados."
+  ],
+  "loadError": [
+    "Nie udało się wczytać tematów.",
+    "Could not load topics.",
+    "Die Themen konnten nicht geladen werden.",
+    "Impossible de charger les sujets.",
+    "Impossibile caricare le discussioni.",
+    "No se han podido cargar los temas."
+  ],
+  "retry": [
+    "Spróbuj ponownie",
+    "Try again",
+    "Erneut versuchen",
+    "Réessayer",
+    "Riprova",
+    "Volver a intentar"
+  ],
+  "more": [
+    "Pokaż kolejne",
+    "Load more",
+    "Mehr laden",
+    "Afficher la suite",
+    "Carica altre discussioni",
+    "Cargar más"
+  ],
+  "attachment": [
+    "Załącznik",
+    "Attachment",
+    "Anhang",
+    "Pièce jointe",
+    "Allegato",
+    "Adjunto"
+  ],
+  "enlarge": [
+    "Powiększ zrzut ekranu",
+    "Enlarge screenshot",
+    "Bildschirmfoto vergrößern",
+    "Agrandir la capture",
+    "Ingrandisci la schermata",
+    "Ampliar la captura"
+  ],
+  "close": [
+    "Zamknij",
+    "Close",
+    "Schließen",
+    "Fermer",
+    "Chiudi",
+    "Cerrar"
+  ],
+  "subject": [
+    "Tytuł",
+    "Title",
+    "Titel",
+    "Titre",
+    "Titolo",
+    "Título"
+  ],
+  "name": [
+    "Imię lub pseudonim",
+    "Name or nickname",
+    "Name oder Alias",
+    "Nom ou pseudonyme",
+    "Nome o pseudonimo",
+    "Nombre o alias"
+  ],
+  "message": [
+    "Treść",
+    "Message",
+    "Nachricht",
+    "Message",
+    "Messaggio",
+    "Mensaje"
+  ],
+  "file": [
+    "Zrzut ekranu (opcjonalnie)",
+    "Screenshot (optional)",
+    "Bildschirmfoto (optional)",
+    "Capture d’écran (facultative)",
+    "Schermata (facoltativa)",
+    "Captura de pantalla (opcional)"
+  ],
+  "fileHint": [
+    "PNG, JPG lub WebP do 1 MB.",
+    "PNG, JPG or WebP up to 1 MB.",
+    "PNG, JPG oder WebP bis 1 MB.",
+    "PNG, JPG ou WebP jusqu’à 1 Mo.",
+    "PNG, JPG o WebP fino a 1 MB.",
+    "PNG, JPG o WebP de hasta 1 MB."
+  ],
+  "send": [
+    "Wyślij wpis",
+    "Submit post",
+    "Beitrag senden",
+    "Envoyer le message",
+    "Invia il messaggio",
+    "Enviar mensaje"
+  ],
+  "rules": [
+    "Zasady forum",
+    "Forum rules",
+    "Forenregeln",
+    "Règles du forum",
+    "Regole del forum",
+    "Normas del foro"
+  ],
+  "rule1": [
+    "Pisz z szacunkiem. Wybierz odpowiedni dział i sprawdź, czy temat już istnieje.",
+    "Be respectful. Choose the right category and check for an existing topic first.",
+    "Bleib respektvoll. Wähle die passende Kategorie und prüfe, ob das Thema schon existiert.",
+    "Restez respectueux. Choisissez la bonne rubrique et vérifiez si le sujet existe déjà.",
+    "Mantieni un tono rispettoso. Scegli la categoria adatta e verifica se esiste già una discussione.",
+    "Mantén el respeto. Elige la categoría adecuada y comprueba si el tema ya existe."
+  ],
+  "rule2": [
+    "Opisuj własne doświadczenia. Pomijaj linki, reklamy i pliki instalacyjne. W zgłoszeniu usterki podaj model, wersję i kroki.",
+    "Describe your own experience. Leave out links, advertising and installers. For bugs, include the model, version and steps.",
+    "Beschreibe eigene Erfahrungen. Verzichte auf Links, Werbung und Installationsdateien. Nenne bei Fehlern Modell, Version und Schritte.",
+    "Décrivez votre expérience. Évitez les liens, la publicité et les fichiers d’installation. Pour un problème, indiquez le modèle, la version et les étapes.",
+    "Descrivi la tua esperienza. Evita link, pubblicità e file di installazione. Per i problemi indica modello, versione e passaggi.",
+    "Describe tu experiencia. Evita enlaces, publicidad y archivos de instalación. Si hay un problema, indica el modelo, la versión y los pasos."
+  ],
+  "rule3": [
+    "Przed wysłaniem usuń dane konta, adresy e-mail, numery seryjne, nazwy sieci i kody parowania. Nie publikuj instrukcji obchodzenia zabezpieczeń robota.",
+    "Remove account details, email addresses, serial numbers, network names and pairing codes before posting. Keep instructions for bypassing device protections off the forum.",
+    "Entferne Kontodaten, E-Mail-Adressen, Seriennummern, Netzwerknamen und Kopplungscodes. Anleitungen zum Umgehen von Schutzfunktionen gehören nicht ins Forum.",
+    "Retirez les données de compte, les adresses e-mail, les numéros de série, les noms de réseau et les codes d’association. Les consignes pour contourner les protections du robot sont exclues.",
+    "Rimuovi dati dell’account, indirizzi e-mail, numeri di serie, nomi di rete e codici di abbinamento. Evita istruzioni per aggirare le protezioni del robot.",
+    "Retira datos de cuenta, correos, números de serie, nombres de red y códigos de vinculación. Evita instrucciones para eludir las protecciones del robot."
+  ],
+  "approval": [
+    "Publikacja zależy od ustawień moderacji.",
+    "Publication depends on the moderation settings.",
+    "Die Veröffentlichung richtet sich nach der Moderationseinstellung.",
+    "La publication dépend des paramètres de modération.",
+    "La pubblicazione dipende dalle impostazioni di moderazione.",
+    "La publicación depende de los ajustes de moderación."
+  ],
+  "moderated": [
+    "Nowe tematy i odpowiedzi pojawiają się po zatwierdzeniu.",
+    "New topics and replies appear after approval.",
+    "Neue Themen und Antworten erscheinen nach Freigabe.",
+    "Les nouveaux sujets et réponses sont publiés après validation.",
+    "Le nuove discussioni e risposte appaiono dopo l’approvazione.",
+    "Los temas y respuestas nuevos aparecen tras su aprobación."
+  ],
+  "immediate": [
+    "Nowe tematy i odpowiedzi pojawiają się od razu.",
+    "New topics and replies appear immediately.",
+    "Neue Themen und Antworten erscheinen sofort.",
+    "Les nouveaux sujets et réponses sont publiés immédiatement.",
+    "Le nuove discussioni e risposte appaiono subito.",
+    "Los temas y respuestas nuevos aparecen de inmediato."
+  ],
+  "posting": [
+    "Wysyłam…",
+    "Sending…",
+    "Wird gesendet…",
+    "Envoi…",
+    "Invio…",
+    "Enviando…"
+  ],
+  "posted": [
+    "Wpis został opublikowany.",
+    "Your post was published.",
+    "Dein Beitrag wurde veröffentlicht.",
+    "Votre message a été publié.",
+    "Il messaggio è stato pubblicato.",
+    "Tu mensaje se ha publicado."
+  ],
+  "pending": [
+    "Wpis czeka na zatwierdzenie.",
+    "Your post is awaiting approval.",
+    "Dein Beitrag wartet auf Freigabe.",
+    "Votre message est en attente de validation.",
+    "Il messaggio è in attesa di approvazione.",
+    "Tu mensaje está pendiente de aprobación."
+  ],
+  "saved": [
+    "Zgłoszenie zostało zapisane.",
+    "Your request was saved.",
+    "Deine Anfrage wurde gespeichert.",
+    "Votre demande a été enregistrée.",
+    "La richiesta è stata salvata.",
+    "Tu solicitud se ha guardado."
+  ],
+  "sendError": [
+    "Nie udało się wysłać. Sprawdź dane i spróbuj ponownie.",
+    "Could not submit. Check your details and try again.",
+    "Senden fehlgeschlagen. Prüfe deine Angaben und versuche es erneut.",
+    "Envoi impossible. Vérifiez les champs et réessayez.",
+    "Invio non riuscito. Controlla i dati e riprova.",
+    "No se ha podido enviar. Revisa los datos e inténtalo de nuevo."
+  ],
+  "preview": [
+    "Podgląd lokalny. Tematy i odpowiedzi dodane tutaj zostają w tym podglądzie.",
+    "Local preview. Topics and replies added here stay in this preview.",
+    "Lokale Vorschau. Themen und Antworten bleiben in dieser Vorschau.",
+    "Aperçu local. Les sujets et réponses ajoutés ici restent dans cet aperçu.",
+    "Anteprima locale. Le discussioni e le risposte aggiunte qui restano in questa anteprima.",
+    "Vista previa local. Los temas y respuestas que añadas se quedan en esta vista previa."
+  ],
+  "private": [
+    "Kontakt prywatny",
+    "Private contact",
+    "Privater Kontakt",
+    "Contact privé",
+    "Contatto privato",
+    "Contacto privado"
+  ],
+  "contactIntro": [
+    "Zapisz się na informacje o aktualizacjach albo zgłoś robota do testów. Zgłoszenie trafia do autora projektu.",
+    "Sign up for update news or offer a robot for testing. Your request goes to the project owner.",
+    "Melde dich für Update-Infos an oder biete ein Gerät für Tests an. Die Anfrage geht an den Projektverantwortlichen.",
+    "Inscrivez-vous aux informations sur les mises à jour ou proposez un robot pour les essais. Votre demande est envoyée à l’auteur du projet.",
+    "Iscriviti alle notizie sugli aggiornamenti o proponi un robot per i test. La richiesta arriva al responsabile del progetto.",
+    "Inscríbete para recibir noticias o propón un robot para las pruebas. Tu solicitud se envía al responsable del proyecto."
+  ],
+  "waitlist": [
+    "Zapisy na aktualizacje",
+    "Update notifications",
+    "Update-Benachrichtigungen",
+    "Infos sur les mises à jour",
+    "Notifiche sugli aggiornamenti",
+    "Avisos de actualizaciones"
+  ],
+  "hardware": [
+    "Zgłoś robota do testów",
+    "Offer a robot for testing",
+    "Gerät für Tests anbieten",
+    "Proposer un robot pour les essais",
+    "Proponi un robot per i test",
+    "Propón un robot para las pruebas"
+  ],
+  "email": [
+    "E-mail do kontaktu",
+    "Contact email",
+    "Kontakt-E-Mail",
+    "E-mail de contact",
+    "E-mail di contatto",
+    "Correo de contacto"
+  ],
+  "model": [
+    "Model robota",
+    "Robot model",
+    "Gerätemodell",
+    "Modèle du robot",
+    "Modello del robot",
+    "Modelo del robot"
+  ],
+  "choose": [
+    "Wybierz model",
+    "Choose a model",
+    "Modell wählen",
+    "Choisir un modèle",
+    "Scegli un modello",
+    "Elige un modelo"
+  ],
+  "other": [
+    "Inny",
+    "Other",
+    "Anderes Modell",
+    "Autre",
+    "Altro",
+    "Otro"
+  ],
+  "postal": [
+    "Kod pocztowy",
+    "Postal code",
+    "Postleitzahl",
+    "Code postal",
+    "Codice postale",
+    "Código postal"
+  ],
+  "city": [
+    "Miasto",
+    "City",
+    "Ort",
+    "Ville",
+    "Città",
+    "Ciudad"
+  ],
+  "condition": [
+    "Stan urządzenia i propozycja",
+    "Device condition and proposal",
+    "Gerätezustand und Vorschlag",
+    "État du robot et proposition",
+    "Condizioni del robot e proposta",
+    "Estado del robot y propuesta"
+  ],
+  "comment": [
+    "Komentarz (opcjonalnie)",
+    "Comment (optional)",
+    "Kommentar (optional)",
+    "Commentaire (facultatif)",
+    "Commento (facoltativo)",
+    "Comentario (opcional)"
+  ],
+  "consent": [
+    "Zgadzam się na kontakt w sprawie zgłoszenia.",
+    "I agree to be contacted about this request.",
+    "Ich stimme der Kontaktaufnahme zu dieser Anfrage zu.",
+    "J’accepte d’être contacté au sujet de cette demande.",
+    "Acconsento a essere contattato per questa richiesta.",
+    "Acepto que se pongan en contacto conmigo sobre esta solicitud."
+  ],
+  "join": [
+    "Zapisz się",
+    "Sign up",
+    "Anmelden",
+    "S’inscrire",
+    "Iscriviti",
+    "Inscribirme"
+  ],
+  "offer": [
+    "Wyślij propozycję",
+    "Send proposal",
+    "Vorschlag senden",
+    "Envoyer la proposition",
+    "Invia la proposta",
+    "Enviar propuesta"
+  ],
+  "boardNames": [
+    [
+      "Usterki i błędy",
+      "Pomysły",
+      "Usprawnienia",
+      "Przepisy i źródła",
+      "Pytania i doświadczenia",
+      "Instalacja"
+    ],
+    [
+      "Bugs and issues",
+      "Ideas",
+      "Improvements",
+      "Recipes and sources",
+      "Questions and experiences",
+      "Installation"
+    ],
+    [
+      "Fehler und Probleme",
+      "Ideen",
+      "Verbesserungen",
+      "Rezepte und Quellen",
+      "Fragen und Erfahrungen",
+      "Installation"
+    ],
+    [
+      "Problèmes et bugs",
+      "Idées",
+      "Améliorations",
+      "Recettes et sources",
+      "Questions et expériences",
+      "Installation"
+    ],
+    [
+      "Problemi ed errori",
+      "Idee",
+      "Miglioramenti",
+      "Ricette e fonti",
+      "Domande ed esperienze",
+      "Installazione"
+    ],
+    [
+      "Problemas y errores",
+      "Ideas",
+      "Mejoras",
+      "Recetas y fuentes",
+      "Preguntas y experiencias",
+      "Instalación"
+    ]
+  ],
+  "boardDescriptions": [
+    [
+      "Opisz problem. Podaj model, wersję aplikacji i kroki, które go wywołują.",
+      "Zaproponuj nową funkcję i opisz, kiedy byłaby przydatna.",
+      "Podpowiedz, co można uprościć w dostępnych funkcjach.",
+      "Podziel się przepisem lub poleć źródło. Publiczny link dodaj w polu formularza.",
+      "Zapytaj o obsługę Connecta lub opisz, co udało Ci się sprawdzić.",
+      "Przygotuj robota i komputer, przejdź przez kolejne kroki i zapytaj, jeśli utkniesz."
+    ],
+    [
+      "Describe the issue and include the model, app version and steps to reproduce it.",
+      "Suggest a new feature and explain when it would help.",
+      "Tell us what could be simpler in an existing feature.",
+      "Share a recipe or recommend a source. Add the public link in the form’s source field.",
+      "Ask about using the Connect or share something you have tried.",
+      "Get your robot and computer ready, follow the guide and ask if you get stuck."
+    ],
+    [
+      "Beschreibe das Problem mit Modell, App-Version und Schritten zur Wiederholung.",
+      "Schlage eine neue Funktion vor und beschreibe ihren Nutzen.",
+      "Erkläre, was sich an vorhandenen Funktionen vereinfachen lässt.",
+      "Teile ein Rezept oder empfehle eine Quelle. Einen öffentlichen Link kannst du ins Quellenfeld eintragen.",
+      "Stelle eine Frage zum Connect oder teile deine Erfahrungen.",
+      "Bereite Gerät und Computer vor, folge der Anleitung und frag nach, wenn du nicht weiterkommst."
+    ],
+    [
+      "Décrivez le problème en indiquant le modèle, la version et les étapes pour le reproduire.",
+      "Proposez une fonction et expliquez quand elle serait utile.",
+      "Indiquez ce que l’on pourrait simplifier dans les fonctions existantes.",
+      "Partagez une recette ou recommandez une source. Ajoutez le lien public dans le champ prévu.",
+      "Posez une question sur le Connect ou partagez votre expérience.",
+      "Préparez le robot et l’ordinateur, suivez les étapes et posez vos questions si vous êtes bloqué."
+    ],
+    [
+      "Descrivi il problema con modello, versione e passaggi per riprodurlo.",
+      "Proponi una funzione e spiega quando sarebbe utile.",
+      "Indica cosa si può semplificare nelle funzioni esistenti.",
+      "Condividi una ricetta o consiglia una fonte. Inserisci il link pubblico nel campo della fonte.",
+      "Fai una domanda su Connect o racconta una tua esperienza.",
+      "Prepara il robot e il computer, segui i passaggi e chiedi aiuto se ti blocchi."
+    ],
+    [
+      "Describe el problema con el modelo, la versión y los pasos para reproducirlo.",
+      "Propón una función y explica cuándo sería útil.",
+      "Cuéntanos qué se podría simplificar en las funciones actuales.",
+      "Comparte una receta o recomienda una fuente. Añade el enlace público en el campo de la fuente.",
+      "Pregunta sobre Connect o comparte tu experiencia.",
+      "Prepara el robot y el ordenador, sigue los pasos y pregunta si te atascas."
+    ]
+  ],
+  "pinned": [
+    "Przypięte tematy",
+    "Pinned topics",
+    "Angeheftete Themen",
+    "Sujets épinglés",
+    "Discussioni in evidenza",
+    "Temas fijados"
+  ],
+  "community": [
+    "Tematy społeczności",
+    "Community topics",
+    "Themen der Community",
+    "Sujets de la communauté",
+    "Discussioni della community",
+    "Temas de la comunidad"
+  ],
+  "allLanguages": [
+    "Pokaż wszystkie języki",
+    "Show all languages",
+    "Alle Sprachen anzeigen",
+    "Afficher toutes les langues",
+    "Mostra tutte le lingue",
+    "Mostrar todos los idiomas"
+  ],
+  "recipeSource": [
+    "Publiczny link do przepisu (opcjonalnie)",
+    "Public recipe link (optional)",
+    "Öffentlicher Rezeptlink (optional)",
+    "Lien public de la recette (facultatif)",
+    "Link pubblico alla ricetta (facoltativo)",
+    "Enlace público de la receta (opcional)"
+  ],
+  "openRecipeSource": [
+    "Otwórz źródło przepisu",
+    "Open the recipe source",
+    "Rezeptquelle öffnen",
+    "Ouvrir la source de la recette",
+    "Apri la fonte della ricetta",
+    "Abrir la fuente de la receta"
+  ],
+  "installationGuide": [
+    "Otwórz przewodnik instalacji",
+    "Open the installation guide",
+    "Installationsanleitung öffnen",
+    "Ouvrir le guide d’installation",
+    "Apri la guida di installazione",
+    "Abrir la guía de instalación"
+  ],
+  "recipeRule": [
+    "W dziale przepisów publiczny link dodaj w osobnym polu źródła.",
+    "In the recipe category, put a public recipe link in the separate source field.",
+    "Trage öffentliche Rezeptlinks im Rezeptbereich ins separate Quellenfeld ein.",
+    "Dans la rubrique Recettes, ajoutez le lien public dans le champ de la source.",
+    "Nella categoria delle ricette, inserisci il link pubblico nel campo della fonte.",
+    "En la categoría de recetas, añade el enlace público en el campo de la fuente."
+  ],
+  "previewSaved": [
+    "Zapisano w lokalnym podglądzie.",
+    "Saved in the local preview.",
+    "In der lokalen Vorschau gespeichert.",
+    "Enregistré dans l’aperçu local.",
+    "Salvato nell’anteprima locale.",
+    "Guardado en la vista previa local."
+  ],
+  "previewPrivate": [
+    "Formularz prywatny można wysłać z opublikowanej strony.",
+    "Private forms can be submitted from the published site.",
+    "Private Formulare können auf der veröffentlichten Website gesendet werden.",
+    "Les formulaires privés peuvent être envoyés depuis le site publié.",
+    "I moduli privati si possono inviare dal sito pubblicato.",
+    "Los formularios privados se pueden enviar desde el sitio publicado."
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "pl": {
+    "origin": "Od tego zaczął się projekt",
+    "assistant": "Lidlomix w ChatGPT",
+    "intro": "To asystent, który pomaga przerabiać przepisy na Monsieur Cuisine. Z niego wyrósł pomysł, żeby gotowy przepis można było otworzyć na ekranie robota.",
+    "capabilities": "Co potrafi asystent?",
+    "skills": [
+      "Dopasowuje domowe przepisy, zdjęcia przepisów i receptury z internetu do Monsieur Cuisine.",
+      "Przelicza składniki na gramy, proponuje ilości przypraw i porządkuje kroki, żeby ograniczyć mycie misy.",
+      "Dobiera czas, temperaturę, prędkość, kierunek obrotów i akcesoria. Pomaga też zrozumieć obsługę programów.",
+      "Pracuje w wybranym języku. Gotowy przepis można zapisać do Worda lub jako plik do importu w Lidlomix Pro."
+    ],
+    "stats": ["Średnia ocena", "4,4 / 5", "Oceny", "20+", "Rozmowy", "10 tys.+"],
+    "stats_date": "Dane z karty GPT z 13 listopada 2026.",
+    "available": "Z asystenta możesz już korzystać w wersji GPT. Przepis zapisany jako JSON można przesłać do Lidlomix Pro.",
+    "gpt_link": "Zobacz wersję GPT",
+    "plugin": "Wtyczka",
+    "plugin_status": "Wtyczka będzie dostępna od {date}.",
+    "plugin_date": "11 grudnia 2026",
+    "caption": "Zrzut karty asystenta w ChatGPT."
+  },
+  "en": {
+    "origin": "Where the project began",
+    "assistant": "Lidlomix in ChatGPT",
+    "intro": "The assistant adapts recipes for Monsieur Cuisine. Lidlomix Pro grew out of the idea of opening those recipes directly on the robot’s screen.",
+    "capabilities": "What can the assistant do?",
+    "skills": [
+      "Adapt family recipes, recipe photos and recipes from the web for Monsieur Cuisine.",
+      "Convert measurements to grams, suggest seasoning amounts and order the steps to reduce bowl washing.",
+      "Suggest times, temperatures, speeds, blade directions and accessories, and explain the programmes.",
+      "Work in your chosen language. Save the recipe as a Word document or as a file to import into Lidlomix Pro."
+    ],
+    "stats": ["Average rating", "4.4 / 5", "Ratings", "20+", "Conversations", "10,000+"],
+    "stats_date": "Figures from the GPT profile on 13 November 2026.",
+    "available": "You can use the GPT version now. Save a recipe as JSON to send it to Lidlomix Pro.",
+    "gpt_link": "See the GPT version",
+    "plugin": "Plugin",
+    "plugin_status": "The plugin will be available from {date}.",
+    "plugin_date": "11 December 2026",
+    "caption": "Screenshot of the original Polish profile in ChatGPT.",
+    "brand_alt": "Lidlomix Pro written in flour",
+    "history": "Project history",
+    "history_intro": "How a handwritten recipe led to an assistant in ChatGPT and an app that guides cooking on the Connect.",
+    "stories": [
+      ["Recipes from a family notebook", "The project started with a stained notebook full of handwritten family recipes. The first assistant read a photo of the page and let you correct any unclear text. It then converted measures such as a handful of nuts to quantities you could weigh, organised the instructions and chose the right programmes for Monsieur Cuisine."],
+      ["Two apps on one Connect", "The next goal was to open the adapted recipe on the robot. After the first attempts and interrupted connections, the Connect could start with a choice between its factory application and Lidlomix Pro."],
+      ["From a file to cooking", "A recipe prepared in ChatGPT could be saved as JSON, sent from a phone over Wi-Fi and reviewed on the Connect. The robot then displayed what to add and when to weigh it, along with the settings for supported cooking steps."],
+      ["Settings and shortcuts in 0.16.4", "The temperature and speed controls moved to a horizontal layout. Minutes and seconds gained separate columns. Quick tools could be opened during a recipe and return you to the step you were on."],
+      ["Programmes, screen and sound in 0.17.8", "The Start button stayed visible while you edited settings. Pause and resume were improved, Turbo and deep cleaning were redesigned, and the sound controls gained a preview."],
+      ["From 0.17.8 to 0.19.1", "WunderPeeler gained a dedicated programme with weighing and illustrated fitting instructions. The recipe catalogues were separated, and the Connect gained online updates with a download progress indicator."]
+    ]
+  },
+  "de": {
+    "origin": "So begann das Projekt",
+    "assistant": "Lidlomix in ChatGPT",
+    "intro": "Der Assistent passt Rezepte an den Monsieur Cuisine an. Daraus entstand die Idee für Lidlomix Pro, mit dem du das fertige Rezept direkt am Gerät öffnen kannst.",
+    "capabilities": "Was kann der Assistent?",
+    "skills": [
+      "Familienrezepte, Rezeptfotos und Rezepte aus dem Internet für den Monsieur Cuisine anpassen.",
+      "Maße in Gramm umrechnen, Gewürzmengen vorschlagen und Schritte sinnvoll anordnen, damit der Mixbehälter seltener gespült werden muss.",
+      "Zeit, Temperatur, Drehzahl, Drehrichtung und Zubehör vorschlagen und Programme erklären.",
+      "In der gewünschten Sprache arbeiten. Das fertige Rezept lässt sich als Word-Dokument oder als Importdatei für Lidlomix Pro speichern."
+    ],
+    "stats": ["Durchschnittsbewertung", "4,4 / 5", "Bewertungen", "20+", "Unterhaltungen", "10.000+"],
+    "stats_date": "Angaben aus dem GPT-Profil vom 13. November 2026.",
+    "available": "Die GPT-Version ist bereits nutzbar. Speichere ein Rezept als JSON, um es an Lidlomix Pro zu senden.",
+    "gpt_link": "GPT-Version ansehen",
+    "plugin": "Plugin",
+    "plugin_status": "Das Plugin ist ab dem {date} verfügbar.",
+    "plugin_date": "11. Dezember 2026",
+    "caption": "Bildschirmfoto des polnischen Originalprofils in ChatGPT.",
+    "brand_alt": "Lidlomix Pro in Mehl geschrieben",
+    "history": "Projektgeschichte",
+    "history_intro": "Wie aus einem handschriftlichen Rezept ein Assistent in ChatGPT und eine Kochanleitung auf dem Connect wurden.",
+    "stories": [
+      ["Rezepte aus einem Familienheft", "Am Anfang stand ein fleckiges Heft mit handgeschriebenen Familienrezepten. Der Assistent las ein Foto der Seite und zeigte unklare Stellen zur Korrektur an. Danach wandelte er Angaben wie eine Handvoll Nüsse in abwiegbare Mengen um und bereitete die Schritte und Programme für den Monsieur Cuisine vor."],
+      ["Zwei Apps auf einem Connect", "Als Nächstes sollte das angepasste Rezept direkt aufs Gerät. Nach ersten Versuchen und unterbrochenen Verbindungen konnte man beim Einschalten zwischen der Werks-App und Lidlomix Pro wählen."],
+      ["Von der Datei zum Kochen", "Das in ChatGPT vorbereitete Rezept ließ sich als JSON speichern, per WLAN vom Smartphone senden und auf dem Connect prüfen. Das Gerät zeigte dann die Zutaten, die Wiegeschritte und die Einstellungen der unterstützten Kochschritte an."],
+      ["Einstellungen und Schnellzugriffe in 0.16.4", "Temperatur und Drehzahl bekamen horizontale Regler. Minuten und Sekunden erhielten separate Spalten. Schnellwerkzeuge ließen sich während des Kochens öffnen, mit Rückkehr zum aktuellen Schritt."],
+      ["Programme, Anzeige und Ton in 0.17.8", "Die Starttaste blieb beim Ändern von Einstellungen sichtbar. Pause und Fortsetzen wurden verbessert, Turbo und gründliche Reinigung überarbeitet und die Toneinstellungen bekamen eine Hörprobe."],
+      ["Von 0.17.8 bis 0.19.1", "Für den WunderPeeler kam ein eigenes Programm mit Waage und bebilderter Montageanleitung. Die Rezeptkataloge wurden getrennt und der Connect erhielt Online-Updates mit Fortschrittsanzeige."]
+    ]
+  },
+  "fr": {
+    "origin": "À l’origine du projet",
+    "assistant": "Lidlomix dans ChatGPT",
+    "intro": "Cet assistant adapte les recettes pour Monsieur Cuisine. Il est à l’origine de Lidlomix Pro, dont l’idée est d’ouvrir la recette adaptée directement sur l’écran du robot.",
+    "capabilities": "Que peut faire l’assistant ?",
+    "skills": [
+      "Adapter les recettes de famille, les photos de recettes et les recettes trouvées en ligne pour Monsieur Cuisine.",
+      "Convertir les mesures en grammes, suggérer les quantités d’épices et organiser les étapes pour laver le bol moins souvent.",
+      "Proposer la durée, la température, la vitesse, le sens de rotation et les accessoires, et expliquer les programmes.",
+      "Travailler dans la langue choisie. La recette peut être enregistrée dans Word ou dans un fichier à importer dans Lidlomix Pro."
+    ],
+    "stats": ["Note moyenne", "4,4 / 5", "Avis", "20+", "Conversations", "10 000+"],
+    "stats_date": "Chiffres relevés sur la fiche du GPT le 13 novembre 2026.",
+    "available": "Vous pouvez déjà utiliser la version GPT. Enregistrez une recette en JSON pour l’envoyer à Lidlomix Pro.",
+    "gpt_link": "Voir la version GPT",
+    "plugin": "Extension",
+    "plugin_status": "L’extension sera disponible à partir du {date}.",
+    "plugin_date": "11 décembre 2026",
+    "caption": "Capture de la fiche originale en polonais dans ChatGPT.",
+    "brand_alt": "Lidlomix Pro écrit dans la farine",
+    "history": "Histoire du projet",
+    "history_intro": "Comment une recette manuscrite a donné naissance à un assistant dans ChatGPT, puis à une application qui guide la cuisson sur le Connect.",
+    "stories": [
+      ["Les recettes du carnet de famille", "Tout a commencé avec un carnet taché rempli de recettes manuscrites. L’assistant lisait la photo d’une page et laissait corriger les passages ambigus. Il transformait ensuite les mesures comme une poignée de noix en quantités à peser et préparait les étapes et les programmes pour Monsieur Cuisine."],
+      ["Deux applications sur le même Connect", "L’étape suivante consistait à ouvrir la recette adaptée sur le robot. Après les premiers essais et quelques connexions interrompues, le Connect proposait au démarrage le choix entre l’application d’origine et Lidlomix Pro."],
+      ["Du fichier à la cuisson", "Une recette préparée dans ChatGPT pouvait être enregistrée au format JSON, envoyée depuis le téléphone en Wi-Fi et vérifiée sur le Connect. Le robot affichait ensuite les ingrédients à ajouter, les pesées et les réglages des étapes compatibles."],
+      ["Réglages et raccourcis dans la version 0.16.4", "La température et la vitesse ont adopté des commandes horizontales. Les minutes et les secondes ont été séparées. Les outils rapides pouvaient s’ouvrir pendant une recette, avec retour à l’étape en cours."],
+      ["Programmes, écran et son dans la version 0.17.8", "Le bouton Démarrer est resté visible pendant les réglages. La pause et la reprise ont été améliorées, le mode Turbo et le nettoyage approfondi ont été revus et un aperçu des sons a été ajouté."],
+      ["De la version 0.17.8 à la version 0.19.1", "Le WunderPeeler a reçu un programme dédié avec pesée et instructions de montage illustrées. Les catalogues ont été séparés et le Connect a reçu des mises à jour en ligne avec un indicateur de téléchargement."]
+    ]
+  },
+  "it": {
+    "origin": "Come è nato il progetto",
+    "assistant": "Lidlomix in ChatGPT",
+    "intro": "L’assistente adatta le ricette per Monsieur Cuisine. Da qui è nata l’idea di Lidlomix Pro, l’app che apre le ricette adattate direttamente sullo schermo del robot.",
+    "capabilities": "Cosa può fare l’assistente?",
+    "skills": [
+      "Adattare ricette di famiglia, foto di ricette e ricette online per Monsieur Cuisine.",
+      "Convertire le misure in grammi, suggerire le quantità di spezie e ordinare i passaggi per lavare il recipiente meno spesso.",
+      "Suggerire tempi, temperature, velocità, senso di rotazione e accessori e spiegare i programmi.",
+      "Lavorare nella lingua scelta. La ricetta si può salvare come documento Word o come file da importare in Lidlomix Pro."
+    ],
+    "stats": ["Valutazione media", "4,4 / 5", "Valutazioni", "20+", "Conversazioni", "10.000+"],
+    "stats_date": "Dati della scheda del GPT del 13 novembre 2026.",
+    "available": "Puoi già usare la versione GPT. Salva la ricetta in JSON per inviarla a Lidlomix Pro.",
+    "gpt_link": "Vedi la versione GPT",
+    "plugin": "Plugin",
+    "plugin_status": "Il plugin sarà disponibile dall’{date}.",
+    "plugin_date": "11 dicembre 2026",
+    "caption": "Schermata della scheda originale in polacco in ChatGPT.",
+    "brand_alt": "Lidlomix Pro scritto nella farina",
+    "history": "Storia del progetto",
+    "history_intro": "Come una ricetta scritta a mano ha fatto nascere un assistente in ChatGPT e un’app che guida la cottura su Connect.",
+    "stories": [
+      ["Ricette dal quaderno di famiglia", "Tutto è iniziato con un quaderno macchiato, pieno di ricette scritte a mano. L’assistente leggeva la fotografia di una pagina e permetteva di correggere i passaggi poco chiari. Poi convertiva misure come una manciata di noci in quantità da pesare e preparava istruzioni e programmi per Monsieur Cuisine."],
+      ["Due app sullo stesso Connect", "L’obiettivo successivo era aprire la ricetta adattata sul robot. Dopo i primi tentativi e alcune connessioni interrotte, all’avvio si poteva scegliere tra l’app di fabbrica e Lidlomix Pro."],
+      ["Dal file alla cottura", "La ricetta preparata in ChatGPT si poteva salvare in JSON, inviare dal telefono via Wi-Fi e controllare sul Connect. Il robot indicava gli ingredienti da aggiungere, le pesature e le impostazioni dei passaggi supportati."],
+      ["Impostazioni e scorciatoie nella 0.16.4", "Temperatura e velocità hanno adottato comandi orizzontali, con colonne separate per minuti e secondi. Gli strumenti rapidi si potevano aprire durante una ricetta e permettevano di tornare al passaggio in corso."],
+      ["Programmi, schermo e suoni nella 0.17.8", "Il pulsante Avvia è rimasto visibile durante le regolazioni. Pausa e ripresa sono state migliorate, Turbo e pulizia intensiva sono stati rivisti ed è arrivata l’anteprima dei suoni."],
+      ["Dalla 0.17.8 alla 0.19.1", "Il WunderPeeler ha ricevuto un programma dedicato con pesatura e istruzioni illustrate di montaggio. I cataloghi sono stati separati e Connect ha ricevuto gli aggiornamenti online con un indicatore di scaricamento."]
+    ]
+  },
+  "es": {
+    "origin": "Así empezó el proyecto",
+    "assistant": "Lidlomix en ChatGPT",
+    "intro": "El asistente adapta recetas para Monsieur Cuisine. Lidlomix Pro nació de la idea de abrir esas recetas directamente en la pantalla del robot.",
+    "capabilities": "¿Qué puede hacer el asistente?",
+    "skills": [
+      "Adaptar recetas familiares, fotos de recetas y recetas de internet para Monsieur Cuisine.",
+      "Convertir las medidas a gramos, sugerir cantidades de especias y ordenar los pasos para lavar menos veces el vaso.",
+      "Sugerir tiempos, temperaturas, velocidad, sentido de giro y accesorios, y explicar los programas.",
+      "Trabajar en el idioma elegido. La receta se puede guardar en Word o como archivo para importarla en Lidlomix Pro."
+    ],
+    "stats": ["Valoración media", "4,4 / 5", "Valoraciones", "20+", "Conversaciones", "10.000+"],
+    "stats_date": "Datos de la ficha del GPT del 13 de noviembre de 2026.",
+    "available": "Ya puedes utilizar la versión GPT. Guarda la receta en JSON para enviarla a Lidlomix Pro.",
+    "gpt_link": "Ver la versión GPT",
+    "plugin": "Complemento",
+    "plugin_status": "El complemento estará disponible a partir del {date}.",
+    "plugin_date": "11 de diciembre de 2026",
+    "caption": "Captura de la ficha original en polaco en ChatGPT.",
+    "brand_alt": "Lidlomix Pro escrito en harina",
+    "history": "Historia del proyecto",
+    "history_intro": "Cómo una receta escrita a mano dio lugar a un asistente en ChatGPT y a una aplicación que guía la preparación en el Connect.",
+    "stories": [
+      ["Recetas del cuaderno familiar", "Todo empezó con un cuaderno manchado lleno de recetas escritas a mano. El asistente leía la foto de una página y dejaba corregir los pasajes dudosos. Después convertía medidas como un puñado de nueces en cantidades que se podían pesar y preparaba los pasos y programas de Monsieur Cuisine."],
+      ["Dos aplicaciones en el mismo Connect", "El siguiente paso era abrir la receta adaptada en el robot. Tras los primeros intentos y algunas conexiones interrumpidas, al encender el Connect se podía elegir entre la aplicación de fábrica y Lidlomix Pro."],
+      ["Del archivo a la cocina", "La receta preparada en ChatGPT se podía guardar en JSON, enviar desde el teléfono por Wi-Fi y revisar en el Connect. El robot indicaba qué añadir y cuándo pesar, junto con los ajustes de los pasos compatibles."],
+      ["Ajustes y accesos directos en la 0.16.4", "La temperatura y la velocidad pasaron a controles horizontales. Los minutos y segundos se separaron. Las herramientas rápidas se podían abrir durante la receta y permitían volver al paso en curso."],
+      ["Programas, pantalla y sonido en la 0.17.8", "El botón Iniciar seguía visible durante los ajustes. Se mejoró la pausa y la reanudación, se revisaron Turbo y la limpieza a fondo y se añadió una vista previa del sonido."],
+      ["De la 0.17.8 a la 0.19.1", "El WunderPeeler recibió un programa con pesaje e instrucciones de montaje ilustradas. Se separaron los catálogos y el Connect incorporó actualizaciones por internet con un indicador de descarga."]
+    ]
+  }
+}

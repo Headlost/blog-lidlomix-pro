@@ -7,10 +7,17 @@ const passwordField = login.elements.password;
 const releaseForm = dialog.querySelector('#panel-release');
 const more = dialog.querySelector('#panel-more');
 const roleField = login.elements.role;
-const approval = document.createElement('button');
-approval.type = 'button';
-approval.hidden = true;
-area.prepend(approval);
+const filters = dialog.querySelector('#panel-filters');
+const localeFilter = filters.querySelector('[name=locale]');
+const boardFilter = filters.querySelector('[name=board]');
+const views = [...area.querySelectorAll('[data-panel-kind]')];
+const languages = new Map([...document.querySelectorAll('.site-languages a')].map(link => [link.lang, link.textContent]));
+const boardNames = new Map([...boardFilter.options].map(option => [option.value, option.textContent]));
+for (const [code, name] of languages) localeFilter.add(new Option(name, code));
+const localPanel = ['127.0.0.1', 'localhost', '[::1]'].includes(location.hostname);
+login.querySelector('#panel-preview-note').hidden = !localPanel;
+const approval = dialog.querySelector('#panel-approval');
+const logout = dialog.querySelector('#panel-logout');
 let credentials;
 let activeKind = 'pending';
 let requestId = 0;
@@ -18,7 +25,7 @@ let approvalRequired;
 
 function showApproval(required) {
   approvalRequired = required;
-  approval.hidden = typeof required !== 'boolean';
+  approval.hidden = filters.hidden || typeof required !== 'boolean';
   approval.textContent = required ? 'Wyłącz zatwierdzanie nowych wpisów' : 'Włącz zatwierdzanie nowych wpisów';
 }
 
@@ -43,17 +50,23 @@ function lockPanel() {
   requestId++;
   login.reset();
   dialog.querySelector('#panel-roles').reset();
+  dialog.querySelector('#panel-moderator').open = false;
   releaseForm.reset();
   releaseForm.hidden = true;
   more.hidden = true;
+  filters.hidden = true;
+  localeFilter.value = '';
+  boardFilter.value = '';
   login.hidden = false;
+  logout.hidden = true;
   area.hidden = true;
   output.replaceChildren();
   status.textContent = '';
 }
 
 async function callPanel(action, fields = {}, auth = credentials) {
-  const response = await fetch('https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site/panel', {
+  const endpoint = localPanel ? '/__forum/panel' : 'https://lidlomix-pro-spolecznosc.heroicsquirrel3.chatgpt.site/panel';
+  const response = await fetch(endpoint, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ ...auth, ...fields, action })
@@ -65,22 +78,52 @@ async function callPanel(action, fields = {}, auth = credentials) {
 }
 
 async function loadEntries(kind, cursor = '') {
+  activeKind = kind;
   releaseForm.hidden = true;
+  const forumView = kind === 'pending' || kind === 'published';
+  filters.hidden = !forumView;
+  approval.hidden = !forumView || typeof approvalRequired !== 'boolean';
+  for (const tab of views) tab.setAttribute('aria-pressed', String(tab.dataset.panelKind === kind));
   const currentRequest = ++requestId;
-  const result = await callPanel('list', { kind, cursor });
+  const selected = forumView ? { locale: localeFilter.value, board: boardFilter.value } : {};
+  more.hidden = true;
+  if (!cursor) output.textContent = 'Wczytywanie…';
+  let result;
+  try {
+    result = await callPanel('list', { kind, cursor, ...selected });
+  } catch (error) {
+    if (requestId !== currentRequest) return;
+    output.replaceChildren();
+    throw error;
+  }
   if (currentRequest !== requestId) return;
   const { entries, next } = result;
   if (!approval.disabled) showApproval(result.approvalRequired);
-  activeKind = kind;
   output.replaceChildren();
-  if (!entries.length) output.textContent = 'Brak wpisów.';
+  if (!entries.length) output.textContent = next ? 'Na tej stronie nie ma pasujących wpisów.' : 'Brak pasujących wpisów.';
   for (const { id, record } of entries) {
     const card = document.createElement('article');
     const label = document.createElement('strong');
     const body = document.createElement('p');
-    label.textContent = [record.title, record.name, record.post, record.model, [record.postalCode, record.city].filter(Boolean).join(" "), record.email].filter(Boolean).join(' · ');
-    body.textContent = [record.body, record.description, record.date].filter(Boolean).join('\n');
-    card.append(label, body);
+    label.textContent = [record.title, record.name, record.model, [record.postalCode, record.city].filter(Boolean).join(' '), record.email].filter(Boolean).join(' · ');
+    card.append(label);
+    if (forumView) {
+      const lang = languages.has(record.locale) ? record.locale : 'pl';
+      const meta = document.createElement('p');
+      meta.className = 'panel-entry-meta';
+      meta.textContent = [boardNames.get(record.post), languages.get(lang), record.replyTo && 'Odpowiedź'].filter(Boolean).join(' · ');
+      card.append(meta);
+      if (kind === 'published') {
+        const link = document.createElement('a');
+        link.href = (lang === 'pl' ? '' : lang + '/') + 'spolecznosc.html#' + record.post + '/wpis-' + (record.replyTo || id);
+        link.textContent = 'Otwórz na forum';
+        card.append(link);
+      }
+    }
+    const date = new Date(record.date);
+    const dateLabel = Number.isFinite(date.valueOf()) ? new Intl.DateTimeFormat('pl', { dateStyle: 'medium', timeStyle: 'short' }).format(date) : '';
+    body.textContent = [record.body, record.description, record.recipeUrl, dateLabel].filter(Boolean).join('\n');
+    card.append(body);
     if (kind === 'pending') {
       const actions = document.createElement('div');
       actions.className = 'panel-actions';
@@ -130,6 +173,7 @@ login.addEventListener('submit', async event => {
     await loadEntries('pending');
     if (!dialog.open || credentials !== session) return;
     login.hidden = true;
+    logout.hidden = false;
     passwordField.value = '';
     area.hidden = false;
     for (const node of area.querySelectorAll('[data-admin-only]')) node.hidden = credentials.role !== 'admin';
@@ -139,13 +183,21 @@ login.addEventListener('submit', async event => {
     status.textContent = error.message;
   } finally { button.disabled = false; }
 });
-for (const button of area.querySelectorAll('[data-panel-kind]')) {
-  button.addEventListener('click', () => loadEntries(button.dataset.panelKind).catch(error => { status.textContent = error.message; }));
+function viewEntries(kind) {
+  status.textContent = '';
+  loadEntries(kind).catch(error => { status.textContent = error.message; });
 }
+for (const button of views) {
+  button.addEventListener('click', () => viewEntries(button.dataset.panelKind));
+}
+filters.addEventListener('change', () => viewEntries(activeKind));
 dialog.querySelector('#panel-releases-toggle').addEventListener('click', () => {
   requestId++;
   output.replaceChildren();
   more.hidden = true;
+  filters.hidden = true;
+  approval.hidden = true;
+  for (const tab of views) tab.setAttribute('aria-pressed', 'false');
   status.textContent = '';
   releaseForm.hidden = false;
   releaseForm.elements.version.focus();
@@ -178,7 +230,7 @@ dialog.querySelector('#panel-roles').addEventListener('submit', async event => {
   } catch (error) { status.textContent = error.message; }
 });
 dialog.querySelector('#panel-close').addEventListener('click', () => dialog.close());
-dialog.querySelector('#panel-logout').addEventListener('click', lockPanel);
+logout.addEventListener('click', lockPanel);
 dialog.addEventListener('close', lockPanel);
 document.addEventListener('keydown', event => {
   if (event.ctrlKey && event.shiftKey && !event.altKey && event.code === 'KeyA') {

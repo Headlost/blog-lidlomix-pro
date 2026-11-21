@@ -18,9 +18,15 @@
     @media (max-width: 620px) { .release-story .shot-pair { grid-template-columns: 1fr; } }
   </style>
   <script src="blog.js?v=aktualizacje-2" defer></script>
+<!-- generated:languages-head -->
+<link rel="stylesheet" href="languages.css">
+<!-- /generated:languages-head -->
 </head>
 <body>
-<header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="technika.html">Technika</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div></header>
+<header><div class="wrap"><a class="brand" href="./">Lidlomix <b>Pro</b></a><nav aria-label="Menu"><a href="./#wpisy">Historia projektu</a><a href="technika.html">Technika</a><a href="aktualizacje.html">Aktualizacje</a><a href="spolecznosc.html">Forum</a><a href="./#wsparcie">Wsparcie</a></nav></div><!-- generated:languages-nav -->
+<nav class="site-languages" aria-label="Język strony"><a lang="pl" hreflang="pl" href="lidlomix-pro-0-19-1.html" aria-current="true">Polski</a><a lang="en" hreflang="en" href="en/lidlomix-pro-0-19-1.html">English</a><a lang="de" hreflang="de" href="de/lidlomix-pro-0-19-1.html">Deutsch</a><a lang="fr" hreflang="fr" href="fr/lidlomix-pro-0-19-1.html">Français</a><a lang="it" hreflang="it" href="it/lidlomix-pro-0-19-1.html">Italiano</a><a lang="es" hreflang="es" href="es/lidlomix-pro-0-19-1.html">Español</a></nav>
+<!-- /generated:languages-nav -->
+</header>
 <main class="wrap">
 <article class="article release-story">
   <p class="eyebrow">Monsieur Cuisine Connect · <time datetime="2026-11-19">19 listopada 2026</time></p>
@@ -91,8 +97,15 @@
 </main>
 <footer><div class="wrap site-footer"><div><p>Lidlomix Pro to autorski, niezależny projekt Beniamina Żaka. Powstaje bez oficjalnej współpracy z Lidlem i Monsieur Cuisine. Nazwy Lidl, Monsieur Cuisine i SilverCrest należą do ich właścicieli.</p><a href="https://github.com/Headlost/blog-lidlomix-pro">GitHub</a> · <button type="button" class="panel-opener" data-open-owner-panel>Panel projektu</button></div><a class="footer-privacy" href="prywatnosc.html">Polityka prywatności</a></div></footer>
 <dialog id="owner-panel" class="owner-panel" aria-labelledby="panel-title">
-  <div class="panel-header"><h2 id="panel-title">Panel projektu</h2><button type="button" id="panel-close">Zamknij</button></div>
+  <div class="panel-header">
+    <h2 id="panel-title">Panel projektu</h2>
+    <div class="panel-actions">
+      <button type="button" id="panel-logout" class="panel-secondary" hidden>Wyloguj</button>
+      <button type="button" id="panel-close">Zamknij</button>
+    </div>
+  </div>
   <form id="panel-login" class="blog-form" method="post">
+    <p id="panel-preview-note" class="form-hint" hidden>Podgląd lokalny. Użyj hasła <strong>podglad</strong>, aby przetestować panel na lokalnych wpisach.</p>
     <label>Rola <select name="role"><option value="admin">Administrator</option><option value="moderator">Moderator</option></select></label>
     <input class="visually-hidden" name="username" value="Lidlomix Pro" autocomplete="username" tabindex="-1" aria-hidden="true" readonly>
     <label>Hasło <input type="password" name="password" autocomplete="current-password" maxlength="128" required></label>
@@ -101,13 +114,23 @@
   <p id="panel-status" role="status"></p>
   <div id="panel-area" hidden>
     <div class="panel-actions">
-      <button type="button" data-panel-kind="pending">Moderacja</button>
-      <button type="button" data-panel-kind="waitlist" data-admin-only>Zapisy</button>
-      <button type="button" data-panel-kind="hardware" data-admin-only>Sprzęt</button>
-      <button type="button" id="panel-releases-toggle" data-admin-only>Aktualizacje</button>
-      <button type="button" id="panel-logout">Wyloguj</button>
+      <button type="button" data-panel-kind="pending">Do moderacji</button>
+      <button type="button" data-panel-kind="published">Opublikowane</button>
+      <button type="button" data-panel-kind="waitlist" class="panel-secondary" data-admin-only>Zapisy</button>
+      <button type="button" data-panel-kind="hardware" class="panel-secondary" data-admin-only>Sprzęt</button>
+      <button type="button" id="panel-releases-toggle" class="panel-secondary" data-admin-only>Aktualizacje</button>
     </div>
-    <div id="panel-entries"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <div id="panel-filters" class="panel-filters" hidden>
+      <label>Język wpisu <select name="locale"><option value="">Wszystkie języki</option></select></label>
+      <label>Dział forum <select name="board"><option value="">Wszystkie działy</option><option value="zgloszenia">Usterki i błędy</option>
+<option value="pomysly">Pomysły</option>
+<option value="usprawnienia">Usprawnienia</option>
+<option value="rozmowy-ai">Przepisy i źródła</option>
+<option value="pomoc">Pytania i doświadczenia</option>
+<option value="instalacja">Instalacja</option></select></label>
+    </div>
+    <div id="panel-entries" aria-live="polite"></div><button type="button" id="panel-more" hidden>Kolejna strona</button>
+    <button type="button" id="panel-approval" class="panel-secondary" hidden></button>
     <form class="blog-form" id="panel-release" method="post" hidden>
       <h3>Opublikuj aktualizację</h3>
       <label>Wersja <input name="version" placeholder="0.15.1" inputmode="decimal" maxlength="14" pattern="[0-9]+\.[0-9]+\.[0-9]+" required></label>
@@ -116,12 +139,15 @@
       <p class="form-hint">Ponowna publikacja tej samej wersji zastępuje jej tytuł i opis.</p>
       <button type="submit">Opublikuj aktualizację</button>
     </form>
-    <form class="blog-form" id="panel-roles" method="post" data-admin-only>
-      <label>Ustaw lub zmień hasło moderatora <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
-      <button type="submit">Zapisz hasło moderatora</button>
-    </form>
+    <details id="panel-moderator" data-admin-only>
+      <summary>Hasło moderatora</summary>
+      <form class="blog-form" id="panel-roles" method="post">
+        <label>Nowe hasło <input name="newPassword" type="password" autocomplete="new-password" minlength="12" maxlength="128" required></label>
+        <button type="submit">Zapisz hasło moderatora</button>
+      </form>
+    </details>
   </div>
 </dialog>
-<script src="panel.js?v=forum-approval-1" defer></script>
+<script src="panel.js?v=forum-boards-1" defer></script>
 </body>
 </html>
