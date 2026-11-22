@@ -8,7 +8,7 @@ Przewodnik instalacji USB i link do dyskusji w danym języku generowane są z `i
 
 Treść sekcji Lidlomix w ChatGPT i skróty historii projektu znajdują się w `project.json`.
 
-Pełne teksty artykułów w pięciu dodatkowych językach znajdują się w `history/<kod>/`. Wspólne elementy nawigacji są w `history.json`. Po zmianie treści uruchom `python -B site-src/build.py`.
+Pełne teksty artykułów w pięciu dodatkowych językach znajdują się w `history/<kod>/`. Wspólne elementy nawigacji są w `history.json`. Znaczniki `history-shot` w tych artykułach i polskich stronach wskazują zrzut z folderu danego języka. Podpisy są w `history-shots.json` i `locales.json`. Po zmianie treści uruchom `python -B site-src/build.py`.
 
 Tłumaczenia polityki prywatności i etykiety formularza są w `privacy.json`. Ich treść odpowiada polskiej stronie `docs/prywatnosc.html`.
 

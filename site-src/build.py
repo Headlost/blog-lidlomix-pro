@@ -12,6 +12,7 @@ DOCS = ROOT.parent / "docs"
 CONTENT = json.loads((ROOT / "locales.json").read_text(encoding="utf-8"))
 PROJECT = json.loads((ROOT / "project.json").read_text(encoding="utf-8"))
 HISTORY = json.loads((ROOT / "history.json").read_text(encoding="utf-8"))
+HISTORY_SHOTS = json.loads((ROOT / "history-shots.json").read_text(encoding="utf-8"))
 PRIVACY = json.loads((ROOT / "privacy.json").read_text(encoding="utf-8"))
 INSTALLATION = json.loads((ROOT / "installation.json").read_text(encoding="utf-8"))
 LANGUAGES = {
@@ -23,11 +24,11 @@ REPOSITORY = "https://github.com/Headlost/blog-lidlomix-pro"
 GPT_URL = "https://chatgpt.com/g/g-hAhHAqUjp-lidlomix-monsieur-cuisine"
 LATEST_PL = "aktualizacje.html#wersja-0-19-9"
 HISTORY_ARTICLES = (
-    ("poczatki.html", "gpt-karta.webp"),
-    ("dwie-aplikacje.html", "connect-aktualne/foto-wybor.webp"),
+    ("poczatki.html", "cards"),
+    ("dwie-aplikacje.html", "chooser"),
     ("waga-i-przepisy.html", "scale"),
-    ("lidlomix-pro-0-16-4.html", "steam"),
-    ("lidlomix-pro-0-17-8.html", "programs"),
+    ("lidlomix-pro-0-16-4.html", "manual"),
+    ("lidlomix-pro-0-17-8.html", "sound"),
     ("lidlomix-pro-0-19-1.html", "peeler"),
 )
 HISTORY_PAGES = {article for article, _ in HISTORY_ARTICLES} | {"technika.html"}
@@ -54,14 +55,15 @@ def alternates(filename=""):
     )
 
 
-def screenshot(code, shot, prefix, eager=False, frame=""):
-    caption = escape(CONTENT[code]["shots"][shot])
+def screenshot(code, shot, prefix, eager=False, frame="", label=None, caption_prefix=""):
+    label = escape(label or CONTENT[code]["shots"][shot])
+    caption = escape(caption_prefix) + label
     path = f"{prefix}media/jezyki/{code}/{shot}.webp"
     loading = ' fetchpriority="high"' if eager else ' loading="lazy"'
     classes = f"localized-shot {frame}" if frame else "localized-shot"
     return (
         f'<figure class="{classes}"><a href="{path}">'
-        f'<img src="{path}" width="1024" height="600" alt="{caption}"{loading}></a>'
+        f'<img src="{path}" width="1024" height="600" alt="{label}"{loading}></a>'
         f'<figcaption>{caption}</figcaption></figure>'
     )
 
@@ -140,7 +142,7 @@ def project_history(code):
     copy = PROJECT[code]
     cards = []
     for (article, image), (title, description) in zip(HISTORY_ARTICLES, copy["stories"], strict=True):
-        thumbnail = image if image.endswith(".webp") else f"jezyki/{code}/{image}.webp"
+        thumbnail = f"jezyki/{code}/{image}.webp"
         cards.append(f'''<article class="story-row localized-story">
       <img src="../media/{thumbnail}" loading="lazy" alt="">
       <div><h3><a href="{article}">{escape(title)}</a></h3>
@@ -157,10 +159,24 @@ def project_history(code):
 </section>'''
 
 
+def render_history_shots(code, text):
+    index = list(LANGUAGES).index(code)
+    prefix = "" if code == "pl" else "../"
+    caption_prefix = HISTORY_SHOTS["current"][index] + " · "
+
+    def render(match):
+        shot = match[1]
+        labels = HISTORY_SHOTS.get(shot)
+        photo = screenshot(code, shot, prefix, label=labels[index] if labels else None, caption_prefix=caption_prefix)
+        return f"<!-- history-shot:{shot} -->{photo}<!-- /history-shot -->"
+
+    return re.sub(r"<!-- history-shot:([a-z-]+) -->.*?<!-- /history-shot -->", render, text, flags=re.S)
+
+
 def history_page(code, filename):
     fragment = (ROOT / "history" / code / filename).read_text(encoding="utf-8")
     title = unescape(re.search(r"<h1>([^<]+)</h1>", fragment)[1])
-    article_page(code, filename, title, fragment)
+    article_page(code, filename, title, render_history_shots(code, fragment))
 
 
 def privacy_page(code):
@@ -286,7 +302,6 @@ def article_page(code, filename, title, fragment, script=""):
     canonical = f"{PAGE_URL}{'' if polish else code + '/'}{filename}"
     nav = choose_language(code, prefix, filename=filename)
     is_history = filename in HISTORY_PAGES
-    context = f'<p class="history-image-note">{escape(copy["images"])}</p>' if is_history and "<img " in fragment else ""
     back_target = "index.html#wpisy" if is_history else "index.html"
     back_label = escape(copy["back"] if is_history else copy["home"])
     (directory / filename).write_text(f'''<!doctype html>
@@ -320,7 +335,7 @@ def article_page(code, filename, title, fragment, script=""):
 </header>
 <main class="wrap" id="content">
   <div class="history-article-nav"><a href="{back_target}">← {back_label}</a></div>
-{context}
+
   {fragment.strip()}
 </main>
 <footer><div class="wrap site-footer">
@@ -448,6 +463,8 @@ def polish_page(path):
     source = path.read_bytes().decode("utf-8")
     newline = "\r\n" if "\r\n" in source else "\n"
     text = source.replace("\r\n", "\n")
+    if path.name in HISTORY_PAGES:
+        text = render_history_shots("pl", text)
     landing = path.name == "index.html"
     releases = path.name == "aktualizacje.html"
     text = re.sub(r'<dialog id="owner-panel".*?</dialog>\s*<script src="panel\.js[^"]*" defer></script>',

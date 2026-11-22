@@ -238,6 +238,7 @@
 .localized-site .site-footer p { max-width: 69ch; margin: 0; }
 .localized-site .site-footer a { white-space: normal; }
 .localized-site section[id], .localized-update[id] { scroll-margin-top: 1rem; }
+.article .demo[id] { scroll-margin-top: 1rem; }
 
 .installation-guide section { margin: 1.6rem 0; }
 .installation-cable {

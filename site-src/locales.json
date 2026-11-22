@@ -13,7 +13,7 @@
       ["Katalog MC", "Jedna karta tego samego przepisu", "Usunięto z wyników 890 dodatkowych powtórzeń. Sprawdzony katalog zawiera 8 742 karty w każdym języku. Nadziewane awokado z Funchal ma teraz jedną kartę z krokami prowadzonymi."]
     ],
     "gallery_title": "Jak to wygląda na Connect",
-    "gallery_intro": "Zrzuty przedstawiają rzeczywisty interfejs z testów na robocie.",
+    "gallery_intro": "Zrzuty wykonano na testowym Monsieur Cuisine Connect z aplikacją Lidlomix Pro 0.19.8.",
     "shots": {
       "programs": "Menu programów w języku polskim",
       "catalog": "Katalog Monsieur Cuisine i filtr ocen",
@@ -60,7 +60,7 @@
       ["0.17.9–0.19.1", "Potato peeling and online updates", "WunderPeeler got a dedicated programme with weighing and fitting instructions. MC and Pro became separate catalogues, and online downloads gained a progress indicator."]
     ],
     "gallery_title": "A closer look at the Connect",
-    "gallery_intro": "Screenshots captured on a physical Monsieur Cuisine Connect during development.",
+    "gallery_intro": "Screenshots from the test Monsieur Cuisine Connect running Lidlomix Pro 0.19.8.",
     "shots": {
       "programs": "Programmes on the Connect in English",
       "catalog": "Monsieur Cuisine catalogue and rating filter",
@@ -112,7 +112,7 @@
       ["0.17.9–0.19.1", "Kartoffeln schälen und Updates online laden", "Für den WunderPeeler kam ein Programm mit Waage und Montageanleitung. MC und Pro erhielten getrennte Kataloge, Downloads eine Fortschrittsanzeige."]
     ],
     "gallery_title": "Ein Blick auf den Connect",
-    "gallery_intro": "Diese Bildschirmfotos stammen von Tests auf einem echten Monsieur Cuisine Connect.",
+    "gallery_intro": "Die Bildschirmfotos stammen vom Testgerät Monsieur Cuisine Connect mit Lidlomix Pro 0.19.8.",
     "shots": {
       "programs": "Menü mit Programmen auf Deutsch",
       "catalog": "Monsieur-Cuisine-Katalog mit Bewertungsfilter",
@@ -164,7 +164,7 @@
       ["0.17.9–0.19.1", "Épluchage des pommes de terre et mises à jour en ligne", "Un programme dédié au WunderPeeler a ajouté la pesée et des instructions de montage. Les catalogues MC et Pro ont été séparés et les téléchargements ont reçu une barre de progression."]
     ],
     "gallery_title": "Le Connect à l’écran",
-    "gallery_intro": "Ces captures ont été réalisées sur un Monsieur Cuisine Connect lors des essais du projet.",
+    "gallery_intro": "Ces captures proviennent du Monsieur Cuisine Connect utilisé pour les essais, avec Lidlomix Pro 0.19.8.",
     "shots": {
       "programs": "Menu des programmes du Connect en français",
       "catalog": "Catalogue Monsieur Cuisine et filtre par note",
@@ -216,7 +216,7 @@
       ["0.17.9–0.19.1", "Pelatura delle patate e aggiornamenti online", "Il WunderPeeler ha ricevuto un programma con pesatura e istruzioni di montaggio. I cataloghi MC e Pro sono stati separati e i download hanno ottenuto un indicatore di avanzamento."]
     ],
     "gallery_title": "Uno sguardo al Connect",
-    "gallery_intro": "Le schermate sono state acquisite su un Monsieur Cuisine Connect durante i test del progetto.",
+    "gallery_intro": "Le schermate provengono dal Monsieur Cuisine Connect usato per i test con Lidlomix Pro 0.19.8.",
     "shots": {
       "programs": "Menu dei programmi del Connect in italiano",
       "catalog": "Catalogo Monsieur Cuisine e filtro per valutazione",
@@ -268,7 +268,7 @@
       ["0.17.9–0.19.1", "Pelado de patatas y actualizaciones por internet", "El WunderPeeler recibió un programa con pesaje e instrucciones de montaje. Los catálogos MC y Pro se separaron y las descargas incorporaron una barra de progreso."]
     ],
     "gallery_title": "Así se ve en el Connect",
-    "gallery_intro": "Las capturas se tomaron en un Monsieur Cuisine Connect durante las pruebas del proyecto.",
+    "gallery_intro": "Las capturas se hicieron en el Monsieur Cuisine Connect de pruebas con Lidlomix Pro 0.19.8.",
     "shots": {
       "programs": "Menú de programas del Connect en español",
       "catalog": "Catálogo de Monsieur Cuisine y filtro de valoraciones",

@@ -2,31 +2,26 @@
   "en": {
     "home": "Home",
     "back": "All project stories",
-    "forum": "Forum",
-    "images": "The original screenshots show the interface from the versions described. Captions are in English."
+    "forum": "Forum"
   },
   "de": {
     "home": "Startseite",
     "back": "Alle Beiträge zur Projektgeschichte",
-    "forum": "Forum",
-    "images": "Die Originalaufnahmen zeigen die Oberfläche der beschriebenen Versionen. Die Bildunterschriften sind auf Deutsch."
+    "forum": "Forum"
   },
   "fr": {
     "home": "Accueil",
     "back": "Tous les articles sur le projet",
-    "forum": "Forum",
-    "images": "Les captures d’origine montrent l’interface des versions présentées. Les légendes sont en français."
+    "forum": "Forum"
   },
   "it": {
     "home": "Pagina iniziale",
     "back": "Tutti gli articoli sul progetto",
-    "forum": "Forum",
-    "images": "Le schermate originali mostrano l’interfaccia delle versioni descritte. Le didascalie sono in italiano."
+    "forum": "Forum"
   },
   "es": {
     "home": "Inicio",
     "back": "Todos los artículos del proyecto",
-    "forum": "Foro",
-    "images": "Las capturas originales muestran la interfaz de las versiones descritas. Los pies de foto están en español."
+    "forum": "Foro"
   }
 }
