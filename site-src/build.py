@@ -10,6 +10,7 @@ import forum
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT.parent / "docs"
 CONTENT = json.loads((ROOT / "locales.json").read_text(encoding="utf-8"))
+RELEASE = json.loads((ROOT / "release.json").read_text(encoding="utf-8"))
 PROJECT = json.loads((ROOT / "project.json").read_text(encoding="utf-8"))
 HISTORY = json.loads((ROOT / "history.json").read_text(encoding="utf-8"))
 HISTORY_SHOTS = json.loads((ROOT / "history-shots.json").read_text(encoding="utf-8"))
@@ -22,7 +23,8 @@ LANGUAGES = {
 PAGE_URL = "https://headlost.github.io/blog-lidlomix-pro/"
 REPOSITORY = "https://github.com/Headlost/blog-lidlomix-pro"
 GPT_URL = "https://chatgpt.com/g/g-hAhHAqUjp-lidlomix-monsieur-cuisine"
-LATEST_PL = "aktualizacje.html#wersja-0-19-9"
+RELEASE_ANCHOR = "wersja-" + RELEASE["version"].replace(".", "-")
+LATEST_PL = f"aktualizacje.html#{RELEASE_ANCHOR}"
 HISTORY_ARTICLES = (
     ("poczatki.html", "cards"),
     ("dwie-aplikacje.html", "chooser"),
@@ -98,13 +100,34 @@ def update(code, historical=False):
       {entries(data["history"], "milestone-list", "h4", milestone_links)}
     </section>'''
     return f'''
-  <article class="localized-update" id="{"updates" if historical else "wersja-0-19-9"}">
+  <article class="localized-update" id="wersja-0-19-9">
     <p class="localized-kicker"><span>{label}</span><time datetime="2026-11-21">{date}</time></p>
     <h2>{title}</h2>
     <p class="lead localized-intro">{intro}</p>
     {entries(data["changes"], "change-grid", "h3")}{history}
   </article>
 '''.strip()
+
+
+def installation_video_link(code, button=False):
+    video = RELEASE["locales"][code].get("video")
+    if not video:
+        return ""
+    style = ' class="btn"' if button else ""
+    return f'<a{style} href="{escape(video["url"])}">{escape(video["text"])}</a>'
+
+
+def latest_release(code):
+    copy = RELEASE["locales"][code]
+    anchor = RELEASE_ANCHOR if code == "pl" else "updates"
+    video = installation_video_link(code, button=True)
+    video_row = f"\n    <p>{video}</p>" if video else ""
+    return f'''<article class="localized-update" id="{anchor}">
+    <p class="localized-kicker"><span>{escape(copy["label"])} · {escape(RELEASE["version"])}</span><time datetime="{escape(RELEASE["date"])}">{escape(copy["date"])}</time></p>
+    <h2>{escape(copy["title"])}</h2>
+    <p class="lead localized-intro">{escape(copy["intro"])}</p>
+    {entries(copy["changes"], "change-grid", "h3")}{video_row}
+  </article>'''
 
 
 def assistant_card(code, prefix=""):
@@ -368,6 +391,7 @@ def localized_page(code):
     feature_cards = "\n".join(features)
     gallery = "\n".join(screenshot(code, shot, "../") for shot in
                         ("catalog", "cards", "steam", "peeler", "scale", "language", "updates"))
+    hero_demo = installation_video_link(code) or escape(data["demo_status"])
     local_file = DOCS / code / "index.html"
     local_file.parent.mkdir(exist_ok=True)
     local_file.write_text(f'''<!doctype html>
@@ -404,7 +428,7 @@ def localized_page(code):
       <p class="lead">{intro}</p>
       <div class="localized-actions">
         <a class="btn" href="#updates">{escape(data["primary"])}</a>
-        <p class="demo-status">{escape(data["demo_status"])}</p>
+        <p class="demo-status">{hero_demo}</p>
       </div>
     </div>
     {screenshot(code, "programs", "../", eager=True, frame="localized-device")}
@@ -417,6 +441,7 @@ def localized_page(code):
       {feature_cards}
     </div>
   </section>
+  {latest_release(code)}
   {update(code, historical=True)}
   <section class="localized-section" id="gallery">
     <h2>{escape(data["gallery_title"])}</h2>
@@ -493,21 +518,28 @@ def polish_page(path):
             end = text.index('</section>\n', start) + len('</section>\n')
             text = text[:start] + text[end:]
         text = replace_generated(text, "assistant-card", assistant_card("pl"), '<section class="section story-section"')
+        text = re.sub(r'aktualizacje\.html#wersja-[\d-]+(?=">Zobacz najnowszą aktualizację</a>)',
+                      LATEST_PL, text, count=1)
+        latest = RELEASE["locales"]["pl"]
         summary = f'''
 <section class="polish-latest">
   <div>
-    <p class="localized-kicker">{escape(data["latest"])} · 0.19.9</p>
-    <h2>{escape(data["update_title"])}</h2>
-    <p>{escape(data["update_intro"])}</p>
+    <p class="localized-kicker">{escape(latest["label"])} · {escape(RELEASE["version"])}</p>
+    <h2>{escape(latest["title"])}</h2>
+    <p>{escape(latest["intro"])}</p>
     <a class="btn" href="{LATEST_PL}">Zobacz najnowsze zmiany</a>
   </div>
   {screenshot("pl", "programs", "")}
 </section>'''.strip()
         text = replace_generated(text, "polish-latest", summary, '<!-- generated:assistant-card -->')
+        film = installation_video_link("pl")
+        text = replace_generated(text, "polish-installation-video", f"  <p>{film}</p>" if film else "",
+                                 '</section>\n<section class="section" id="zapisy">')
     if releases:
         gallery = "\n".join(screenshot("pl", shot, "") for shot in
                             ("catalog", "cards", "steam", "peeler", "scale", "language", "updates"))
-        summary = f'''{update("pl")}
+        summary = f'''{latest_release("pl")}
+{update("pl")}
 <section class="localized-section" id="zrzuty-0-19-9">
   <h2>{escape(data["gallery_title"])}</h2>
   <p>{escape(data["gallery_intro"])}</p>

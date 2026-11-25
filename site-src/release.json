@@ -1,0 +1,212 @@
+{
+  "version": "0.21.5",
+  "date": "2026-11-26",
+  "locales": {
+    "pl": {
+      "label": "Najnowsza aktualizacja",
+      "date": "26 listopada 2026",
+      "title": "Instalator USB, parowanie przez Wi-Fi i widoczny Start",
+      "intro": "Wydanie 0.21.5 upraszcza instalację na Monsieur Cuisine Connect, poprawia wysyłanie przepisów z telefonu i porządkuje ekran kroków gotowania.",
+      "changes": [
+        [
+          "Instalator USB",
+          "Język wybierasz na początku",
+          "Instrukcje, animacje podłączania USB i przykładowe okno autoryzacji debugowania są dostępne w sześciu językach. Wybrany język przejmują Lidlomix Pro na robocie i ekran wyboru między nim a fabryczną aplikacją Monsieur Cuisine."
+        ],
+        [
+          "Rozruch Androida",
+          "Przepnij USB dopiero po wyświetleniu menu",
+          "Po restarcie pozostaw kabel podłączony. Jeśli przepięcie jest nadal potrzebne, instrukcja i animacja pojawią się najwcześniej po 60 sekundach. Jeżeli pytanie o debugowanie pojawi się wcześniej, możesz od razu je zatwierdzić na robocie."
+        ],
+        [
+          "Przerwanie",
+          "Potwierdzenie przed zatrzymaniem instalatora",
+          "Na etapie, który można przerwać, pierwsze kliknięcie pokazuje ostrzeżenie. Drugie w ciągu 8 sekund otwiera okno, w którym wpisujesz „przerwij”. Po zakończeniu przerwania możesz zamknąć instalator lub ponowić próbę."
+        ],
+        [
+          "Wi-Fi 2,4 GHz",
+          "Sieci i parowanie w aplikacji",
+          "Sieć 2,4 GHz wybierzesz w ustawieniach robota. Poprawiono skaner kodów QR na telefonie, ponowne parowanie po zatrzymaniu odbioru oraz komunikaty potwierdzające połączenie."
+        ],
+        [
+          "Przepisy",
+          "Porcje na zdjęciu, Start w zasięgu",
+          "Liczba porcji jest widoczna w rogu zdjęcia. Dzięki temu w testowanych krokach masy maślanej i „3 Bit” widać cały przycisk Start. Ikona Ulubione w ustawieniach ma teraz niebieskie serce na zielonym tle."
+        ]
+      ],
+      "video": {
+        "url": "https://youtu.be/7VAwYb6dRY4?si=OoYUA0khNpvHa_-3",
+        "text": "Obejrzyj instalację po polsku na YouTube"
+      }
+    },
+    "en": {
+      "label": "Latest update",
+      "date": "26 November 2026",
+      "title": "USB installation, Wi-Fi pairing and a visible Start button",
+      "intro": "Version 0.21.5 makes installation on the Monsieur Cuisine Connect clearer, improves recipe transfers from your phone and gives cooking controls more room.",
+      "changes": [
+        [
+          "USB installer",
+          "Choose your language at the start",
+          "The instructions, USB connection animations and sample debugging prompt are available in six languages. The selected language carries over to Lidlomix Pro on the robot and to the screen where you choose between Lidlomix Pro and the original Monsieur Cuisine app."
+        ],
+        [
+          "Android startup",
+          "Reconnect USB once the menu is visible",
+          "Keep the cable connected after the restart. If you still need to reconnect, the instruction and animation appear after at least 60 seconds. If the USB debugging prompt appears earlier, you can approve it on the robot straight away."
+        ],
+        [
+          "Cancellation",
+          "Confirm before stopping the installer",
+          "At a step you can cancel, the first click shows a warning. A second click within eight seconds opens a confirmation where you type “przerwij”. Once cancellation is complete, you can close the installer or try again."
+        ],
+        [
+          "2.4 GHz Wi-Fi",
+          "Choose a network and pair in the app",
+          "Choose a 2.4 GHz network in the robot’s settings. The update improves the phone app’s QR scanner, pairing again after stopping reception, and the messages that confirm a connection."
+        ],
+        [
+          "Recipes",
+          "Servings on the photo, Start within reach",
+          "The serving count appears in a corner of the photo. The full Start button is visible in the tested steps for the condensed-milk buttercream and “3 Bit” recipes. The Favourites icon in settings now has a blue heart on a green background."
+        ]
+      ]
+    },
+    "de": {
+      "label": "Aktuelles Update",
+      "date": "26. November 2026",
+      "title": "USB-Installation, WLAN-Kopplung und eine sichtbare Starttaste",
+      "intro": "Version 0.21.5 macht die Installation auf dem Monsieur Cuisine Connect übersichtlicher, verbessert die Rezeptübertragung vom Smartphone und schafft Platz für die Bedienelemente beim Kochen.",
+      "changes": [
+        [
+          "USB-Installation",
+          "Sprache gleich zu Beginn wählen",
+          "Anweisungen, USB-Animationen und das Beispiel für die Debugging-Abfrage gibt es in sechs Sprachen. Die gewählte Sprache gilt danach für Lidlomix Pro auf dem Gerät und für die Auswahl zwischen Lidlomix Pro und der Original-App von Monsieur Cuisine."
+        ],
+        [
+          "Android-Start",
+          "USB erst bei sichtbarem Menü neu verbinden",
+          "Lass das Kabel nach dem Neustart angeschlossen. Ist ein erneutes Verbinden nötig, erscheinen Hinweis und Animation frühestens nach 60 Sekunden. Erscheint die Abfrage für USB-Debugging früher, kannst du sie direkt am Gerät bestätigen."
+        ],
+        [
+          "Abbruch",
+          "Installation bewusst abbrechen",
+          "Bei einem abbrechbaren Schritt zeigt der erste Klick einen Hinweis. Ein zweiter Klick innerhalb von acht Sekunden öffnet ein Fenster, in dem du „przerwij“ eingibst. Danach kannst du das Installationsprogramm schließen oder erneut starten."
+        ],
+        [
+          "2,4-GHz-WLAN",
+          "Netzwerk wählen und in der App koppeln",
+          "Das 2,4-GHz-Netz wählst du in den Einstellungen des Geräts. Der QR-Scanner auf dem Smartphone, die erneute Kopplung nach dem Stopp des Empfangs und die Rückmeldungen zur Verbindung wurden verbessert."
+        ],
+        [
+          "Rezepte",
+          "Portionen im Foto, Starttaste im Blick",
+          "Die Portionszahl steht in einer Ecke des Fotos. Bei den geprüften Schritten für Buttercreme mit Kondensmilch und „3 Bit“ ist die Starttaste vollständig sichtbar. Das Favoritensymbol in den Einstellungen zeigt jetzt ein blaues Herz auf grünem Grund."
+        ]
+      ]
+    },
+    "fr": {
+      "label": "Dernière mise à jour",
+      "date": "26 novembre 2026",
+      "title": "Installation USB, association Wi-Fi et bouton Démarrer bien visible",
+      "intro": "La version 0.21.5 facilite l’installation sur Monsieur Cuisine Connect, améliore l’envoi de recettes depuis le téléphone et laisse plus de place aux commandes pendant la cuisson.",
+      "changes": [
+        [
+          "Installation USB",
+          "Choisissez la langue dès le départ",
+          "Les consignes, les animations de branchement USB et l’exemple de demande d’autorisation de débogage sont disponibles en six langues. La langue choisie s’applique à Lidlomix Pro sur le robot et à l’écran de sélection entre Lidlomix Pro et l’application Monsieur Cuisine d’origine."
+        ],
+        [
+          "Démarrage d’Android",
+          "Rebranchez l’USB une fois le menu affiché",
+          "Laissez le câble branché après le redémarrage. Si vous devez le rebrancher, la consigne et l’animation s’affichent au plus tôt après 60 secondes. Si la demande de débogage USB apparaît avant, vous pouvez l’autoriser directement sur le robot."
+        ],
+        [
+          "Interruption",
+          "Confirmez l’arrêt de l’installation",
+          "Lorsqu’une étape peut être interrompue, le premier clic affiche un avertissement. Un second clic dans les huit secondes ouvre une fenêtre où vous devez saisir « przerwij ». Une fois l’arrêt terminé, vous pouvez fermer l’installateur ou réessayer."
+        ],
+        [
+          "Wi-Fi 2,4 GHz",
+          "Choisissez le réseau et associez le robot dans l’application",
+          "Sélectionnez un réseau 2,4 GHz dans les réglages du robot. La lecture des codes QR sur le téléphone, la reconnexion après l’arrêt de la réception et les messages de confirmation ont été améliorés."
+        ],
+        [
+          "Recettes",
+          "Portions sur la photo et bouton Démarrer accessible",
+          "Le nombre de portions figure dans un coin de la photo. Le bouton Démarrer reste entièrement visible aux étapes vérifiées de la crème au beurre au lait concentré et du gâteau « 3 Bit ». Dans les réglages, les favoris sont représentés par un cœur bleu sur fond vert."
+        ]
+      ],
+      "video": {
+        "url": "https://youtu.be/cS_9JGpzB3Y?si=goobB2FDWGJSN74-",
+        "text": "Voir l’installation en français sur YouTube"
+      }
+    },
+    "it": {
+      "label": "Ultimo aggiornamento",
+      "date": "26 novembre 2026",
+      "title": "Installazione USB, abbinamento Wi-Fi e pulsante Avvia ben visibile",
+      "intro": "La versione 0.21.5 rende più chiara l’installazione su Monsieur Cuisine Connect, migliora l’invio delle ricette dal telefono e lascia più spazio ai comandi di cottura.",
+      "changes": [
+        [
+          "Installazione USB",
+          "Scegli la lingua all’inizio",
+          "Le istruzioni, le animazioni del collegamento USB e l’esempio della richiesta di autorizzazione al debug sono disponibili in sei lingue. La lingua selezionata si applica a Lidlomix Pro sul robot e alla schermata di scelta tra Lidlomix Pro e l’app originale Monsieur Cuisine."
+        ],
+        [
+          "Avvio di Android",
+          "Ricollega l’USB quando compare il menu",
+          "Lascia il cavo collegato dopo il riavvio. Se serve ricollegarlo, l’istruzione e l’animazione compaiono dopo almeno 60 secondi. Se la richiesta di debug USB appare prima, puoi confermarla direttamente sul robot."
+        ],
+        [
+          "Interruzione",
+          "Conferma prima di interrompere l’installazione",
+          "Nelle fasi che si possono interrompere, il primo clic mostra un avviso. Un secondo clic entro otto secondi apre la finestra in cui digitare «przerwij». Al termine dell’interruzione puoi chiudere il programma o riprovare."
+        ],
+        [
+          "Wi-Fi a 2,4 GHz",
+          "Scegli la rete e abbina il robot nell’app",
+          "Seleziona una rete a 2,4 GHz nelle impostazioni del robot. Sono migliorati la lettura dei codici QR sul telefono, il nuovo abbinamento dopo aver interrotto la ricezione e i messaggi di conferma del collegamento."
+        ],
+        [
+          "Ricette",
+          "Porzioni sulla foto e pulsante Avvia a portata di mano",
+          "Il numero di porzioni compare in un angolo della foto. Nei passaggi verificati della crema al burro con latte condensato e del dolce «3 Bit» il pulsante Avvia rimane interamente visibile. Nelle impostazioni, l’icona dei preferiti mostra un cuore blu su sfondo verde."
+        ]
+      ]
+    },
+    "es": {
+      "label": "Última actualización",
+      "date": "26 de noviembre de 2026",
+      "title": "Instalación por USB, vinculación Wi-Fi y botón Iniciar visible",
+      "intro": "La versión 0.21.5 facilita la instalación en Monsieur Cuisine Connect, mejora el envío de recetas desde el móvil y deja más espacio para los controles de cocción.",
+      "changes": [
+        [
+          "Instalación por USB",
+          "Elige el idioma al empezar",
+          "Las instrucciones, las animaciones de conexión USB y el ejemplo de autorización de depuración están disponibles en seis idiomas. El idioma elegido se aplica a Lidlomix Pro en el robot y a la pantalla donde eliges entre Lidlomix Pro y la aplicación original de Monsieur Cuisine."
+        ],
+        [
+          "Inicio de Android",
+          "Vuelve a conectar el USB cuando aparezca el menú",
+          "Deja el cable conectado tras el reinicio. Si hace falta volver a conectarlo, la indicación y la animación aparecen pasados al menos 60 segundos. Si la solicitud de depuración USB aparece antes, puedes aceptarla directamente en el robot."
+        ],
+        [
+          "Interrupción",
+          "Confirma antes de interrumpir la instalación",
+          "En los pasos que se pueden interrumpir, el primer clic muestra un aviso. Un segundo clic en ocho segundos abre una ventana en la que debes escribir «przerwij». Cuando termine la interrupción, puedes cerrar el instalador o volver a intentarlo."
+        ],
+        [
+          "Wi-Fi de 2,4 GHz",
+          "Elige la red y vincula el robot desde la aplicación",
+          "Selecciona una red de 2,4 GHz en los ajustes del robot. Se han mejorado la lectura de códigos QR en el móvil, la vinculación tras detener la recepción y los mensajes de confirmación de la conexión."
+        ],
+        [
+          "Recetas",
+          "Raciones en la foto y botón Iniciar a mano",
+          "El número de raciones aparece en una esquina de la foto. En los pasos comprobados de la crema de mantequilla con leche condensada y del pastel «3 Bit» se ve todo el botón Iniciar. En los ajustes, el icono de favoritos muestra un corazón azul sobre fondo verde."
+        ]
+      ]
+    }
+  }
+}

@@ -21,9 +21,9 @@
     "steps": [
       ["Rozpakuj paczkę", "Rozpakuj cały ZIP do jednego katalogu na komputerze. Uruchom Lidlomix-Pro-Instalator-USB.exe z tego katalogu."],
       ["Połącz robota z komputerem", "Wyłącz Connect i odłącz go od zasilania. Na spodzie podstawy odkręć śrubkę klapki bitem Torx TT10 i zdejmij klapkę. Podłącz przewód serwisowy do komputera i do gniazda Android USB. Podłącz robota ponownie do zasilania, włącz go, odblokuj ekran i pozostaw w stanie spoczynku."],
-      ["Uruchom instalatora", "W oknie instalatora kliknij Start. Jeśli robot zapyta o debugowanie USB, potwierdź połączenie na jego ekranie. Windows musi rozpoznać połączenie Android USB."],
+      ["Uruchom instalatora", "Wybierz język instalatora i kliknij Start. Po restarcie pozostaw kabel podłączony, aż na robocie pojawi się menu. Przepnij USB dopiero wtedy, gdy instalator pokaże wskazówkę i menu będzie widoczne. Jeśli robot zapyta o debugowanie USB, potwierdź je na jego ekranie."],
       ["Zachowaj kopię zapasową", "Przed instalacją program zapisuje kopię plików instalacyjnych fabrycznej aplikacji (APK). Zachowaj ją na wypadek błędu. Przyda się do przywrócenia fabrycznej aplikacji. Zostaw przewód podłączony, aż instalator potwierdzi zakończenie."],
-      ["Sprawdź pierwsze uruchomienie", "Otwórz programy i katalog przepisów, a w ustawieniach wybierz język. Jeśli chcesz zmienić domyślny ekran startowy, znajdziesz go w ustawieniach Androida pod pozycją Ekran główny."]
+      ["Sprawdź pierwsze uruchomienie", "Sprawdź, czy Lidlomix Pro i ekran wyboru aplikacji używają języka wybranego w instalatorze. Możesz go później zmienić w ustawieniach Lidlomix Pro. Domyślny ekran startowy znajdziesz w ustawieniach Androida pod pozycją Ekran główny."]
     ],
     "help_title": "Gdy instalacja się zatrzyma",
     "help": "Kliknij w instalatorze Kopie i logi. Znajdziesz tam zapis próby i kopię fabrycznej aplikacji, jeśli instalator zdążył ją utworzyć. Pełne przywrócenie systemu wymaga procedury serwisowej. Na forum podaj model, wersję Windows, numer kroku i komunikat z instalatora. Przed wklejeniem logu usuń numer seryjny i dane konta.",
@@ -52,9 +52,9 @@
     "steps": [
       ["Extract the package", "Extract the entire ZIP into one folder on your computer. Run Lidlomix-Pro-Instalator-USB.exe from that folder."],
       ["Connect the robot to the computer", "Turn the Connect off and unplug it. Use a Torx TT10 bit to undo the screw on the underside of the base and remove the service cover. Connect the service cable to the computer and the Android USB socket. Plug the Connect back in, turn it on, unlock the screen and leave it idle."],
-      ["Start the installer", "Click Start in the installer. If the robot asks you to allow USB debugging, confirm on its screen. Windows must detect the Android USB connection."],
+      ["Start the installer", "Choose the installer language and click Start. After the restart, keep the cable connected while the robot loads its menu. Reconnect USB when the installer shows the instruction and the menu is visible. If the robot asks to allow USB debugging, approve it on the robot’s screen."],
       ["Keep the backup", "The installer backs up the factory app’s installation files (APKs) before making changes. Keep the backup so you can restore the factory app if something goes wrong. Leave the cable connected until the installer confirms it has finished."],
-      ["Check the first launch", "Open the programmes and recipe catalogue, then choose your language in settings. To change the default startup screen, look for Home screen in Android settings."]
+      ["Check the first launch", "Check that Lidlomix Pro and the app chooser use the language selected in the installer. You can change it later in Lidlomix Pro settings. To change the default startup screen, open Home screen in Android settings."]
     ],
     "help_title": "If installation stops",
     "help": "Use the installer button labelled Kopie i logi (Backups and logs) to find the run log and the factory app backup, if it was created. A full system restore requires a service procedure. In the forum, include the model, Windows version, step number and the installer message. Remove serial numbers and account details before pasting a log excerpt.",
@@ -83,9 +83,9 @@
     "steps": [
       ["Paket entpacken", "Entpacke die gesamte ZIP-Datei in einen Ordner auf dem Computer. Starte Lidlomix-Pro-Instalator-USB.exe aus diesem Ordner."],
       ["Gerät mit dem Computer verbinden", "Schalte den Connect aus und ziehe den Netzstecker. Löse die Schraube an der Unterseite mit einem Torx-TT10-Bit und nimm die Serviceklappe ab. Verbinde den Computer über das Servicekabel mit dem Anschluss Android USB. Schließe den Connect wieder ans Stromnetz an, schalte ihn ein, entsperre den Bildschirm und lass das Gerät im Ruhezustand."],
-      ["Installationsprogramm starten", "Klicke im Installationsprogramm auf Start. Wenn das Gerät fragt, ob USB-Debugging zugelassen werden soll, bestätige am Bildschirm. Windows muss die Android-USB-Verbindung erkennen."],
+      ["Installationsprogramm starten", "Wähle die Sprache des Installationsprogramms und klicke auf Start. Lass das Kabel nach dem Neustart angeschlossen, während das Gerät sein Menü lädt. Verbinde USB erst neu, wenn die Anweisung erscheint und das Menü sichtbar ist. Eine Abfrage für USB-Debugging bestätigst du am Gerätebildschirm."],
       ["Sicherung aufbewahren", "Vor der Installation sichert das Programm die Installationsdateien der Original-App (APK). Bewahre die Sicherung auf, damit du die Original-App bei einem Fehler wiederherstellen kannst. Lass das Kabel angeschlossen, bis das Programm den Abschluss meldet."],
-      ["Ersten Start prüfen", "Öffne die Programme und den Rezeptkatalog und wähle in den Einstellungen deine Sprache. Den Standard-Startbildschirm kannst du in den Android-Einstellungen unter Startbildschirm ändern."]
+      ["Ersten Start prüfen", "Prüfe, ob Lidlomix Pro und die App-Auswahl die im Installationsprogramm gewählte Sprache verwenden. Du kannst sie später in den Einstellungen von Lidlomix Pro ändern. Den Standard-Startbildschirm findest du in den Android-Einstellungen unter Startbildschirm."]
     ],
     "help_title": "Wenn die Installation stehen bleibt",
     "help": "Über Kopie i logi (Sicherungen und Protokolle) findest du das Protokoll und, falls bereits erstellt, die Sicherung der Original-App. Die Wiederherstellung des gesamten Systems erfordert ein Serviceverfahren. Nenne im Forum Modell, Windows-Version, Schrittnummer und Fehlermeldung. Entferne Seriennummern und Kontodaten aus Protokollauszügen.",
@@ -114,9 +114,9 @@
     "steps": [
       ["Décompresser le fichier", "Décompressez le ZIP entier dans un dossier de l’ordinateur. Lancez Lidlomix-Pro-Instalator-USB.exe depuis ce dossier."],
       ["Relier le robot à l’ordinateur", "Éteignez et débranchez le Connect. Sous la base, retirez la vis avec un embout Torx TT10, puis enlevez la trappe. Reliez l’ordinateur au port Android USB avec le câble de maintenance. Rebranchez le robot sur le secteur, allumez-le, déverrouillez l’écran et laissez-le au repos."],
-      ["Lancer l’installateur", "Cliquez sur Start. Si le robot demande d’autoriser le débogage USB, confirmez sur son écran. Windows doit détecter la connexion Android USB."],
+      ["Lancer l’installateur", "Choisissez la langue de l’installateur et cliquez sur Démarrer. Après le redémarrage, laissez le câble branché pendant le chargement du menu du robot. Rebranchez l’USB lorsque l’installateur affiche la consigne et que le menu est visible. Si le robot demande une autorisation de débogage USB, confirmez-la sur son écran."],
       ["Conserver la sauvegarde", "Avant l’installation, l’installateur sauvegarde les fichiers d’installation de l’application d’origine (APK). Gardez cette sauvegarde pour pouvoir restaurer l’application d’origine en cas de problème. Laissez le câble branché jusqu’à ce que l’installateur confirme la fin de l’opération."],
-      ["Vérifier le premier démarrage", "Ouvrez les programmes et le catalogue de recettes, puis choisissez votre langue dans les réglages. Pour changer l’écran de démarrage par défaut, cherchez Écran d’accueil dans les réglages Android."]
+      ["Vérifier le premier démarrage", "Vérifiez que Lidlomix Pro et l’écran de sélection des applications utilisent la langue choisie dans l’installateur. Vous pouvez la modifier dans les réglages de Lidlomix Pro. Pour changer l’écran de démarrage par défaut, ouvrez la rubrique Écran d’accueil dans les réglages Android."]
     ],
     "help_title": "Si l’installation s’interrompt",
     "help": "Le bouton Kopie i logi (Sauvegardes et journaux) donne accès au journal de l’essai et à la sauvegarde de l’application d’origine, si elle a été créée. La restauration complète du système nécessite une procédure de maintenance. Sur le forum, indiquez le modèle, la version de Windows, le numéro de l’étape et le message affiché. Retirez le numéro de série et les données de compte avant de partager un extrait du journal.",
@@ -145,9 +145,9 @@
     "steps": [
       ["Estrai il pacchetto", "Estrai tutto lo ZIP in una cartella del computer. Avvia Lidlomix-Pro-Instalator-USB.exe da quella cartella."],
       ["Collega il robot al computer", "Spegni Connect e scollegalo dalla rete elettrica. Sotto la base, svita la vite con un inserto Torx TT10 e rimuovi lo sportello. Collega il computer alla porta Android USB con il cavo di servizio. Ricollega il robot alla rete elettrica, accendilo, sblocca lo schermo e lascialo a riposo."],
-      ["Avvia l’installatore", "Fai clic su Start. Se il robot chiede di autorizzare il debug USB, conferma sul suo schermo. Windows deve riconoscere il collegamento Android USB."],
+      ["Avvia l’installatore", "Scegli la lingua del programma e fai clic su Avvia. Dopo il riavvio, lascia collegato il cavo mentre il robot carica il menu. Ricollega l’USB quando il programma mostra l’istruzione e il menu è visibile. Se il robot chiede l’autorizzazione al debug USB, confermala sul suo schermo."],
       ["Conserva il backup", "Prima dell’installazione il programma salva una copia dei file di installazione dell’app originale (APK). Conservala per poter ripristinare l’app originale in caso di problemi. Lascia il cavo collegato finché il programma non conferma che l’installazione è terminata."],
-      ["Verifica il primo avvio", "Apri i programmi e il catalogo di ricette, poi scegli la lingua nelle impostazioni. Per cambiare la schermata di avvio predefinita, cerca Schermata Home nelle impostazioni di Android."]
+      ["Verifica il primo avvio", "Controlla che Lidlomix Pro e la schermata di scelta delle app usino la lingua selezionata durante l’installazione. Puoi cambiarla in seguito nelle impostazioni di Lidlomix Pro. Per modificare la schermata iniziale predefinita, apri Schermata Home nelle impostazioni di Android."]
     ],
     "help_title": "Se l’installazione si interrompe",
     "help": "Il pulsante Kopie i logi (Copie e registri) apre il registro del tentativo e il backup dell’app originale, se è stato creato. Il ripristino completo del sistema richiede una procedura di assistenza. Sul forum indica il modello, la versione di Windows, il numero del passaggio e il messaggio. Rimuovi numero di serie e dati dell’account da eventuali estratti del registro.",
@@ -176,9 +176,9 @@
     "steps": [
       ["Descomprime el paquete", "Descomprime todo el ZIP en una carpeta del ordenador. Ejecuta Lidlomix-Pro-Instalator-USB.exe desde esa carpeta."],
       ["Conecta el robot al ordenador", "Apaga y desenchufa el Connect. En la parte inferior de la base, quita el tornillo con una punta Torx TT10 y retira la tapa. Conecta el ordenador al puerto Android USB con el cable de servicio. Vuelve a enchufar el robot, enciéndelo, desbloquea la pantalla y déjalo en reposo."],
-      ["Ejecuta el instalador", "Pulsa Start. Si el robot pide que autorices la depuración USB, confirma en su pantalla. Windows debe detectar la conexión Android USB."],
+      ["Ejecuta el instalador", "Elige el idioma del instalador y pulsa Iniciar. Tras el reinicio, deja el cable conectado mientras el robot carga el menú. Vuelve a conectar el USB cuando aparezca la indicación del instalador y el menú sea visible. Si el robot solicita autorización para la depuración USB, confírmala en su pantalla."],
       ["Guarda la copia de seguridad", "Antes de instalar, el instalador guarda una copia de los archivos de instalación de la aplicación original (APK). Consérvala para poder restaurar la aplicación original si surge algún problema. Deja el cable conectado hasta que el instalador confirme que ha terminado."],
-      ["Comprueba el primer inicio", "Abre los programas y el catálogo de recetas y elige el idioma en los ajustes. Para cambiar la pantalla de inicio predeterminada, busca Pantalla de inicio en los ajustes de Android."]
+      ["Comprueba el primer inicio", "Comprueba que Lidlomix Pro y el selector de aplicaciones usan el idioma elegido en el instalador. Puedes cambiarlo después en los ajustes de Lidlomix Pro. Para cambiar la pantalla de inicio predeterminada, abre Pantalla de inicio en los ajustes de Android."]
     ],
     "help_title": "Si la instalación se interrumpe",
     "help": "El botón Kopie i logi (Copias y registros) abre el registro del intento y la copia de la aplicación original, si se llegó a crear. La restauración completa del sistema requiere un procedimiento de servicio. En el foro incluye el modelo, la versión de Windows, el número del paso y el mensaje del instalador. Elimina el número de serie y los datos de la cuenta antes de compartir un fragmento del registro.",

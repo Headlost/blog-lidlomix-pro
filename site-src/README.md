@@ -1,6 +1,6 @@
 # Wersje językowe bloga
 
-Treści nowych wersji i najnowszy polski wpis znajdują się w `locales.json`. Po edycji uruchom `python -B site-src/build.py` w katalogu repozytorium. Skrypt odtwarza wersje językowe w `docs`, sekcje oznaczone komentarzami `generated` w polskich stronach oraz listę języków w `README.md`.
+Opis bieżącego wydania i linki do filmów dla wybranych języków znajdują się w `release.json`. Teksty stron i wcześniejsze aktualizacje są w `locales.json`. Po edycji uruchom `python -B site-src/build.py` w katalogu repozytorium. Skrypt odtwarza wersje językowe w `docs`, sekcje oznaczone komentarzami `generated` w polskich stronach oraz listę języków w `README.md`.
 
 Teksty interfejsu forum są w `forum.json`, a przypięte tematy w `forum-topics.json`. Każda wersja korzysta ze wspólnych działów i domyślnie pokazuje wpisy użytkowników w wybranym języku. Identyfikatory przypiętych tematów są wspólne dla wszystkich języków i muszą odpowiadać identyfikatorom akceptowanym przez usługę forum.
 
